@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/argos3-examples
+CMAKE_SOURCE_DIR = /root/argos-sir-sim
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/argos3-examples/build
+CMAKE_BINARY_DIR = /root/argos-sir-sim/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /root/argos3-examples/build && $(CMAKE_COMMAND) -E cmake_progress_start /root/argos3-examples/build/CMakeFiles /root/argos3-examples/build/controllers/eyebot_flocking/CMakeFiles/progress.marks
-	cd /root/argos3-examples/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/eyebot_flocking/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos3-examples/build/CMakeFiles 0
+	cd /root/argos-sir-sim/build && $(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles /root/argos-sir-sim/build/controllers/eyebot_flocking/CMakeFiles/progress.marks
+	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/eyebot_flocking/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /root/argos3-examples/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/eyebot_flocking/clean
+	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/eyebot_flocking/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /root/argos3-examples/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/eyebot_flocking/preinstall
+	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/eyebot_flocking/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /root/argos3-examples/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/eyebot_flocking/preinstall
+	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/eyebot_flocking/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /root/argos3-examples/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /root/argos-sir-sim/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/rule:
-	cd /root/argos3-examples/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/rule
+	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/rule
 .PHONY : controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/rule
 
 # Convenience name for target.
@@ -122,12 +122,12 @@ eyebot_flocking: controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/rule
 
 # fast build rule for target.
 eyebot_flocking/fast:
-	cd /root/argos3-examples/build && $(MAKE) -f controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/build.make controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/build
+	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/build.make controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/build
 .PHONY : eyebot_flocking/fast
 
 # Convenience name for target.
 controllers/eyebot_flocking/CMakeFiles/eyebot_flocking_autogen.dir/rule:
-	cd /root/argos3-examples/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/eyebot_flocking/CMakeFiles/eyebot_flocking_autogen.dir/rule
+	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/eyebot_flocking/CMakeFiles/eyebot_flocking_autogen.dir/rule
 .PHONY : controllers/eyebot_flocking/CMakeFiles/eyebot_flocking_autogen.dir/rule
 
 # Convenience name for target.
@@ -137,7 +137,7 @@ eyebot_flocking_autogen: controllers/eyebot_flocking/CMakeFiles/eyebot_flocking_
 
 # fast build rule for target.
 eyebot_flocking_autogen/fast:
-	cd /root/argos3-examples/build && $(MAKE) -f controllers/eyebot_flocking/CMakeFiles/eyebot_flocking_autogen.dir/build.make controllers/eyebot_flocking/CMakeFiles/eyebot_flocking_autogen.dir/build
+	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/eyebot_flocking/CMakeFiles/eyebot_flocking_autogen.dir/build.make controllers/eyebot_flocking/CMakeFiles/eyebot_flocking_autogen.dir/build
 .PHONY : eyebot_flocking_autogen/fast
 
 eyebot_flocking.o: eyebot_flocking.cpp.o
@@ -146,7 +146,7 @@ eyebot_flocking.o: eyebot_flocking.cpp.o
 
 # target to build an object file
 eyebot_flocking.cpp.o:
-	cd /root/argos3-examples/build && $(MAKE) -f controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/build.make controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/eyebot_flocking.cpp.o
+	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/build.make controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/eyebot_flocking.cpp.o
 .PHONY : eyebot_flocking.cpp.o
 
 eyebot_flocking.i: eyebot_flocking.cpp.i
@@ -155,7 +155,7 @@ eyebot_flocking.i: eyebot_flocking.cpp.i
 
 # target to preprocess a source file
 eyebot_flocking.cpp.i:
-	cd /root/argos3-examples/build && $(MAKE) -f controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/build.make controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/eyebot_flocking.cpp.i
+	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/build.make controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/eyebot_flocking.cpp.i
 .PHONY : eyebot_flocking.cpp.i
 
 eyebot_flocking.s: eyebot_flocking.cpp.s
@@ -164,7 +164,7 @@ eyebot_flocking.s: eyebot_flocking.cpp.s
 
 # target to generate assembly for a file
 eyebot_flocking.cpp.s:
-	cd /root/argos3-examples/build && $(MAKE) -f controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/build.make controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/eyebot_flocking.cpp.s
+	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/build.make controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/eyebot_flocking.cpp.s
 .PHONY : eyebot_flocking.cpp.s
 
 eyebot_flocking_autogen/mocs_compilation.o: eyebot_flocking_autogen/mocs_compilation.cpp.o
@@ -173,7 +173,7 @@ eyebot_flocking_autogen/mocs_compilation.o: eyebot_flocking_autogen/mocs_compila
 
 # target to build an object file
 eyebot_flocking_autogen/mocs_compilation.cpp.o:
-	cd /root/argos3-examples/build && $(MAKE) -f controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/build.make controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/eyebot_flocking_autogen/mocs_compilation.cpp.o
+	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/build.make controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/eyebot_flocking_autogen/mocs_compilation.cpp.o
 .PHONY : eyebot_flocking_autogen/mocs_compilation.cpp.o
 
 eyebot_flocking_autogen/mocs_compilation.i: eyebot_flocking_autogen/mocs_compilation.cpp.i
@@ -182,7 +182,7 @@ eyebot_flocking_autogen/mocs_compilation.i: eyebot_flocking_autogen/mocs_compila
 
 # target to preprocess a source file
 eyebot_flocking_autogen/mocs_compilation.cpp.i:
-	cd /root/argos3-examples/build && $(MAKE) -f controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/build.make controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/eyebot_flocking_autogen/mocs_compilation.cpp.i
+	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/build.make controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/eyebot_flocking_autogen/mocs_compilation.cpp.i
 .PHONY : eyebot_flocking_autogen/mocs_compilation.cpp.i
 
 eyebot_flocking_autogen/mocs_compilation.s: eyebot_flocking_autogen/mocs_compilation.cpp.s
@@ -191,7 +191,7 @@ eyebot_flocking_autogen/mocs_compilation.s: eyebot_flocking_autogen/mocs_compila
 
 # target to generate assembly for a file
 eyebot_flocking_autogen/mocs_compilation.cpp.s:
-	cd /root/argos3-examples/build && $(MAKE) -f controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/build.make controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/eyebot_flocking_autogen/mocs_compilation.cpp.s
+	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/build.make controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/eyebot_flocking_autogen/mocs_compilation.cpp.s
 .PHONY : eyebot_flocking_autogen/mocs_compilation.cpp.s
 
 # Help Target
@@ -221,6 +221,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /root/argos3-examples/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /root/argos-sir-sim/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,4 +1,4 @@
-# Install script for directory: /root/argos3-examples/controllers/footbot_flocking
+# Install script for directory: /root/argos-sir-sim/controllers/footbot_flocking
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

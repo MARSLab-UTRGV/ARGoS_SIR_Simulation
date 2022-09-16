@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/argos3-examples
+CMAKE_SOURCE_DIR = /root/argos-sir-sim
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/argos3-examples/build
+CMAKE_BINARY_DIR = /root/argos-sir-sim/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /root/argos3-examples/build && $(CMAKE_COMMAND) -E cmake_progress_start /root/argos3-examples/build/CMakeFiles /root/argos3-examples/build/loop_functions/trajectory_loop_functions/CMakeFiles/progress.marks
-	cd /root/argos3-examples/build && $(MAKE) -f CMakeFiles/Makefile2 loop_functions/trajectory_loop_functions/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos3-examples/build/CMakeFiles 0
+	cd /root/argos-sir-sim/build && $(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles /root/argos-sir-sim/build/loop_functions/trajectory_loop_functions/CMakeFiles/progress.marks
+	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 loop_functions/trajectory_loop_functions/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /root/argos3-examples/build && $(MAKE) -f CMakeFiles/Makefile2 loop_functions/trajectory_loop_functions/clean
+	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 loop_functions/trajectory_loop_functions/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /root/argos3-examples/build && $(MAKE) -f CMakeFiles/Makefile2 loop_functions/trajectory_loop_functions/preinstall
+	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 loop_functions/trajectory_loop_functions/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /root/argos3-examples/build && $(MAKE) -f CMakeFiles/Makefile2 loop_functions/trajectory_loop_functions/preinstall
+	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 loop_functions/trajectory_loop_functions/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /root/argos3-examples/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /root/argos-sir-sim/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/rule:
-	cd /root/argos3-examples/build && $(MAKE) -f CMakeFiles/Makefile2 loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/rule
+	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/rule
 .PHONY : loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/rule
 
 # Convenience name for target.
@@ -122,12 +122,12 @@ trajectory_loop_functions: loop_functions/trajectory_loop_functions/CMakeFiles/t
 
 # fast build rule for target.
 trajectory_loop_functions/fast:
-	cd /root/argos3-examples/build && $(MAKE) -f loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/build.make loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/build
+	cd /root/argos-sir-sim/build && $(MAKE) -f loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/build.make loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/build
 .PHONY : trajectory_loop_functions/fast
 
 # Convenience name for target.
 loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions_autogen.dir/rule:
-	cd /root/argos3-examples/build && $(MAKE) -f CMakeFiles/Makefile2 loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions_autogen.dir/rule
+	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions_autogen.dir/rule
 .PHONY : loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions_autogen.dir/rule
 
 # Convenience name for target.
@@ -137,7 +137,7 @@ trajectory_loop_functions_autogen: loop_functions/trajectory_loop_functions/CMak
 
 # fast build rule for target.
 trajectory_loop_functions_autogen/fast:
-	cd /root/argos3-examples/build && $(MAKE) -f loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions_autogen.dir/build.make loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions_autogen.dir/build
+	cd /root/argos-sir-sim/build && $(MAKE) -f loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions_autogen.dir/build.make loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions_autogen.dir/build
 .PHONY : trajectory_loop_functions_autogen/fast
 
 trajectory_loop_functions.o: trajectory_loop_functions.cpp.o
@@ -146,7 +146,7 @@ trajectory_loop_functions.o: trajectory_loop_functions.cpp.o
 
 # target to build an object file
 trajectory_loop_functions.cpp.o:
-	cd /root/argos3-examples/build && $(MAKE) -f loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/build.make loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/trajectory_loop_functions.cpp.o
+	cd /root/argos-sir-sim/build && $(MAKE) -f loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/build.make loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/trajectory_loop_functions.cpp.o
 .PHONY : trajectory_loop_functions.cpp.o
 
 trajectory_loop_functions.i: trajectory_loop_functions.cpp.i
@@ -155,7 +155,7 @@ trajectory_loop_functions.i: trajectory_loop_functions.cpp.i
 
 # target to preprocess a source file
 trajectory_loop_functions.cpp.i:
-	cd /root/argos3-examples/build && $(MAKE) -f loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/build.make loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/trajectory_loop_functions.cpp.i
+	cd /root/argos-sir-sim/build && $(MAKE) -f loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/build.make loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/trajectory_loop_functions.cpp.i
 .PHONY : trajectory_loop_functions.cpp.i
 
 trajectory_loop_functions.s: trajectory_loop_functions.cpp.s
@@ -164,7 +164,7 @@ trajectory_loop_functions.s: trajectory_loop_functions.cpp.s
 
 # target to generate assembly for a file
 trajectory_loop_functions.cpp.s:
-	cd /root/argos3-examples/build && $(MAKE) -f loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/build.make loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/trajectory_loop_functions.cpp.s
+	cd /root/argos-sir-sim/build && $(MAKE) -f loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/build.make loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/trajectory_loop_functions.cpp.s
 .PHONY : trajectory_loop_functions.cpp.s
 
 trajectory_loop_functions_autogen/mocs_compilation.o: trajectory_loop_functions_autogen/mocs_compilation.cpp.o
@@ -173,7 +173,7 @@ trajectory_loop_functions_autogen/mocs_compilation.o: trajectory_loop_functions_
 
 # target to build an object file
 trajectory_loop_functions_autogen/mocs_compilation.cpp.o:
-	cd /root/argos3-examples/build && $(MAKE) -f loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/build.make loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/trajectory_loop_functions_autogen/mocs_compilation.cpp.o
+	cd /root/argos-sir-sim/build && $(MAKE) -f loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/build.make loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/trajectory_loop_functions_autogen/mocs_compilation.cpp.o
 .PHONY : trajectory_loop_functions_autogen/mocs_compilation.cpp.o
 
 trajectory_loop_functions_autogen/mocs_compilation.i: trajectory_loop_functions_autogen/mocs_compilation.cpp.i
@@ -182,7 +182,7 @@ trajectory_loop_functions_autogen/mocs_compilation.i: trajectory_loop_functions_
 
 # target to preprocess a source file
 trajectory_loop_functions_autogen/mocs_compilation.cpp.i:
-	cd /root/argos3-examples/build && $(MAKE) -f loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/build.make loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/trajectory_loop_functions_autogen/mocs_compilation.cpp.i
+	cd /root/argos-sir-sim/build && $(MAKE) -f loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/build.make loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/trajectory_loop_functions_autogen/mocs_compilation.cpp.i
 .PHONY : trajectory_loop_functions_autogen/mocs_compilation.cpp.i
 
 trajectory_loop_functions_autogen/mocs_compilation.s: trajectory_loop_functions_autogen/mocs_compilation.cpp.s
@@ -191,7 +191,7 @@ trajectory_loop_functions_autogen/mocs_compilation.s: trajectory_loop_functions_
 
 # target to generate assembly for a file
 trajectory_loop_functions_autogen/mocs_compilation.cpp.s:
-	cd /root/argos3-examples/build && $(MAKE) -f loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/build.make loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/trajectory_loop_functions_autogen/mocs_compilation.cpp.s
+	cd /root/argos-sir-sim/build && $(MAKE) -f loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/build.make loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/trajectory_loop_functions_autogen/mocs_compilation.cpp.s
 .PHONY : trajectory_loop_functions_autogen/mocs_compilation.cpp.s
 
 trajectory_qtuser_functions.o: trajectory_qtuser_functions.cpp.o
@@ -200,7 +200,7 @@ trajectory_qtuser_functions.o: trajectory_qtuser_functions.cpp.o
 
 # target to build an object file
 trajectory_qtuser_functions.cpp.o:
-	cd /root/argos3-examples/build && $(MAKE) -f loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/build.make loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/trajectory_qtuser_functions.cpp.o
+	cd /root/argos-sir-sim/build && $(MAKE) -f loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/build.make loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/trajectory_qtuser_functions.cpp.o
 .PHONY : trajectory_qtuser_functions.cpp.o
 
 trajectory_qtuser_functions.i: trajectory_qtuser_functions.cpp.i
@@ -209,7 +209,7 @@ trajectory_qtuser_functions.i: trajectory_qtuser_functions.cpp.i
 
 # target to preprocess a source file
 trajectory_qtuser_functions.cpp.i:
-	cd /root/argos3-examples/build && $(MAKE) -f loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/build.make loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/trajectory_qtuser_functions.cpp.i
+	cd /root/argos-sir-sim/build && $(MAKE) -f loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/build.make loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/trajectory_qtuser_functions.cpp.i
 .PHONY : trajectory_qtuser_functions.cpp.i
 
 trajectory_qtuser_functions.s: trajectory_qtuser_functions.cpp.s
@@ -218,7 +218,7 @@ trajectory_qtuser_functions.s: trajectory_qtuser_functions.cpp.s
 
 # target to generate assembly for a file
 trajectory_qtuser_functions.cpp.s:
-	cd /root/argos3-examples/build && $(MAKE) -f loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/build.make loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/trajectory_qtuser_functions.cpp.s
+	cd /root/argos-sir-sim/build && $(MAKE) -f loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/build.make loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/trajectory_qtuser_functions.cpp.s
 .PHONY : trajectory_qtuser_functions.cpp.s
 
 # Help Target
@@ -251,6 +251,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /root/argos3-examples/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /root/argos-sir-sim/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

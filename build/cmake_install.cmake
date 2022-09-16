@@ -1,4 +1,4 @@
-# Install script for directory: /root/argos3-examples
+# Install script for directory: /root/argos-sir-sim
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,9 +39,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/root/argos3-examples/build/controllers/cmake_install.cmake")
-  include("/root/argos3-examples/build/loop_functions/cmake_install.cmake")
-  include("/root/argos3-examples/build/embedding/cmake_install.cmake")
+  include("/root/argos-sir-sim/build/controllers/cmake_install.cmake")
+  include("/root/argos-sir-sim/build/loop_functions/cmake_install.cmake")
+  include("/root/argos-sir-sim/build/embedding/cmake_install.cmake")
 
 endif()
 
@@ -53,5 +53,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/root/argos3-examples/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/root/argos-sir-sim/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

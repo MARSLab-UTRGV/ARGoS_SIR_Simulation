@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/argos3-examples
+CMAKE_SOURCE_DIR = /root/argos-sir-sim
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/argos3-examples/build
+CMAKE_BINARY_DIR = /root/argos-sir-sim/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /root/argos3-examples/build && $(CMAKE_COMMAND) -E cmake_progress_start /root/argos3-examples/build/CMakeFiles /root/argos3-examples/build/controllers/eyebot_circle/CMakeFiles/progress.marks
-	cd /root/argos3-examples/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/eyebot_circle/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos3-examples/build/CMakeFiles 0
+	cd /root/argos-sir-sim/build && $(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles /root/argos-sir-sim/build/controllers/eyebot_circle/CMakeFiles/progress.marks
+	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/eyebot_circle/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /root/argos3-examples/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/eyebot_circle/clean
+	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/eyebot_circle/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /root/argos3-examples/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/eyebot_circle/preinstall
+	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/eyebot_circle/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /root/argos3-examples/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/eyebot_circle/preinstall
+	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/eyebot_circle/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /root/argos3-examples/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /root/argos-sir-sim/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/rule:
-	cd /root/argos3-examples/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/rule
+	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/rule
 .PHONY : controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/rule
 
 # Convenience name for target.
@@ -122,12 +122,12 @@ eyebot_circle: controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/rule
 
 # fast build rule for target.
 eyebot_circle/fast:
-	cd /root/argos3-examples/build && $(MAKE) -f controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/build.make controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/build
+	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/build.make controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/build
 .PHONY : eyebot_circle/fast
 
 # Convenience name for target.
 controllers/eyebot_circle/CMakeFiles/eyebot_circle_autogen.dir/rule:
-	cd /root/argos3-examples/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/eyebot_circle/CMakeFiles/eyebot_circle_autogen.dir/rule
+	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/eyebot_circle/CMakeFiles/eyebot_circle_autogen.dir/rule
 .PHONY : controllers/eyebot_circle/CMakeFiles/eyebot_circle_autogen.dir/rule
 
 # Convenience name for target.
@@ -137,7 +137,7 @@ eyebot_circle_autogen: controllers/eyebot_circle/CMakeFiles/eyebot_circle_autoge
 
 # fast build rule for target.
 eyebot_circle_autogen/fast:
-	cd /root/argos3-examples/build && $(MAKE) -f controllers/eyebot_circle/CMakeFiles/eyebot_circle_autogen.dir/build.make controllers/eyebot_circle/CMakeFiles/eyebot_circle_autogen.dir/build
+	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/eyebot_circle/CMakeFiles/eyebot_circle_autogen.dir/build.make controllers/eyebot_circle/CMakeFiles/eyebot_circle_autogen.dir/build
 .PHONY : eyebot_circle_autogen/fast
 
 eyebot_circle.o: eyebot_circle.cpp.o
@@ -146,7 +146,7 @@ eyebot_circle.o: eyebot_circle.cpp.o
 
 # target to build an object file
 eyebot_circle.cpp.o:
-	cd /root/argos3-examples/build && $(MAKE) -f controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/build.make controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/eyebot_circle.cpp.o
+	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/build.make controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/eyebot_circle.cpp.o
 .PHONY : eyebot_circle.cpp.o
 
 eyebot_circle.i: eyebot_circle.cpp.i
@@ -155,7 +155,7 @@ eyebot_circle.i: eyebot_circle.cpp.i
 
 # target to preprocess a source file
 eyebot_circle.cpp.i:
-	cd /root/argos3-examples/build && $(MAKE) -f controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/build.make controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/eyebot_circle.cpp.i
+	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/build.make controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/eyebot_circle.cpp.i
 .PHONY : eyebot_circle.cpp.i
 
 eyebot_circle.s: eyebot_circle.cpp.s
@@ -164,7 +164,7 @@ eyebot_circle.s: eyebot_circle.cpp.s
 
 # target to generate assembly for a file
 eyebot_circle.cpp.s:
-	cd /root/argos3-examples/build && $(MAKE) -f controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/build.make controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/eyebot_circle.cpp.s
+	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/build.make controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/eyebot_circle.cpp.s
 .PHONY : eyebot_circle.cpp.s
 
 eyebot_circle_autogen/mocs_compilation.o: eyebot_circle_autogen/mocs_compilation.cpp.o
@@ -173,7 +173,7 @@ eyebot_circle_autogen/mocs_compilation.o: eyebot_circle_autogen/mocs_compilation
 
 # target to build an object file
 eyebot_circle_autogen/mocs_compilation.cpp.o:
-	cd /root/argos3-examples/build && $(MAKE) -f controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/build.make controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/eyebot_circle_autogen/mocs_compilation.cpp.o
+	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/build.make controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/eyebot_circle_autogen/mocs_compilation.cpp.o
 .PHONY : eyebot_circle_autogen/mocs_compilation.cpp.o
 
 eyebot_circle_autogen/mocs_compilation.i: eyebot_circle_autogen/mocs_compilation.cpp.i
@@ -182,7 +182,7 @@ eyebot_circle_autogen/mocs_compilation.i: eyebot_circle_autogen/mocs_compilation
 
 # target to preprocess a source file
 eyebot_circle_autogen/mocs_compilation.cpp.i:
-	cd /root/argos3-examples/build && $(MAKE) -f controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/build.make controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/eyebot_circle_autogen/mocs_compilation.cpp.i
+	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/build.make controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/eyebot_circle_autogen/mocs_compilation.cpp.i
 .PHONY : eyebot_circle_autogen/mocs_compilation.cpp.i
 
 eyebot_circle_autogen/mocs_compilation.s: eyebot_circle_autogen/mocs_compilation.cpp.s
@@ -191,7 +191,7 @@ eyebot_circle_autogen/mocs_compilation.s: eyebot_circle_autogen/mocs_compilation
 
 # target to generate assembly for a file
 eyebot_circle_autogen/mocs_compilation.cpp.s:
-	cd /root/argos3-examples/build && $(MAKE) -f controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/build.make controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/eyebot_circle_autogen/mocs_compilation.cpp.s
+	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/build.make controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/eyebot_circle_autogen/mocs_compilation.cpp.s
 .PHONY : eyebot_circle_autogen/mocs_compilation.cpp.s
 
 footbot_circle.o: footbot_circle.cpp.o
@@ -200,7 +200,7 @@ footbot_circle.o: footbot_circle.cpp.o
 
 # target to build an object file
 footbot_circle.cpp.o:
-	cd /root/argos3-examples/build && $(MAKE) -f controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/build.make controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/footbot_circle.cpp.o
+	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/build.make controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/footbot_circle.cpp.o
 .PHONY : footbot_circle.cpp.o
 
 footbot_circle.i: footbot_circle.cpp.i
@@ -209,7 +209,7 @@ footbot_circle.i: footbot_circle.cpp.i
 
 # target to preprocess a source file
 footbot_circle.cpp.i:
-	cd /root/argos3-examples/build && $(MAKE) -f controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/build.make controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/footbot_circle.cpp.i
+	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/build.make controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/footbot_circle.cpp.i
 .PHONY : footbot_circle.cpp.i
 
 footbot_circle.s: footbot_circle.cpp.s
@@ -218,7 +218,7 @@ footbot_circle.s: footbot_circle.cpp.s
 
 # target to generate assembly for a file
 footbot_circle.cpp.s:
-	cd /root/argos3-examples/build && $(MAKE) -f controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/build.make controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/footbot_circle.cpp.s
+	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/build.make controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/footbot_circle.cpp.s
 .PHONY : footbot_circle.cpp.s
 
 # Help Target
@@ -251,6 +251,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /root/argos3-examples/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /root/argos-sir-sim/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

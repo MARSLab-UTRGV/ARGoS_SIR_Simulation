@@ -50,9 +50,9 @@ argos3/plugins/robots/foot-bot/simulator/footbot_entity.h
 loop_functions/mpga_loop_functions/mpga_loop_functions.h
 -
 
-/root/argos3-examples/build/embedding/mpga/mpga_phototaxis_autogen/mocs_compilation.cpp
+/root/argos-sir-sim/build/embedding/mpga/mpga_phototaxis_autogen/mocs_compilation.cpp
 
-/root/argos3-examples/embedding/mpga/main.cpp
+/root/argos-sir-sim/embedding/mpga/main.cpp
 iostream
 -
 fstream

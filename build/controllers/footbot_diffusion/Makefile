@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/argos3-examples
+CMAKE_SOURCE_DIR = /root/argos-sir-sim
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/argos3-examples/build
+CMAKE_BINARY_DIR = /root/argos-sir-sim/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /root/argos3-examples/build && $(CMAKE_COMMAND) -E cmake_progress_start /root/argos3-examples/build/CMakeFiles /root/argos3-examples/build/controllers/footbot_diffusion/CMakeFiles/progress.marks
-	cd /root/argos3-examples/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/footbot_diffusion/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos3-examples/build/CMakeFiles 0
+	cd /root/argos-sir-sim/build && $(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles /root/argos-sir-sim/build/controllers/footbot_diffusion/CMakeFiles/progress.marks
+	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/footbot_diffusion/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /root/argos3-examples/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/footbot_diffusion/clean
+	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/footbot_diffusion/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /root/argos3-examples/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/footbot_diffusion/preinstall
+	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/footbot_diffusion/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /root/argos3-examples/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/footbot_diffusion/preinstall
+	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/footbot_diffusion/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /root/argos3-examples/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /root/argos-sir-sim/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/rule:
-	cd /root/argos3-examples/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/rule
+	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/rule
 .PHONY : controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/rule
 
 # Convenience name for target.
@@ -122,12 +122,12 @@ footbot_diffusion: controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.di
 
 # fast build rule for target.
 footbot_diffusion/fast:
-	cd /root/argos3-examples/build && $(MAKE) -f controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/build.make controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/build
+	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/build.make controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/build
 .PHONY : footbot_diffusion/fast
 
 # Convenience name for target.
 controllers/footbot_diffusion/CMakeFiles/footbot_diffusion_autogen.dir/rule:
-	cd /root/argos3-examples/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/footbot_diffusion/CMakeFiles/footbot_diffusion_autogen.dir/rule
+	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/footbot_diffusion/CMakeFiles/footbot_diffusion_autogen.dir/rule
 .PHONY : controllers/footbot_diffusion/CMakeFiles/footbot_diffusion_autogen.dir/rule
 
 # Convenience name for target.
@@ -137,7 +137,7 @@ footbot_diffusion_autogen: controllers/footbot_diffusion/CMakeFiles/footbot_diff
 
 # fast build rule for target.
 footbot_diffusion_autogen/fast:
-	cd /root/argos3-examples/build && $(MAKE) -f controllers/footbot_diffusion/CMakeFiles/footbot_diffusion_autogen.dir/build.make controllers/footbot_diffusion/CMakeFiles/footbot_diffusion_autogen.dir/build
+	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/footbot_diffusion/CMakeFiles/footbot_diffusion_autogen.dir/build.make controllers/footbot_diffusion/CMakeFiles/footbot_diffusion_autogen.dir/build
 .PHONY : footbot_diffusion_autogen/fast
 
 footbot_diffusion.o: footbot_diffusion.cpp.o
@@ -146,7 +146,7 @@ footbot_diffusion.o: footbot_diffusion.cpp.o
 
 # target to build an object file
 footbot_diffusion.cpp.o:
-	cd /root/argos3-examples/build && $(MAKE) -f controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/build.make controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/footbot_diffusion.cpp.o
+	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/build.make controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/footbot_diffusion.cpp.o
 .PHONY : footbot_diffusion.cpp.o
 
 footbot_diffusion.i: footbot_diffusion.cpp.i
@@ -155,7 +155,7 @@ footbot_diffusion.i: footbot_diffusion.cpp.i
 
 # target to preprocess a source file
 footbot_diffusion.cpp.i:
-	cd /root/argos3-examples/build && $(MAKE) -f controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/build.make controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/footbot_diffusion.cpp.i
+	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/build.make controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/footbot_diffusion.cpp.i
 .PHONY : footbot_diffusion.cpp.i
 
 footbot_diffusion.s: footbot_diffusion.cpp.s
@@ -164,7 +164,7 @@ footbot_diffusion.s: footbot_diffusion.cpp.s
 
 # target to generate assembly for a file
 footbot_diffusion.cpp.s:
-	cd /root/argos3-examples/build && $(MAKE) -f controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/build.make controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/footbot_diffusion.cpp.s
+	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/build.make controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/footbot_diffusion.cpp.s
 .PHONY : footbot_diffusion.cpp.s
 
 footbot_diffusion_autogen/mocs_compilation.o: footbot_diffusion_autogen/mocs_compilation.cpp.o
@@ -173,7 +173,7 @@ footbot_diffusion_autogen/mocs_compilation.o: footbot_diffusion_autogen/mocs_com
 
 # target to build an object file
 footbot_diffusion_autogen/mocs_compilation.cpp.o:
-	cd /root/argos3-examples/build && $(MAKE) -f controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/build.make controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/footbot_diffusion_autogen/mocs_compilation.cpp.o
+	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/build.make controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/footbot_diffusion_autogen/mocs_compilation.cpp.o
 .PHONY : footbot_diffusion_autogen/mocs_compilation.cpp.o
 
 footbot_diffusion_autogen/mocs_compilation.i: footbot_diffusion_autogen/mocs_compilation.cpp.i
@@ -182,7 +182,7 @@ footbot_diffusion_autogen/mocs_compilation.i: footbot_diffusion_autogen/mocs_com
 
 # target to preprocess a source file
 footbot_diffusion_autogen/mocs_compilation.cpp.i:
-	cd /root/argos3-examples/build && $(MAKE) -f controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/build.make controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/footbot_diffusion_autogen/mocs_compilation.cpp.i
+	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/build.make controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/footbot_diffusion_autogen/mocs_compilation.cpp.i
 .PHONY : footbot_diffusion_autogen/mocs_compilation.cpp.i
 
 footbot_diffusion_autogen/mocs_compilation.s: footbot_diffusion_autogen/mocs_compilation.cpp.s
@@ -191,7 +191,7 @@ footbot_diffusion_autogen/mocs_compilation.s: footbot_diffusion_autogen/mocs_com
 
 # target to generate assembly for a file
 footbot_diffusion_autogen/mocs_compilation.cpp.s:
-	cd /root/argos3-examples/build && $(MAKE) -f controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/build.make controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/footbot_diffusion_autogen/mocs_compilation.cpp.s
+	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/build.make controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/footbot_diffusion_autogen/mocs_compilation.cpp.s
 .PHONY : footbot_diffusion_autogen/mocs_compilation.cpp.s
 
 # Help Target
@@ -221,6 +221,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /root/argos3-examples/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /root/argos-sir-sim/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

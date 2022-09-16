@@ -1,4 +1,4 @@
-# Install script for directory: /root/argos3-examples/loop_functions
+# Install script for directory: /root/argos-sir-sim/loop_functions
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,12 +39,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/root/argos3-examples/build/loop_functions/foraging_loop_functions/cmake_install.cmake")
-  include("/root/argos3-examples/build/loop_functions/mpga_loop_functions/cmake_install.cmake")
-  include("/root/argos3-examples/build/loop_functions/custom_distributions_loop_functions/cmake_install.cmake")
-  include("/root/argos3-examples/build/loop_functions/trajectory_loop_functions/cmake_install.cmake")
-  include("/root/argos3-examples/build/loop_functions/id_loop_functions/cmake_install.cmake")
-  include("/root/argos3-examples/build/loop_functions/manualcontrol_loop_functions/cmake_install.cmake")
+  include("/root/argos-sir-sim/build/loop_functions/foraging_loop_functions/cmake_install.cmake")
+  include("/root/argos-sir-sim/build/loop_functions/mpga_loop_functions/cmake_install.cmake")
+  include("/root/argos-sir-sim/build/loop_functions/custom_distributions_loop_functions/cmake_install.cmake")
+  include("/root/argos-sir-sim/build/loop_functions/trajectory_loop_functions/cmake_install.cmake")
+  include("/root/argos-sir-sim/build/loop_functions/id_loop_functions/cmake_install.cmake")
+  include("/root/argos-sir-sim/build/loop_functions/manualcontrol_loop_functions/cmake_install.cmake")
 
 endif()
 

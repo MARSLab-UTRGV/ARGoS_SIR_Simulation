@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/argos3-examples
+CMAKE_SOURCE_DIR = /root/argos-sir-sim
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/argos3-examples/build
+CMAKE_BINARY_DIR = /root/argos-sir-sim/build
 
 # Include any dependencies generated for this target.
 include controllers/footbot_nn/CMakeFiles/footbot_nn.dir/depend.make
@@ -59,68 +59,68 @@ include controllers/footbot_nn/CMakeFiles/footbot_nn.dir/flags.make
 
 controllers/footbot_nn/CMakeFiles/footbot_nn.dir/footbot_nn_autogen/mocs_compilation.cpp.o: controllers/footbot_nn/CMakeFiles/footbot_nn.dir/flags.make
 controllers/footbot_nn/CMakeFiles/footbot_nn.dir/footbot_nn_autogen/mocs_compilation.cpp.o: controllers/footbot_nn/footbot_nn_autogen/mocs_compilation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/argos3-examples/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object controllers/footbot_nn/CMakeFiles/footbot_nn.dir/footbot_nn_autogen/mocs_compilation.cpp.o"
-	cd /root/argos3-examples/build/controllers/footbot_nn && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/footbot_nn.dir/footbot_nn_autogen/mocs_compilation.cpp.o -c /root/argos3-examples/build/controllers/footbot_nn/footbot_nn_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object controllers/footbot_nn/CMakeFiles/footbot_nn.dir/footbot_nn_autogen/mocs_compilation.cpp.o"
+	cd /root/argos-sir-sim/build/controllers/footbot_nn && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/footbot_nn.dir/footbot_nn_autogen/mocs_compilation.cpp.o -c /root/argos-sir-sim/build/controllers/footbot_nn/footbot_nn_autogen/mocs_compilation.cpp
 
 controllers/footbot_nn/CMakeFiles/footbot_nn.dir/footbot_nn_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/footbot_nn.dir/footbot_nn_autogen/mocs_compilation.cpp.i"
-	cd /root/argos3-examples/build/controllers/footbot_nn && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/argos3-examples/build/controllers/footbot_nn/footbot_nn_autogen/mocs_compilation.cpp > CMakeFiles/footbot_nn.dir/footbot_nn_autogen/mocs_compilation.cpp.i
+	cd /root/argos-sir-sim/build/controllers/footbot_nn && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/argos-sir-sim/build/controllers/footbot_nn/footbot_nn_autogen/mocs_compilation.cpp > CMakeFiles/footbot_nn.dir/footbot_nn_autogen/mocs_compilation.cpp.i
 
 controllers/footbot_nn/CMakeFiles/footbot_nn.dir/footbot_nn_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/footbot_nn.dir/footbot_nn_autogen/mocs_compilation.cpp.s"
-	cd /root/argos3-examples/build/controllers/footbot_nn && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/argos3-examples/build/controllers/footbot_nn/footbot_nn_autogen/mocs_compilation.cpp -o CMakeFiles/footbot_nn.dir/footbot_nn_autogen/mocs_compilation.cpp.s
+	cd /root/argos-sir-sim/build/controllers/footbot_nn && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/argos-sir-sim/build/controllers/footbot_nn/footbot_nn_autogen/mocs_compilation.cpp -o CMakeFiles/footbot_nn.dir/footbot_nn_autogen/mocs_compilation.cpp.s
 
 controllers/footbot_nn/CMakeFiles/footbot_nn.dir/nn/neural_network.cpp.o: controllers/footbot_nn/CMakeFiles/footbot_nn.dir/flags.make
 controllers/footbot_nn/CMakeFiles/footbot_nn.dir/nn/neural_network.cpp.o: ../controllers/footbot_nn/nn/neural_network.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/argos3-examples/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object controllers/footbot_nn/CMakeFiles/footbot_nn.dir/nn/neural_network.cpp.o"
-	cd /root/argos3-examples/build/controllers/footbot_nn && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/footbot_nn.dir/nn/neural_network.cpp.o -c /root/argos3-examples/controllers/footbot_nn/nn/neural_network.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object controllers/footbot_nn/CMakeFiles/footbot_nn.dir/nn/neural_network.cpp.o"
+	cd /root/argos-sir-sim/build/controllers/footbot_nn && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/footbot_nn.dir/nn/neural_network.cpp.o -c /root/argos-sir-sim/controllers/footbot_nn/nn/neural_network.cpp
 
 controllers/footbot_nn/CMakeFiles/footbot_nn.dir/nn/neural_network.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/footbot_nn.dir/nn/neural_network.cpp.i"
-	cd /root/argos3-examples/build/controllers/footbot_nn && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/argos3-examples/controllers/footbot_nn/nn/neural_network.cpp > CMakeFiles/footbot_nn.dir/nn/neural_network.cpp.i
+	cd /root/argos-sir-sim/build/controllers/footbot_nn && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/argos-sir-sim/controllers/footbot_nn/nn/neural_network.cpp > CMakeFiles/footbot_nn.dir/nn/neural_network.cpp.i
 
 controllers/footbot_nn/CMakeFiles/footbot_nn.dir/nn/neural_network.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/footbot_nn.dir/nn/neural_network.cpp.s"
-	cd /root/argos3-examples/build/controllers/footbot_nn && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/argos3-examples/controllers/footbot_nn/nn/neural_network.cpp -o CMakeFiles/footbot_nn.dir/nn/neural_network.cpp.s
+	cd /root/argos-sir-sim/build/controllers/footbot_nn && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/argos-sir-sim/controllers/footbot_nn/nn/neural_network.cpp -o CMakeFiles/footbot_nn.dir/nn/neural_network.cpp.s
 
 controllers/footbot_nn/CMakeFiles/footbot_nn.dir/nn/perceptron.cpp.o: controllers/footbot_nn/CMakeFiles/footbot_nn.dir/flags.make
 controllers/footbot_nn/CMakeFiles/footbot_nn.dir/nn/perceptron.cpp.o: ../controllers/footbot_nn/nn/perceptron.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/argos3-examples/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object controllers/footbot_nn/CMakeFiles/footbot_nn.dir/nn/perceptron.cpp.o"
-	cd /root/argos3-examples/build/controllers/footbot_nn && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/footbot_nn.dir/nn/perceptron.cpp.o -c /root/argos3-examples/controllers/footbot_nn/nn/perceptron.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object controllers/footbot_nn/CMakeFiles/footbot_nn.dir/nn/perceptron.cpp.o"
+	cd /root/argos-sir-sim/build/controllers/footbot_nn && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/footbot_nn.dir/nn/perceptron.cpp.o -c /root/argos-sir-sim/controllers/footbot_nn/nn/perceptron.cpp
 
 controllers/footbot_nn/CMakeFiles/footbot_nn.dir/nn/perceptron.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/footbot_nn.dir/nn/perceptron.cpp.i"
-	cd /root/argos3-examples/build/controllers/footbot_nn && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/argos3-examples/controllers/footbot_nn/nn/perceptron.cpp > CMakeFiles/footbot_nn.dir/nn/perceptron.cpp.i
+	cd /root/argos-sir-sim/build/controllers/footbot_nn && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/argos-sir-sim/controllers/footbot_nn/nn/perceptron.cpp > CMakeFiles/footbot_nn.dir/nn/perceptron.cpp.i
 
 controllers/footbot_nn/CMakeFiles/footbot_nn.dir/nn/perceptron.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/footbot_nn.dir/nn/perceptron.cpp.s"
-	cd /root/argos3-examples/build/controllers/footbot_nn && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/argos3-examples/controllers/footbot_nn/nn/perceptron.cpp -o CMakeFiles/footbot_nn.dir/nn/perceptron.cpp.s
+	cd /root/argos-sir-sim/build/controllers/footbot_nn && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/argos-sir-sim/controllers/footbot_nn/nn/perceptron.cpp -o CMakeFiles/footbot_nn.dir/nn/perceptron.cpp.s
 
 controllers/footbot_nn/CMakeFiles/footbot_nn.dir/nn/ctrnn_multilayer.cpp.o: controllers/footbot_nn/CMakeFiles/footbot_nn.dir/flags.make
 controllers/footbot_nn/CMakeFiles/footbot_nn.dir/nn/ctrnn_multilayer.cpp.o: ../controllers/footbot_nn/nn/ctrnn_multilayer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/argos3-examples/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object controllers/footbot_nn/CMakeFiles/footbot_nn.dir/nn/ctrnn_multilayer.cpp.o"
-	cd /root/argos3-examples/build/controllers/footbot_nn && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/footbot_nn.dir/nn/ctrnn_multilayer.cpp.o -c /root/argos3-examples/controllers/footbot_nn/nn/ctrnn_multilayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object controllers/footbot_nn/CMakeFiles/footbot_nn.dir/nn/ctrnn_multilayer.cpp.o"
+	cd /root/argos-sir-sim/build/controllers/footbot_nn && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/footbot_nn.dir/nn/ctrnn_multilayer.cpp.o -c /root/argos-sir-sim/controllers/footbot_nn/nn/ctrnn_multilayer.cpp
 
 controllers/footbot_nn/CMakeFiles/footbot_nn.dir/nn/ctrnn_multilayer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/footbot_nn.dir/nn/ctrnn_multilayer.cpp.i"
-	cd /root/argos3-examples/build/controllers/footbot_nn && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/argos3-examples/controllers/footbot_nn/nn/ctrnn_multilayer.cpp > CMakeFiles/footbot_nn.dir/nn/ctrnn_multilayer.cpp.i
+	cd /root/argos-sir-sim/build/controllers/footbot_nn && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/argos-sir-sim/controllers/footbot_nn/nn/ctrnn_multilayer.cpp > CMakeFiles/footbot_nn.dir/nn/ctrnn_multilayer.cpp.i
 
 controllers/footbot_nn/CMakeFiles/footbot_nn.dir/nn/ctrnn_multilayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/footbot_nn.dir/nn/ctrnn_multilayer.cpp.s"
-	cd /root/argos3-examples/build/controllers/footbot_nn && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/argos3-examples/controllers/footbot_nn/nn/ctrnn_multilayer.cpp -o CMakeFiles/footbot_nn.dir/nn/ctrnn_multilayer.cpp.s
+	cd /root/argos-sir-sim/build/controllers/footbot_nn && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/argos-sir-sim/controllers/footbot_nn/nn/ctrnn_multilayer.cpp -o CMakeFiles/footbot_nn.dir/nn/ctrnn_multilayer.cpp.s
 
 controllers/footbot_nn/CMakeFiles/footbot_nn.dir/footbot_nn_controller.cpp.o: controllers/footbot_nn/CMakeFiles/footbot_nn.dir/flags.make
 controllers/footbot_nn/CMakeFiles/footbot_nn.dir/footbot_nn_controller.cpp.o: ../controllers/footbot_nn/footbot_nn_controller.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/argos3-examples/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object controllers/footbot_nn/CMakeFiles/footbot_nn.dir/footbot_nn_controller.cpp.o"
-	cd /root/argos3-examples/build/controllers/footbot_nn && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/footbot_nn.dir/footbot_nn_controller.cpp.o -c /root/argos3-examples/controllers/footbot_nn/footbot_nn_controller.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object controllers/footbot_nn/CMakeFiles/footbot_nn.dir/footbot_nn_controller.cpp.o"
+	cd /root/argos-sir-sim/build/controllers/footbot_nn && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/footbot_nn.dir/footbot_nn_controller.cpp.o -c /root/argos-sir-sim/controllers/footbot_nn/footbot_nn_controller.cpp
 
 controllers/footbot_nn/CMakeFiles/footbot_nn.dir/footbot_nn_controller.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/footbot_nn.dir/footbot_nn_controller.cpp.i"
-	cd /root/argos3-examples/build/controllers/footbot_nn && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/argos3-examples/controllers/footbot_nn/footbot_nn_controller.cpp > CMakeFiles/footbot_nn.dir/footbot_nn_controller.cpp.i
+	cd /root/argos-sir-sim/build/controllers/footbot_nn && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/argos-sir-sim/controllers/footbot_nn/footbot_nn_controller.cpp > CMakeFiles/footbot_nn.dir/footbot_nn_controller.cpp.i
 
 controllers/footbot_nn/CMakeFiles/footbot_nn.dir/footbot_nn_controller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/footbot_nn.dir/footbot_nn_controller.cpp.s"
-	cd /root/argos3-examples/build/controllers/footbot_nn && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/argos3-examples/controllers/footbot_nn/footbot_nn_controller.cpp -o CMakeFiles/footbot_nn.dir/footbot_nn_controller.cpp.s
+	cd /root/argos-sir-sim/build/controllers/footbot_nn && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/argos-sir-sim/controllers/footbot_nn/footbot_nn_controller.cpp -o CMakeFiles/footbot_nn.dir/footbot_nn_controller.cpp.s
 
 # Object files for target footbot_nn
 footbot_nn_OBJECTS = \
@@ -154,8 +154,8 @@ controllers/footbot_nn/libfootbot_nn.so: /usr/lib/x86_64-linux-gnu/liblua5.3.so
 controllers/footbot_nn/libfootbot_nn.so: /usr/lib/x86_64-linux-gnu/libm.so
 controllers/footbot_nn/libfootbot_nn.so: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8
 controllers/footbot_nn/libfootbot_nn.so: controllers/footbot_nn/CMakeFiles/footbot_nn.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/argos3-examples/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library libfootbot_nn.so"
-	cd /root/argos3-examples/build/controllers/footbot_nn && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/footbot_nn.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library libfootbot_nn.so"
+	cd /root/argos-sir-sim/build/controllers/footbot_nn && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/footbot_nn.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 controllers/footbot_nn/CMakeFiles/footbot_nn.dir/build: controllers/footbot_nn/libfootbot_nn.so
@@ -163,10 +163,10 @@ controllers/footbot_nn/CMakeFiles/footbot_nn.dir/build: controllers/footbot_nn/l
 .PHONY : controllers/footbot_nn/CMakeFiles/footbot_nn.dir/build
 
 controllers/footbot_nn/CMakeFiles/footbot_nn.dir/clean:
-	cd /root/argos3-examples/build/controllers/footbot_nn && $(CMAKE_COMMAND) -P CMakeFiles/footbot_nn.dir/cmake_clean.cmake
+	cd /root/argos-sir-sim/build/controllers/footbot_nn && $(CMAKE_COMMAND) -P CMakeFiles/footbot_nn.dir/cmake_clean.cmake
 .PHONY : controllers/footbot_nn/CMakeFiles/footbot_nn.dir/clean
 
 controllers/footbot_nn/CMakeFiles/footbot_nn.dir/depend:
-	cd /root/argos3-examples/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/argos3-examples /root/argos3-examples/controllers/footbot_nn /root/argos3-examples/build /root/argos3-examples/build/controllers/footbot_nn /root/argos3-examples/build/controllers/footbot_nn/CMakeFiles/footbot_nn.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/argos-sir-sim/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/argos-sir-sim /root/argos-sir-sim/controllers/footbot_nn /root/argos-sir-sim/build /root/argos-sir-sim/build/controllers/footbot_nn /root/argos-sir-sim/build/controllers/footbot_nn/CMakeFiles/footbot_nn.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : controllers/footbot_nn/CMakeFiles/footbot_nn.dir/depend
 

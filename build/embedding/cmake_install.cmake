@@ -1,4 +1,4 @@
-# Install script for directory: /root/argos3-examples/embedding
+# Install script for directory: /root/argos-sir-sim/embedding
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/root/argos3-examples/build/embedding/mpga/cmake_install.cmake")
+  include("/root/argos-sir-sim/build/embedding/mpga/cmake_install.cmake")
 
 endif()
 

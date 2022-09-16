@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/root/argos3-examples/build/controllers/footbot_manualcontrol/footbot_manualcontrol_autogen/mocs_compilation.cpp
+/root/argos-sir-sim/build/controllers/footbot_manualcontrol/footbot_manualcontrol_autogen/mocs_compilation.cpp
 
-/root/argos3-examples/controllers/footbot_manualcontrol/footbot_manualcontrol.cpp
+/root/argos-sir-sim/controllers/footbot_manualcontrol/footbot_manualcontrol.cpp
 footbot_manualcontrol.h
-/root/argos3-examples/controllers/footbot_manualcontrol/footbot_manualcontrol.h
+/root/argos-sir-sim/controllers/footbot_manualcontrol/footbot_manualcontrol.h
 argos3/core/utility/configuration/argos_configuration.h
 -
 argos3/core/utility/logging/argos_log.h
 -
 
-/root/argos3-examples/controllers/footbot_manualcontrol/footbot_manualcontrol.h
+/root/argos-sir-sim/controllers/footbot_manualcontrol/footbot_manualcontrol.h
 argos3/core/control_interface/ci_controller.h
 -
 argos3/plugins/robots/generic/control_interface/ci_differential_steering_actuator.h

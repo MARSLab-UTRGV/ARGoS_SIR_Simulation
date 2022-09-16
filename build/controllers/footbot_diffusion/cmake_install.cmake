@@ -1,4 +1,4 @@
-# Install script for directory: /root/argos3-examples/controllers/footbot_diffusion
+# Install script for directory: /root/argos-sir-sim/controllers/footbot_diffusion
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

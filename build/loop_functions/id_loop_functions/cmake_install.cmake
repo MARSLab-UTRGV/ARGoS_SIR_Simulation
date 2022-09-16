@@ -1,4 +1,4 @@
-# Install script for directory: /root/argos3-examples/loop_functions/id_loop_functions
+# Install script for directory: /root/argos-sir-sim/loop_functions/id_loop_functions
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

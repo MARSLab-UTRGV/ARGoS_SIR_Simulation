@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/argos3-examples
+CMAKE_SOURCE_DIR = /root/argos-sir-sim
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/argos3-examples/build
+CMAKE_BINARY_DIR = /root/argos-sir-sim/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /root/argos3-examples/build && $(CMAKE_COMMAND) -E cmake_progress_start /root/argos3-examples/build/CMakeFiles /root/argos3-examples/build/loop_functions/id_loop_functions/CMakeFiles/progress.marks
-	cd /root/argos3-examples/build && $(MAKE) -f CMakeFiles/Makefile2 loop_functions/id_loop_functions/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos3-examples/build/CMakeFiles 0
+	cd /root/argos-sir-sim/build && $(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles /root/argos-sir-sim/build/loop_functions/id_loop_functions/CMakeFiles/progress.marks
+	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 loop_functions/id_loop_functions/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /root/argos3-examples/build && $(MAKE) -f CMakeFiles/Makefile2 loop_functions/id_loop_functions/clean
+	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 loop_functions/id_loop_functions/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /root/argos3-examples/build && $(MAKE) -f CMakeFiles/Makefile2 loop_functions/id_loop_functions/preinstall
+	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 loop_functions/id_loop_functions/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /root/argos3-examples/build && $(MAKE) -f CMakeFiles/Makefile2 loop_functions/id_loop_functions/preinstall
+	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 loop_functions/id_loop_functions/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /root/argos3-examples/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /root/argos-sir-sim/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/rule:
-	cd /root/argos3-examples/build && $(MAKE) -f CMakeFiles/Makefile2 loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/rule
+	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/rule
 .PHONY : loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/rule
 
 # Convenience name for target.
@@ -122,12 +122,12 @@ id_loop_functions: loop_functions/id_loop_functions/CMakeFiles/id_loop_functions
 
 # fast build rule for target.
 id_loop_functions/fast:
-	cd /root/argos3-examples/build && $(MAKE) -f loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/build.make loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/build
+	cd /root/argos-sir-sim/build && $(MAKE) -f loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/build.make loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/build
 .PHONY : id_loop_functions/fast
 
 # Convenience name for target.
 loop_functions/id_loop_functions/CMakeFiles/id_loop_functions_autogen.dir/rule:
-	cd /root/argos3-examples/build && $(MAKE) -f CMakeFiles/Makefile2 loop_functions/id_loop_functions/CMakeFiles/id_loop_functions_autogen.dir/rule
+	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 loop_functions/id_loop_functions/CMakeFiles/id_loop_functions_autogen.dir/rule
 .PHONY : loop_functions/id_loop_functions/CMakeFiles/id_loop_functions_autogen.dir/rule
 
 # Convenience name for target.
@@ -137,7 +137,7 @@ id_loop_functions_autogen: loop_functions/id_loop_functions/CMakeFiles/id_loop_f
 
 # fast build rule for target.
 id_loop_functions_autogen/fast:
-	cd /root/argos3-examples/build && $(MAKE) -f loop_functions/id_loop_functions/CMakeFiles/id_loop_functions_autogen.dir/build.make loop_functions/id_loop_functions/CMakeFiles/id_loop_functions_autogen.dir/build
+	cd /root/argos-sir-sim/build && $(MAKE) -f loop_functions/id_loop_functions/CMakeFiles/id_loop_functions_autogen.dir/build.make loop_functions/id_loop_functions/CMakeFiles/id_loop_functions_autogen.dir/build
 .PHONY : id_loop_functions_autogen/fast
 
 id_loop_functions_autogen/mocs_compilation.o: id_loop_functions_autogen/mocs_compilation.cpp.o
@@ -146,7 +146,7 @@ id_loop_functions_autogen/mocs_compilation.o: id_loop_functions_autogen/mocs_com
 
 # target to build an object file
 id_loop_functions_autogen/mocs_compilation.cpp.o:
-	cd /root/argos3-examples/build && $(MAKE) -f loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/build.make loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/id_loop_functions_autogen/mocs_compilation.cpp.o
+	cd /root/argos-sir-sim/build && $(MAKE) -f loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/build.make loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/id_loop_functions_autogen/mocs_compilation.cpp.o
 .PHONY : id_loop_functions_autogen/mocs_compilation.cpp.o
 
 id_loop_functions_autogen/mocs_compilation.i: id_loop_functions_autogen/mocs_compilation.cpp.i
@@ -155,7 +155,7 @@ id_loop_functions_autogen/mocs_compilation.i: id_loop_functions_autogen/mocs_com
 
 # target to preprocess a source file
 id_loop_functions_autogen/mocs_compilation.cpp.i:
-	cd /root/argos3-examples/build && $(MAKE) -f loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/build.make loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/id_loop_functions_autogen/mocs_compilation.cpp.i
+	cd /root/argos-sir-sim/build && $(MAKE) -f loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/build.make loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/id_loop_functions_autogen/mocs_compilation.cpp.i
 .PHONY : id_loop_functions_autogen/mocs_compilation.cpp.i
 
 id_loop_functions_autogen/mocs_compilation.s: id_loop_functions_autogen/mocs_compilation.cpp.s
@@ -164,7 +164,7 @@ id_loop_functions_autogen/mocs_compilation.s: id_loop_functions_autogen/mocs_com
 
 # target to generate assembly for a file
 id_loop_functions_autogen/mocs_compilation.cpp.s:
-	cd /root/argos3-examples/build && $(MAKE) -f loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/build.make loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/id_loop_functions_autogen/mocs_compilation.cpp.s
+	cd /root/argos-sir-sim/build && $(MAKE) -f loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/build.make loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/id_loop_functions_autogen/mocs_compilation.cpp.s
 .PHONY : id_loop_functions_autogen/mocs_compilation.cpp.s
 
 id_qtuser_functions.o: id_qtuser_functions.cpp.o
@@ -173,7 +173,7 @@ id_qtuser_functions.o: id_qtuser_functions.cpp.o
 
 # target to build an object file
 id_qtuser_functions.cpp.o:
-	cd /root/argos3-examples/build && $(MAKE) -f loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/build.make loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/id_qtuser_functions.cpp.o
+	cd /root/argos-sir-sim/build && $(MAKE) -f loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/build.make loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/id_qtuser_functions.cpp.o
 .PHONY : id_qtuser_functions.cpp.o
 
 id_qtuser_functions.i: id_qtuser_functions.cpp.i
@@ -182,7 +182,7 @@ id_qtuser_functions.i: id_qtuser_functions.cpp.i
 
 # target to preprocess a source file
 id_qtuser_functions.cpp.i:
-	cd /root/argos3-examples/build && $(MAKE) -f loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/build.make loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/id_qtuser_functions.cpp.i
+	cd /root/argos-sir-sim/build && $(MAKE) -f loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/build.make loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/id_qtuser_functions.cpp.i
 .PHONY : id_qtuser_functions.cpp.i
 
 id_qtuser_functions.s: id_qtuser_functions.cpp.s
@@ -191,7 +191,7 @@ id_qtuser_functions.s: id_qtuser_functions.cpp.s
 
 # target to generate assembly for a file
 id_qtuser_functions.cpp.s:
-	cd /root/argos3-examples/build && $(MAKE) -f loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/build.make loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/id_qtuser_functions.cpp.s
+	cd /root/argos-sir-sim/build && $(MAKE) -f loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/build.make loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/id_qtuser_functions.cpp.s
 .PHONY : id_qtuser_functions.cpp.s
 
 # Help Target
@@ -221,6 +221,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /root/argos3-examples/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /root/argos-sir-sim/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

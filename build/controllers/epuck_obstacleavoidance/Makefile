@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/argos3-examples
+CMAKE_SOURCE_DIR = /root/argos-sir-sim
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/argos3-examples/build
+CMAKE_BINARY_DIR = /root/argos-sir-sim/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /root/argos3-examples/build && $(CMAKE_COMMAND) -E cmake_progress_start /root/argos3-examples/build/CMakeFiles /root/argos3-examples/build/controllers/epuck_obstacleavoidance/CMakeFiles/progress.marks
-	cd /root/argos3-examples/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/epuck_obstacleavoidance/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos3-examples/build/CMakeFiles 0
+	cd /root/argos-sir-sim/build && $(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles /root/argos-sir-sim/build/controllers/epuck_obstacleavoidance/CMakeFiles/progress.marks
+	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/epuck_obstacleavoidance/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /root/argos3-examples/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/epuck_obstacleavoidance/clean
+	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/epuck_obstacleavoidance/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /root/argos3-examples/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/epuck_obstacleavoidance/preinstall
+	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/epuck_obstacleavoidance/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /root/argos3-examples/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/epuck_obstacleavoidance/preinstall
+	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/epuck_obstacleavoidance/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /root/argos3-examples/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /root/argos-sir-sim/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/rule:
-	cd /root/argos3-examples/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/rule
+	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/rule
 .PHONY : controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/rule
 
 # Convenience name for target.
@@ -122,12 +122,12 @@ epuck_obstacleavoidance: controllers/epuck_obstacleavoidance/CMakeFiles/epuck_ob
 
 # fast build rule for target.
 epuck_obstacleavoidance/fast:
-	cd /root/argos3-examples/build && $(MAKE) -f controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/build.make controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/build
+	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/build.make controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/build
 .PHONY : epuck_obstacleavoidance/fast
 
 # Convenience name for target.
 controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance_autogen.dir/rule:
-	cd /root/argos3-examples/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance_autogen.dir/rule
+	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance_autogen.dir/rule
 .PHONY : controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance_autogen.dir/rule
 
 # Convenience name for target.
@@ -137,7 +137,7 @@ epuck_obstacleavoidance_autogen: controllers/epuck_obstacleavoidance/CMakeFiles/
 
 # fast build rule for target.
 epuck_obstacleavoidance_autogen/fast:
-	cd /root/argos3-examples/build && $(MAKE) -f controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance_autogen.dir/build.make controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance_autogen.dir/build
+	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance_autogen.dir/build.make controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance_autogen.dir/build
 .PHONY : epuck_obstacleavoidance_autogen/fast
 
 epuck_obstacleavoidance.o: epuck_obstacleavoidance.cpp.o
@@ -146,7 +146,7 @@ epuck_obstacleavoidance.o: epuck_obstacleavoidance.cpp.o
 
 # target to build an object file
 epuck_obstacleavoidance.cpp.o:
-	cd /root/argos3-examples/build && $(MAKE) -f controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/build.make controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/epuck_obstacleavoidance.cpp.o
+	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/build.make controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/epuck_obstacleavoidance.cpp.o
 .PHONY : epuck_obstacleavoidance.cpp.o
 
 epuck_obstacleavoidance.i: epuck_obstacleavoidance.cpp.i
@@ -155,7 +155,7 @@ epuck_obstacleavoidance.i: epuck_obstacleavoidance.cpp.i
 
 # target to preprocess a source file
 epuck_obstacleavoidance.cpp.i:
-	cd /root/argos3-examples/build && $(MAKE) -f controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/build.make controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/epuck_obstacleavoidance.cpp.i
+	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/build.make controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/epuck_obstacleavoidance.cpp.i
 .PHONY : epuck_obstacleavoidance.cpp.i
 
 epuck_obstacleavoidance.s: epuck_obstacleavoidance.cpp.s
@@ -164,7 +164,7 @@ epuck_obstacleavoidance.s: epuck_obstacleavoidance.cpp.s
 
 # target to generate assembly for a file
 epuck_obstacleavoidance.cpp.s:
-	cd /root/argos3-examples/build && $(MAKE) -f controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/build.make controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/epuck_obstacleavoidance.cpp.s
+	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/build.make controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/epuck_obstacleavoidance.cpp.s
 .PHONY : epuck_obstacleavoidance.cpp.s
 
 epuck_obstacleavoidance_autogen/mocs_compilation.o: epuck_obstacleavoidance_autogen/mocs_compilation.cpp.o
@@ -173,7 +173,7 @@ epuck_obstacleavoidance_autogen/mocs_compilation.o: epuck_obstacleavoidance_auto
 
 # target to build an object file
 epuck_obstacleavoidance_autogen/mocs_compilation.cpp.o:
-	cd /root/argos3-examples/build && $(MAKE) -f controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/build.make controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/epuck_obstacleavoidance_autogen/mocs_compilation.cpp.o
+	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/build.make controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/epuck_obstacleavoidance_autogen/mocs_compilation.cpp.o
 .PHONY : epuck_obstacleavoidance_autogen/mocs_compilation.cpp.o
 
 epuck_obstacleavoidance_autogen/mocs_compilation.i: epuck_obstacleavoidance_autogen/mocs_compilation.cpp.i
@@ -182,7 +182,7 @@ epuck_obstacleavoidance_autogen/mocs_compilation.i: epuck_obstacleavoidance_auto
 
 # target to preprocess a source file
 epuck_obstacleavoidance_autogen/mocs_compilation.cpp.i:
-	cd /root/argos3-examples/build && $(MAKE) -f controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/build.make controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/epuck_obstacleavoidance_autogen/mocs_compilation.cpp.i
+	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/build.make controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/epuck_obstacleavoidance_autogen/mocs_compilation.cpp.i
 .PHONY : epuck_obstacleavoidance_autogen/mocs_compilation.cpp.i
 
 epuck_obstacleavoidance_autogen/mocs_compilation.s: epuck_obstacleavoidance_autogen/mocs_compilation.cpp.s
@@ -191,7 +191,7 @@ epuck_obstacleavoidance_autogen/mocs_compilation.s: epuck_obstacleavoidance_auto
 
 # target to generate assembly for a file
 epuck_obstacleavoidance_autogen/mocs_compilation.cpp.s:
-	cd /root/argos3-examples/build && $(MAKE) -f controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/build.make controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/epuck_obstacleavoidance_autogen/mocs_compilation.cpp.s
+	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/build.make controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/epuck_obstacleavoidance_autogen/mocs_compilation.cpp.s
 .PHONY : epuck_obstacleavoidance_autogen/mocs_compilation.cpp.s
 
 # Help Target
@@ -221,6 +221,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /root/argos3-examples/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /root/argos-sir-sim/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/argos3-examples
+CMAKE_SOURCE_DIR = /root/argos-sir-sim
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/argos3-examples/build
+CMAKE_BINARY_DIR = /root/argos-sir-sim/build
 
 # Include any dependencies generated for this target.
 include controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/depend.make
@@ -59,29 +59,29 @@ include controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/flags.mak
 
 controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/footbot_diffusion_autogen/mocs_compilation.cpp.o: controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/flags.make
 controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/footbot_diffusion_autogen/mocs_compilation.cpp.o: controllers/footbot_diffusion/footbot_diffusion_autogen/mocs_compilation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/argos3-examples/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/footbot_diffusion_autogen/mocs_compilation.cpp.o"
-	cd /root/argos3-examples/build/controllers/footbot_diffusion && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/footbot_diffusion.dir/footbot_diffusion_autogen/mocs_compilation.cpp.o -c /root/argos3-examples/build/controllers/footbot_diffusion/footbot_diffusion_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/footbot_diffusion_autogen/mocs_compilation.cpp.o"
+	cd /root/argos-sir-sim/build/controllers/footbot_diffusion && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/footbot_diffusion.dir/footbot_diffusion_autogen/mocs_compilation.cpp.o -c /root/argos-sir-sim/build/controllers/footbot_diffusion/footbot_diffusion_autogen/mocs_compilation.cpp
 
 controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/footbot_diffusion_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/footbot_diffusion.dir/footbot_diffusion_autogen/mocs_compilation.cpp.i"
-	cd /root/argos3-examples/build/controllers/footbot_diffusion && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/argos3-examples/build/controllers/footbot_diffusion/footbot_diffusion_autogen/mocs_compilation.cpp > CMakeFiles/footbot_diffusion.dir/footbot_diffusion_autogen/mocs_compilation.cpp.i
+	cd /root/argos-sir-sim/build/controllers/footbot_diffusion && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/argos-sir-sim/build/controllers/footbot_diffusion/footbot_diffusion_autogen/mocs_compilation.cpp > CMakeFiles/footbot_diffusion.dir/footbot_diffusion_autogen/mocs_compilation.cpp.i
 
 controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/footbot_diffusion_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/footbot_diffusion.dir/footbot_diffusion_autogen/mocs_compilation.cpp.s"
-	cd /root/argos3-examples/build/controllers/footbot_diffusion && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/argos3-examples/build/controllers/footbot_diffusion/footbot_diffusion_autogen/mocs_compilation.cpp -o CMakeFiles/footbot_diffusion.dir/footbot_diffusion_autogen/mocs_compilation.cpp.s
+	cd /root/argos-sir-sim/build/controllers/footbot_diffusion && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/argos-sir-sim/build/controllers/footbot_diffusion/footbot_diffusion_autogen/mocs_compilation.cpp -o CMakeFiles/footbot_diffusion.dir/footbot_diffusion_autogen/mocs_compilation.cpp.s
 
 controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/footbot_diffusion.cpp.o: controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/flags.make
 controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/footbot_diffusion.cpp.o: ../controllers/footbot_diffusion/footbot_diffusion.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/argos3-examples/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/footbot_diffusion.cpp.o"
-	cd /root/argos3-examples/build/controllers/footbot_diffusion && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/footbot_diffusion.dir/footbot_diffusion.cpp.o -c /root/argos3-examples/controllers/footbot_diffusion/footbot_diffusion.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/footbot_diffusion.cpp.o"
+	cd /root/argos-sir-sim/build/controllers/footbot_diffusion && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/footbot_diffusion.dir/footbot_diffusion.cpp.o -c /root/argos-sir-sim/controllers/footbot_diffusion/footbot_diffusion.cpp
 
 controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/footbot_diffusion.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/footbot_diffusion.dir/footbot_diffusion.cpp.i"
-	cd /root/argos3-examples/build/controllers/footbot_diffusion && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/argos3-examples/controllers/footbot_diffusion/footbot_diffusion.cpp > CMakeFiles/footbot_diffusion.dir/footbot_diffusion.cpp.i
+	cd /root/argos-sir-sim/build/controllers/footbot_diffusion && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/argos-sir-sim/controllers/footbot_diffusion/footbot_diffusion.cpp > CMakeFiles/footbot_diffusion.dir/footbot_diffusion.cpp.i
 
 controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/footbot_diffusion.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/footbot_diffusion.dir/footbot_diffusion.cpp.s"
-	cd /root/argos3-examples/build/controllers/footbot_diffusion && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/argos3-examples/controllers/footbot_diffusion/footbot_diffusion.cpp -o CMakeFiles/footbot_diffusion.dir/footbot_diffusion.cpp.s
+	cd /root/argos-sir-sim/build/controllers/footbot_diffusion && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/argos-sir-sim/controllers/footbot_diffusion/footbot_diffusion.cpp -o CMakeFiles/footbot_diffusion.dir/footbot_diffusion.cpp.s
 
 # Object files for target footbot_diffusion
 footbot_diffusion_OBJECTS = \
@@ -109,8 +109,8 @@ controllers/footbot_diffusion/libfootbot_diffusion.so: /usr/lib/x86_64-linux-gnu
 controllers/footbot_diffusion/libfootbot_diffusion.so: /usr/lib/x86_64-linux-gnu/libm.so
 controllers/footbot_diffusion/libfootbot_diffusion.so: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8
 controllers/footbot_diffusion/libfootbot_diffusion.so: controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/argos3-examples/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared module libfootbot_diffusion.so"
-	cd /root/argos3-examples/build/controllers/footbot_diffusion && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/footbot_diffusion.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared module libfootbot_diffusion.so"
+	cd /root/argos-sir-sim/build/controllers/footbot_diffusion && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/footbot_diffusion.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/build: controllers/footbot_diffusion/libfootbot_diffusion.so
@@ -118,10 +118,10 @@ controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/build: controller
 .PHONY : controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/build
 
 controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/clean:
-	cd /root/argos3-examples/build/controllers/footbot_diffusion && $(CMAKE_COMMAND) -P CMakeFiles/footbot_diffusion.dir/cmake_clean.cmake
+	cd /root/argos-sir-sim/build/controllers/footbot_diffusion && $(CMAKE_COMMAND) -P CMakeFiles/footbot_diffusion.dir/cmake_clean.cmake
 .PHONY : controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/clean
 
 controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/depend:
-	cd /root/argos3-examples/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/argos3-examples /root/argos3-examples/controllers/footbot_diffusion /root/argos3-examples/build /root/argos3-examples/build/controllers/footbot_diffusion /root/argos3-examples/build/controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/argos-sir-sim/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/argos-sir-sim /root/argos-sir-sim/controllers/footbot_diffusion /root/argos-sir-sim/build /root/argos-sir-sim/build/controllers/footbot_diffusion /root/argos-sir-sim/build/controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/depend
 

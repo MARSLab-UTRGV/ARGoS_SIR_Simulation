@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/root/argos3-examples/controllers/footbot_synchronization/footbot_synchronization.cpp" "/root/argos3-examples/build/controllers/footbot_synchronization/CMakeFiles/footbot_synchronization.dir/footbot_synchronization.cpp.o"
-  "/root/argos3-examples/build/controllers/footbot_synchronization/footbot_synchronization_autogen/mocs_compilation.cpp" "/root/argos3-examples/build/controllers/footbot_synchronization/CMakeFiles/footbot_synchronization.dir/footbot_synchronization_autogen/mocs_compilation.cpp.o"
+  "/root/argos-sir-sim/controllers/footbot_synchronization/footbot_synchronization.cpp" "/root/argos-sir-sim/build/controllers/footbot_synchronization/CMakeFiles/footbot_synchronization.dir/footbot_synchronization.cpp.o"
+  "/root/argos-sir-sim/build/controllers/footbot_synchronization/footbot_synchronization_autogen/mocs_compilation.cpp" "/root/argos-sir-sim/build/controllers/footbot_synchronization/CMakeFiles/footbot_synchronization.dir/footbot_synchronization_autogen/mocs_compilation.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

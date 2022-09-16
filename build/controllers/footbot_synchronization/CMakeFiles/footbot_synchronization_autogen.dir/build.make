@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/argos3-examples
+CMAKE_SOURCE_DIR = /root/argos-sir-sim
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/argos3-examples/build
+CMAKE_BINARY_DIR = /root/argos-sir-sim/build
 
 # Utility rule file for footbot_synchronization_autogen.
 
@@ -54,8 +54,8 @@ CMAKE_BINARY_DIR = /root/argos3-examples/build
 include controllers/footbot_synchronization/CMakeFiles/footbot_synchronization_autogen.dir/progress.make
 
 controllers/footbot_synchronization/CMakeFiles/footbot_synchronization_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/argos3-examples/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target footbot_synchronization"
-	cd /root/argos3-examples/build/controllers/footbot_synchronization && /usr/bin/cmake -E cmake_autogen /root/argos3-examples/build/controllers/footbot_synchronization/CMakeFiles/footbot_synchronization_autogen.dir/AutogenInfo.json Release
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target footbot_synchronization"
+	cd /root/argos-sir-sim/build/controllers/footbot_synchronization && /usr/bin/cmake -E cmake_autogen /root/argos-sir-sim/build/controllers/footbot_synchronization/CMakeFiles/footbot_synchronization_autogen.dir/AutogenInfo.json Release
 
 footbot_synchronization_autogen: controllers/footbot_synchronization/CMakeFiles/footbot_synchronization_autogen
 footbot_synchronization_autogen: controllers/footbot_synchronization/CMakeFiles/footbot_synchronization_autogen.dir/build.make
@@ -68,10 +68,10 @@ controllers/footbot_synchronization/CMakeFiles/footbot_synchronization_autogen.d
 .PHONY : controllers/footbot_synchronization/CMakeFiles/footbot_synchronization_autogen.dir/build
 
 controllers/footbot_synchronization/CMakeFiles/footbot_synchronization_autogen.dir/clean:
-	cd /root/argos3-examples/build/controllers/footbot_synchronization && $(CMAKE_COMMAND) -P CMakeFiles/footbot_synchronization_autogen.dir/cmake_clean.cmake
+	cd /root/argos-sir-sim/build/controllers/footbot_synchronization && $(CMAKE_COMMAND) -P CMakeFiles/footbot_synchronization_autogen.dir/cmake_clean.cmake
 .PHONY : controllers/footbot_synchronization/CMakeFiles/footbot_synchronization_autogen.dir/clean
 
 controllers/footbot_synchronization/CMakeFiles/footbot_synchronization_autogen.dir/depend:
-	cd /root/argos3-examples/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/argos3-examples /root/argos3-examples/controllers/footbot_synchronization /root/argos3-examples/build /root/argos3-examples/build/controllers/footbot_synchronization /root/argos3-examples/build/controllers/footbot_synchronization/CMakeFiles/footbot_synchronization_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/argos-sir-sim/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/argos-sir-sim /root/argos-sir-sim/controllers/footbot_synchronization /root/argos-sir-sim/build /root/argos-sir-sim/build/controllers/footbot_synchronization /root/argos-sir-sim/build/controllers/footbot_synchronization/CMakeFiles/footbot_synchronization_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : controllers/footbot_synchronization/CMakeFiles/footbot_synchronization_autogen.dir/depend
 

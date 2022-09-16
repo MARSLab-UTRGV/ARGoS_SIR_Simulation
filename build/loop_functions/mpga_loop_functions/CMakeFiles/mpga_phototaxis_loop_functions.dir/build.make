@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/argos3-examples
+CMAKE_SOURCE_DIR = /root/argos-sir-sim
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/argos3-examples/build
+CMAKE_BINARY_DIR = /root/argos-sir-sim/build
 
 # Include any dependencies generated for this target.
 include loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir/depend.make
@@ -59,29 +59,29 @@ include loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_funct
 
 loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir/mpga_phototaxis_loop_functions_autogen/mocs_compilation.cpp.o: loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir/flags.make
 loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir/mpga_phototaxis_loop_functions_autogen/mocs_compilation.cpp.o: loop_functions/mpga_loop_functions/mpga_phototaxis_loop_functions_autogen/mocs_compilation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/argos3-examples/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir/mpga_phototaxis_loop_functions_autogen/mocs_compilation.cpp.o"
-	cd /root/argos3-examples/build/loop_functions/mpga_loop_functions && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpga_phototaxis_loop_functions.dir/mpga_phototaxis_loop_functions_autogen/mocs_compilation.cpp.o -c /root/argos3-examples/build/loop_functions/mpga_loop_functions/mpga_phototaxis_loop_functions_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir/mpga_phototaxis_loop_functions_autogen/mocs_compilation.cpp.o"
+	cd /root/argos-sir-sim/build/loop_functions/mpga_loop_functions && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpga_phototaxis_loop_functions.dir/mpga_phototaxis_loop_functions_autogen/mocs_compilation.cpp.o -c /root/argos-sir-sim/build/loop_functions/mpga_loop_functions/mpga_phototaxis_loop_functions_autogen/mocs_compilation.cpp
 
 loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir/mpga_phototaxis_loop_functions_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mpga_phototaxis_loop_functions.dir/mpga_phototaxis_loop_functions_autogen/mocs_compilation.cpp.i"
-	cd /root/argos3-examples/build/loop_functions/mpga_loop_functions && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/argos3-examples/build/loop_functions/mpga_loop_functions/mpga_phototaxis_loop_functions_autogen/mocs_compilation.cpp > CMakeFiles/mpga_phototaxis_loop_functions.dir/mpga_phototaxis_loop_functions_autogen/mocs_compilation.cpp.i
+	cd /root/argos-sir-sim/build/loop_functions/mpga_loop_functions && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/argos-sir-sim/build/loop_functions/mpga_loop_functions/mpga_phototaxis_loop_functions_autogen/mocs_compilation.cpp > CMakeFiles/mpga_phototaxis_loop_functions.dir/mpga_phototaxis_loop_functions_autogen/mocs_compilation.cpp.i
 
 loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir/mpga_phototaxis_loop_functions_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mpga_phototaxis_loop_functions.dir/mpga_phototaxis_loop_functions_autogen/mocs_compilation.cpp.s"
-	cd /root/argos3-examples/build/loop_functions/mpga_loop_functions && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/argos3-examples/build/loop_functions/mpga_loop_functions/mpga_phototaxis_loop_functions_autogen/mocs_compilation.cpp -o CMakeFiles/mpga_phototaxis_loop_functions.dir/mpga_phototaxis_loop_functions_autogen/mocs_compilation.cpp.s
+	cd /root/argos-sir-sim/build/loop_functions/mpga_loop_functions && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/argos-sir-sim/build/loop_functions/mpga_loop_functions/mpga_phototaxis_loop_functions_autogen/mocs_compilation.cpp -o CMakeFiles/mpga_phototaxis_loop_functions.dir/mpga_phototaxis_loop_functions_autogen/mocs_compilation.cpp.s
 
 loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir/mpga_phototaxis_loop_functions.cpp.o: loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir/flags.make
 loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir/mpga_phototaxis_loop_functions.cpp.o: ../loop_functions/mpga_loop_functions/mpga_phototaxis_loop_functions.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/argos3-examples/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir/mpga_phototaxis_loop_functions.cpp.o"
-	cd /root/argos3-examples/build/loop_functions/mpga_loop_functions && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpga_phototaxis_loop_functions.dir/mpga_phototaxis_loop_functions.cpp.o -c /root/argos3-examples/loop_functions/mpga_loop_functions/mpga_phototaxis_loop_functions.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir/mpga_phototaxis_loop_functions.cpp.o"
+	cd /root/argos-sir-sim/build/loop_functions/mpga_loop_functions && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpga_phototaxis_loop_functions.dir/mpga_phototaxis_loop_functions.cpp.o -c /root/argos-sir-sim/loop_functions/mpga_loop_functions/mpga_phototaxis_loop_functions.cpp
 
 loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir/mpga_phototaxis_loop_functions.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mpga_phototaxis_loop_functions.dir/mpga_phototaxis_loop_functions.cpp.i"
-	cd /root/argos3-examples/build/loop_functions/mpga_loop_functions && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/argos3-examples/loop_functions/mpga_loop_functions/mpga_phototaxis_loop_functions.cpp > CMakeFiles/mpga_phototaxis_loop_functions.dir/mpga_phototaxis_loop_functions.cpp.i
+	cd /root/argos-sir-sim/build/loop_functions/mpga_loop_functions && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/argos-sir-sim/loop_functions/mpga_loop_functions/mpga_phototaxis_loop_functions.cpp > CMakeFiles/mpga_phototaxis_loop_functions.dir/mpga_phototaxis_loop_functions.cpp.i
 
 loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir/mpga_phototaxis_loop_functions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mpga_phototaxis_loop_functions.dir/mpga_phototaxis_loop_functions.cpp.s"
-	cd /root/argos3-examples/build/loop_functions/mpga_loop_functions && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/argos3-examples/loop_functions/mpga_loop_functions/mpga_phototaxis_loop_functions.cpp -o CMakeFiles/mpga_phototaxis_loop_functions.dir/mpga_phototaxis_loop_functions.cpp.s
+	cd /root/argos-sir-sim/build/loop_functions/mpga_loop_functions && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/argos-sir-sim/loop_functions/mpga_loop_functions/mpga_phototaxis_loop_functions.cpp -o CMakeFiles/mpga_phototaxis_loop_functions.dir/mpga_phototaxis_loop_functions.cpp.s
 
 # Object files for target mpga_phototaxis_loop_functions
 mpga_phototaxis_loop_functions_OBJECTS = \
@@ -122,8 +122,8 @@ loop_functions/mpga_loop_functions/libmpga_phototaxis_loop_functions.so: /usr/li
 loop_functions/mpga_loop_functions/libmpga_phototaxis_loop_functions.so: /usr/lib/x86_64-linux-gnu/liblua5.3.so
 loop_functions/mpga_loop_functions/libmpga_phototaxis_loop_functions.so: /usr/lib/x86_64-linux-gnu/libm.so
 loop_functions/mpga_loop_functions/libmpga_phototaxis_loop_functions.so: loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/argos3-examples/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library libmpga_phototaxis_loop_functions.so"
-	cd /root/argos3-examples/build/loop_functions/mpga_loop_functions && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mpga_phototaxis_loop_functions.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library libmpga_phototaxis_loop_functions.so"
+	cd /root/argos-sir-sim/build/loop_functions/mpga_loop_functions && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mpga_phototaxis_loop_functions.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir/build: loop_functions/mpga_loop_functions/libmpga_phototaxis_loop_functions.so
@@ -131,10 +131,10 @@ loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir
 .PHONY : loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir/build
 
 loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir/clean:
-	cd /root/argos3-examples/build/loop_functions/mpga_loop_functions && $(CMAKE_COMMAND) -P CMakeFiles/mpga_phototaxis_loop_functions.dir/cmake_clean.cmake
+	cd /root/argos-sir-sim/build/loop_functions/mpga_loop_functions && $(CMAKE_COMMAND) -P CMakeFiles/mpga_phototaxis_loop_functions.dir/cmake_clean.cmake
 .PHONY : loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir/clean
 
 loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir/depend:
-	cd /root/argos3-examples/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/argos3-examples /root/argos3-examples/loop_functions/mpga_loop_functions /root/argos3-examples/build /root/argos3-examples/build/loop_functions/mpga_loop_functions /root/argos3-examples/build/loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/argos-sir-sim/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/argos-sir-sim /root/argos-sir-sim/loop_functions/mpga_loop_functions /root/argos-sir-sim/build /root/argos-sir-sim/build/loop_functions/mpga_loop_functions /root/argos-sir-sim/build/loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir/depend
 

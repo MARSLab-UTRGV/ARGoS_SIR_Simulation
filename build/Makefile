@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/argos3-examples
+CMAKE_SOURCE_DIR = /root/argos-sir-sim
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/argos3-examples/build
+CMAKE_BINARY_DIR = /root/argos-sir-sim/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos3-examples/build/CMakeFiles /root/argos3-examples/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles /root/argos-sir-sim/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos3-examples/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -135,6 +135,32 @@ footbot_diffusion_autogen: cmake_check_build_system
 footbot_diffusion_autogen/fast:
 	$(MAKE) -f controllers/footbot_diffusion/CMakeFiles/footbot_diffusion_autogen.dir/build.make controllers/footbot_diffusion/CMakeFiles/footbot_diffusion_autogen.dir/build
 .PHONY : footbot_diffusion_autogen/fast
+
+#=============================================================================
+# Target rules for targets named SIR_diffusion
+
+# Build rule for target.
+SIR_diffusion: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 SIR_diffusion
+.PHONY : SIR_diffusion
+
+# fast build rule for target.
+SIR_diffusion/fast:
+	$(MAKE) -f controllers/SIR_diffusion/CMakeFiles/SIR_diffusion.dir/build.make controllers/SIR_diffusion/CMakeFiles/SIR_diffusion.dir/build
+.PHONY : SIR_diffusion/fast
+
+#=============================================================================
+# Target rules for targets named SIR_diffusion_autogen
+
+# Build rule for target.
+SIR_diffusion_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 SIR_diffusion_autogen
+.PHONY : SIR_diffusion_autogen
+
+# fast build rule for target.
+SIR_diffusion_autogen/fast:
+	$(MAKE) -f controllers/SIR_diffusion/CMakeFiles/SIR_diffusion_autogen.dir/build.make controllers/SIR_diffusion/CMakeFiles/SIR_diffusion_autogen.dir/build
+.PHONY : SIR_diffusion_autogen/fast
 
 #=============================================================================
 # Target rules for targets named footbot_synchronization
@@ -588,6 +614,8 @@ help:
 	@echo "... edit_cache"
 	@echo "... footbot_diffusion"
 	@echo "... footbot_diffusion_autogen"
+	@echo "... SIR_diffusion"
+	@echo "... SIR_diffusion_autogen"
 	@echo "... footbot_synchronization"
 	@echo "... footbot_synchronization_autogen"
 	@echo "... footbot_flocking"

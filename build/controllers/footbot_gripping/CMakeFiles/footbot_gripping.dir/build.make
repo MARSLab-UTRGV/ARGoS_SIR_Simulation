@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/argos3-examples
+CMAKE_SOURCE_DIR = /root/argos-sir-sim
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/argos3-examples/build
+CMAKE_BINARY_DIR = /root/argos-sir-sim/build
 
 # Include any dependencies generated for this target.
 include controllers/footbot_gripping/CMakeFiles/footbot_gripping.dir/depend.make
@@ -59,29 +59,29 @@ include controllers/footbot_gripping/CMakeFiles/footbot_gripping.dir/flags.make
 
 controllers/footbot_gripping/CMakeFiles/footbot_gripping.dir/footbot_gripping_autogen/mocs_compilation.cpp.o: controllers/footbot_gripping/CMakeFiles/footbot_gripping.dir/flags.make
 controllers/footbot_gripping/CMakeFiles/footbot_gripping.dir/footbot_gripping_autogen/mocs_compilation.cpp.o: controllers/footbot_gripping/footbot_gripping_autogen/mocs_compilation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/argos3-examples/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object controllers/footbot_gripping/CMakeFiles/footbot_gripping.dir/footbot_gripping_autogen/mocs_compilation.cpp.o"
-	cd /root/argos3-examples/build/controllers/footbot_gripping && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/footbot_gripping.dir/footbot_gripping_autogen/mocs_compilation.cpp.o -c /root/argos3-examples/build/controllers/footbot_gripping/footbot_gripping_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object controllers/footbot_gripping/CMakeFiles/footbot_gripping.dir/footbot_gripping_autogen/mocs_compilation.cpp.o"
+	cd /root/argos-sir-sim/build/controllers/footbot_gripping && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/footbot_gripping.dir/footbot_gripping_autogen/mocs_compilation.cpp.o -c /root/argos-sir-sim/build/controllers/footbot_gripping/footbot_gripping_autogen/mocs_compilation.cpp
 
 controllers/footbot_gripping/CMakeFiles/footbot_gripping.dir/footbot_gripping_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/footbot_gripping.dir/footbot_gripping_autogen/mocs_compilation.cpp.i"
-	cd /root/argos3-examples/build/controllers/footbot_gripping && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/argos3-examples/build/controllers/footbot_gripping/footbot_gripping_autogen/mocs_compilation.cpp > CMakeFiles/footbot_gripping.dir/footbot_gripping_autogen/mocs_compilation.cpp.i
+	cd /root/argos-sir-sim/build/controllers/footbot_gripping && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/argos-sir-sim/build/controllers/footbot_gripping/footbot_gripping_autogen/mocs_compilation.cpp > CMakeFiles/footbot_gripping.dir/footbot_gripping_autogen/mocs_compilation.cpp.i
 
 controllers/footbot_gripping/CMakeFiles/footbot_gripping.dir/footbot_gripping_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/footbot_gripping.dir/footbot_gripping_autogen/mocs_compilation.cpp.s"
-	cd /root/argos3-examples/build/controllers/footbot_gripping && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/argos3-examples/build/controllers/footbot_gripping/footbot_gripping_autogen/mocs_compilation.cpp -o CMakeFiles/footbot_gripping.dir/footbot_gripping_autogen/mocs_compilation.cpp.s
+	cd /root/argos-sir-sim/build/controllers/footbot_gripping && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/argos-sir-sim/build/controllers/footbot_gripping/footbot_gripping_autogen/mocs_compilation.cpp -o CMakeFiles/footbot_gripping.dir/footbot_gripping_autogen/mocs_compilation.cpp.s
 
 controllers/footbot_gripping/CMakeFiles/footbot_gripping.dir/footbot_gripping.cpp.o: controllers/footbot_gripping/CMakeFiles/footbot_gripping.dir/flags.make
 controllers/footbot_gripping/CMakeFiles/footbot_gripping.dir/footbot_gripping.cpp.o: ../controllers/footbot_gripping/footbot_gripping.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/argos3-examples/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object controllers/footbot_gripping/CMakeFiles/footbot_gripping.dir/footbot_gripping.cpp.o"
-	cd /root/argos3-examples/build/controllers/footbot_gripping && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/footbot_gripping.dir/footbot_gripping.cpp.o -c /root/argos3-examples/controllers/footbot_gripping/footbot_gripping.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object controllers/footbot_gripping/CMakeFiles/footbot_gripping.dir/footbot_gripping.cpp.o"
+	cd /root/argos-sir-sim/build/controllers/footbot_gripping && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/footbot_gripping.dir/footbot_gripping.cpp.o -c /root/argos-sir-sim/controllers/footbot_gripping/footbot_gripping.cpp
 
 controllers/footbot_gripping/CMakeFiles/footbot_gripping.dir/footbot_gripping.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/footbot_gripping.dir/footbot_gripping.cpp.i"
-	cd /root/argos3-examples/build/controllers/footbot_gripping && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/argos3-examples/controllers/footbot_gripping/footbot_gripping.cpp > CMakeFiles/footbot_gripping.dir/footbot_gripping.cpp.i
+	cd /root/argos-sir-sim/build/controllers/footbot_gripping && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/argos-sir-sim/controllers/footbot_gripping/footbot_gripping.cpp > CMakeFiles/footbot_gripping.dir/footbot_gripping.cpp.i
 
 controllers/footbot_gripping/CMakeFiles/footbot_gripping.dir/footbot_gripping.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/footbot_gripping.dir/footbot_gripping.cpp.s"
-	cd /root/argos3-examples/build/controllers/footbot_gripping && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/argos3-examples/controllers/footbot_gripping/footbot_gripping.cpp -o CMakeFiles/footbot_gripping.dir/footbot_gripping.cpp.s
+	cd /root/argos-sir-sim/build/controllers/footbot_gripping && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/argos-sir-sim/controllers/footbot_gripping/footbot_gripping.cpp -o CMakeFiles/footbot_gripping.dir/footbot_gripping.cpp.s
 
 # Object files for target footbot_gripping
 footbot_gripping_OBJECTS = \
@@ -109,8 +109,8 @@ controllers/footbot_gripping/libfootbot_gripping.so: /usr/lib/x86_64-linux-gnu/l
 controllers/footbot_gripping/libfootbot_gripping.so: /usr/lib/x86_64-linux-gnu/libm.so
 controllers/footbot_gripping/libfootbot_gripping.so: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8
 controllers/footbot_gripping/libfootbot_gripping.so: controllers/footbot_gripping/CMakeFiles/footbot_gripping.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/argos3-examples/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared module libfootbot_gripping.so"
-	cd /root/argos3-examples/build/controllers/footbot_gripping && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/footbot_gripping.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared module libfootbot_gripping.so"
+	cd /root/argos-sir-sim/build/controllers/footbot_gripping && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/footbot_gripping.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 controllers/footbot_gripping/CMakeFiles/footbot_gripping.dir/build: controllers/footbot_gripping/libfootbot_gripping.so
@@ -118,10 +118,10 @@ controllers/footbot_gripping/CMakeFiles/footbot_gripping.dir/build: controllers/
 .PHONY : controllers/footbot_gripping/CMakeFiles/footbot_gripping.dir/build
 
 controllers/footbot_gripping/CMakeFiles/footbot_gripping.dir/clean:
-	cd /root/argos3-examples/build/controllers/footbot_gripping && $(CMAKE_COMMAND) -P CMakeFiles/footbot_gripping.dir/cmake_clean.cmake
+	cd /root/argos-sir-sim/build/controllers/footbot_gripping && $(CMAKE_COMMAND) -P CMakeFiles/footbot_gripping.dir/cmake_clean.cmake
 .PHONY : controllers/footbot_gripping/CMakeFiles/footbot_gripping.dir/clean
 
 controllers/footbot_gripping/CMakeFiles/footbot_gripping.dir/depend:
-	cd /root/argos3-examples/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/argos3-examples /root/argos3-examples/controllers/footbot_gripping /root/argos3-examples/build /root/argos3-examples/build/controllers/footbot_gripping /root/argos3-examples/build/controllers/footbot_gripping/CMakeFiles/footbot_gripping.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/argos-sir-sim/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/argos-sir-sim /root/argos-sir-sim/controllers/footbot_gripping /root/argos-sir-sim/build /root/argos-sir-sim/build/controllers/footbot_gripping /root/argos-sir-sim/build/controllers/footbot_gripping/CMakeFiles/footbot_gripping.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : controllers/footbot_gripping/CMakeFiles/footbot_gripping.dir/depend
 

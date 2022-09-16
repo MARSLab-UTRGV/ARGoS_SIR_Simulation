@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/root/argos3-examples/build/controllers/footbot_nn/footbot_nn_autogen/mocs_compilation.cpp
+/root/argos-sir-sim/build/controllers/footbot_nn/footbot_nn_autogen/mocs_compilation.cpp
 
-/root/argos3-examples/controllers/footbot_nn/footbot_nn_controller.cpp
+/root/argos-sir-sim/controllers/footbot_nn/footbot_nn_controller.cpp
 footbot_nn_controller.h
-/root/argos3-examples/controllers/footbot_nn/footbot_nn_controller.h
+/root/argos-sir-sim/controllers/footbot_nn/footbot_nn_controller.h
 
-/root/argos3-examples/controllers/footbot_nn/footbot_nn_controller.h
+/root/argos-sir-sim/controllers/footbot_nn/footbot_nn_controller.h
 argos3/core/control_interface/ci_controller.h
 -
 argos3/plugins/robots/generic/control_interface/ci_differential_steering_actuator.h
@@ -22,11 +22,11 @@ argos3/plugins/robots/foot-bot/control_interface/ci_footbot_proximity_sensor.h
 argos3/plugins/robots/foot-bot/control_interface/ci_footbot_light_sensor.h
 -
 nn/perceptron.h
-/root/argos3-examples/controllers/footbot_nn/nn/perceptron.h
+/root/argos-sir-sim/controllers/footbot_nn/nn/perceptron.h
 
-/root/argos3-examples/controllers/footbot_nn/nn/ctrnn_multilayer.cpp
+/root/argos-sir-sim/controllers/footbot_nn/nn/ctrnn_multilayer.cpp
 ctrnn_multilayer.h
-/root/argos3-examples/controllers/footbot_nn/nn/ctrnn_multilayer.h
+/root/argos-sir-sim/controllers/footbot_nn/nn/ctrnn_multilayer.h
 cmath
 -
 fstream
@@ -34,31 +34,31 @@ fstream
 argos3/core/utility/string_utilities.h
 -
 
-/root/argos3-examples/controllers/footbot_nn/nn/ctrnn_multilayer.h
+/root/argos-sir-sim/controllers/footbot_nn/nn/ctrnn_multilayer.h
 neural_network.h
-/root/argos3-examples/controllers/footbot_nn/nn/neural_network.h
+/root/argos-sir-sim/controllers/footbot_nn/nn/neural_network.h
 argos3/core/utility/math/range.h
 -
 
-/root/argos3-examples/controllers/footbot_nn/nn/neural_network.cpp
+/root/argos-sir-sim/controllers/footbot_nn/nn/neural_network.cpp
 neural_network.h
-/root/argos3-examples/controllers/footbot_nn/nn/neural_network.h
+/root/argos-sir-sim/controllers/footbot_nn/nn/neural_network.h
 argos3/core/utility/string_utilities.h
 -
 
-/root/argos3-examples/controllers/footbot_nn/nn/neural_network.h
+/root/argos-sir-sim/controllers/footbot_nn/nn/neural_network.h
 argos3/core/control_interface/ci_controller.h
 -
 
-/root/argos3-examples/controllers/footbot_nn/nn/perceptron.cpp
+/root/argos-sir-sim/controllers/footbot_nn/nn/perceptron.cpp
 perceptron.h
-/root/argos3-examples/controllers/footbot_nn/nn/perceptron.h
+/root/argos-sir-sim/controllers/footbot_nn/nn/perceptron.h
 fstream
 -
 cmath
 -
 
-/root/argos3-examples/controllers/footbot_nn/nn/perceptron.h
+/root/argos-sir-sim/controllers/footbot_nn/nn/perceptron.h
 neural_network.h
-/root/argos3-examples/controllers/footbot_nn/nn/neural_network.h
+/root/argos-sir-sim/controllers/footbot_nn/nn/neural_network.h
 
