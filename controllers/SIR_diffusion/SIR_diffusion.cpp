@@ -8,7 +8,7 @@
 /****************************************/
 /****************************************/
 
-CFootBotDiffusion::CFootBotDiffusion() :
+CFootBot_SIR_Diffusion::CFootBot_SIR_Diffusion() :
    m_pcWheels(NULL),
    m_pcProximity(NULL),
    m_cAlpha(10.0f),
@@ -20,7 +20,7 @@ CFootBotDiffusion::CFootBotDiffusion() :
 /****************************************/
 /****************************************/
 
-void CFootBotDiffusion::Init(TConfigurationNode& t_node) {
+void CFootBot_SIR_Diffusion::Init(TConfigurationNode& t_node) {
    /*
     * Get sensor/actuator handles
     *
@@ -45,6 +45,7 @@ void CFootBotDiffusion::Init(TConfigurationNode& t_node) {
     */
    m_pcWheels    = GetActuator<CCI_DifferentialSteeringActuator>("differential_steering");
    m_pcProximity = GetSensor  <CCI_FootBotProximitySensor      >("footbot_proximity"    );
+   m_pcLEDs      = GetActuator<CCI_LEDsActuator                >("leds");         /***NEW***/
    /*
     * Parse the configuration file
     *
@@ -61,7 +62,16 @@ void CFootBotDiffusion::Init(TConfigurationNode& t_node) {
 /****************************************/
 /****************************************/
 
-void CFootBotDiffusion::ControlStep() {
+void CFootBot_SIR_Diffusion::ControlStep() {
+
+
+   /* NEW */
+
+   /* Test to set color of LEDs */
+   m_pcLEDs->SetAllColors(CColor::RED);
+   
+   /* END NEW */
+
    /* Get readings from proximity sensor */
    const CCI_FootBotProximitySensor::TReadings& tProxReads = m_pcProximity->GetReadings();
    /* Sum them together */
@@ -103,4 +113,4 @@ void CFootBotDiffusion::ControlStep() {
  * controller class to instantiate.
  * See also the configuration files for an example of how this is used.
  */
-REGISTER_CONTROLLER(CFootBotDiffusion, "footbot_diffusion_controller")
+REGISTER_CONTROLLER(CFootBot_SIR_Diffusion, "footbot_sir_diffusion_controller")

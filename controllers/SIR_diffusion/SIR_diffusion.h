@@ -30,6 +30,13 @@
 /* Definition of the foot-bot proximity sensor */
 #include <argos3/plugins/robots/foot-bot/control_interface/ci_footbot_proximity_sensor.h>
 
+/* NEW */
+
+/* Definition of the LEDs actuator */
+#include <argos3/plugins/robots/generic/control_interface/ci_leds_actuator.h>
+
+/* END NEW */
+
 /*
  * All the ARGoS stuff in the 'argos' namespace.
  * With this statement, you save typing argos:: every time.
@@ -39,15 +46,15 @@ using namespace argos;
 /*
  * A controller is simply an implementation of the CCI_Controller class.
  */
-class CFootBotDiffusion : public CCI_Controller {
+class CFootBot_SIR_Diffusion : public CCI_Controller {
 
 public:
 
    /* Class constructor. */
-   CFootBotDiffusion();
+   CFootBot_SIR_Diffusion();
 
    /* Class destructor. */
-   virtual ~CFootBotDiffusion() {}
+   virtual ~CFootBot_SIR_Diffusion() {}
 
    /*
     * This function initializes the controller.
@@ -86,6 +93,13 @@ private:
    CCI_DifferentialSteeringActuator* m_pcWheels;
    /* Pointer to the foot-bot proximity sensor */
    CCI_FootBotProximitySensor* m_pcProximity;
+
+   /* NEW */
+
+   /* Pointer to the LED actuator */
+   CCI_LEDsActuator* m_pcLEDs;
+
+   /* END NEW */
 
    /*
     * The following variables are used as parameters for the

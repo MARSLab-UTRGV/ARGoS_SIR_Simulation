@@ -16,16 +16,17 @@
   <!-- *************** -->
   <controllers>
 
-    <footbot_diffusion_controller id="fdc"
+    <footbot_sir_diffusion_controller id="fdc"
                                   library="build/controllers/SIR_diffusion/libSIR_diffusion.so">
       <actuators>
         <differential_steering implementation="default" />
+        <leds implementation="default" medium="leds" />
       </actuators>
       <sensors>
         <footbot_proximity implementation="default" show_rays="true" />
       </sensors>
       <params alpha="7.5" delta="0.1" velocity="5" />
-    </footbot_diffusion_controller>
+    </footbot_sir_diffusion_controller>
 
   </controllers>
 
