@@ -110,7 +110,7 @@ private:
    /* Pointer to the LED actuator */
    CCI_LEDsActuator* m_pcLEDs;
    /* Pointer to the colored blob camera */
-   CCI_ColoredBlobOmnidirectionalCameraSensor* m_pcBlob
+   CCI_ColoredBlobOmnidirectionalCameraSensor* m_pcBlob;
 
    /* END NEW */
 

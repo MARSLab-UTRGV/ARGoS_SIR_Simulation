@@ -52,7 +52,7 @@ void CFootBot_SIR_Diffusion::Init(TConfigurationNode& t_node) {
    /* NEW */
 
    m_pcLEDs      = GetActuator<CCI_LEDsActuator                >("leds");
-   m_pcBlob      = GetSensor  <CCI_ColoredBlobOmnidirectionalCameraSensor >("blobcam");
+   m_pcBlob      = GetSensor  <CCI_ColoredBlobOmnidirectionalCameraSensor >("colored_blob_omnidirectional_camera");
 
    /* END NEW */
    /*
