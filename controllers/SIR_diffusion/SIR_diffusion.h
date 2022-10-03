@@ -34,6 +34,17 @@
 
 /* Definition of the LEDs actuator */
 #include <argos3/plugins/robots/generic/control_interface/ci_leds_actuator.h>
+/* Definition of the colored blob omnidirectional camera */
+   /* NOTE:
+      For small swarms, enabling the sensor (and therefore causing ARGoS to
+      update its readings each timestep) unconditionally does not impact performance too
+      much. For large swarms, it can impact performance, and selectively
+      enabling/disabling the sensor according to when each individual robot needs it
+      (e.g., only when it is looking for an LED equipped entity) can increase performance
+      by only requiring ARGoS to update the readings on timesteps they will be used.
+   */
+#include <argos3/plugins/robots/generic/control_interface/ci_colored_blob_omnidirectional_camera_sensor.h>
+
 
 /* END NEW */
 
@@ -98,6 +109,8 @@ private:
 
    /* Pointer to the LED actuator */
    CCI_LEDsActuator* m_pcLEDs;
+   /* Pointer to the colored blob camera */
+   CCI_ColoredBlobOmnidirectionalCameraSensor* m_pcBlob
 
    /* END NEW */
 

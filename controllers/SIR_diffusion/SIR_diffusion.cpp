@@ -6,11 +6,14 @@
 #include <argos3/core/utility/math/vector2.h>
 
 /****************************************/
+
 /****************************************/
 
 CFootBot_SIR_Diffusion::CFootBot_SIR_Diffusion() :
    m_pcWheels(NULL),
    m_pcProximity(NULL),
+   m_pcLEDs(NULL),
+   m_pcBlob(NULL),
    m_cAlpha(10.0f),
    m_fDelta(0.5f),
    m_fWheelVelocity(2.5f),
@@ -45,7 +48,13 @@ void CFootBot_SIR_Diffusion::Init(TConfigurationNode& t_node) {
     */
    m_pcWheels    = GetActuator<CCI_DifferentialSteeringActuator>("differential_steering");
    m_pcProximity = GetSensor  <CCI_FootBotProximitySensor      >("footbot_proximity"    );
-   m_pcLEDs      = GetActuator<CCI_LEDsActuator                >("leds");         /***NEW***/
+
+   /* NEW */
+
+   m_pcLEDs      = GetActuator<CCI_LEDsActuator                >("leds");
+   m_pcBlob      = GetSensor  <CCI_ColoredBlobOmnidirectionalCameraSensor >("blobcam");
+
+   /* END NEW */
    /*
     * Parse the configuration file
     *
@@ -68,7 +77,18 @@ void CFootBot_SIR_Diffusion::ControlStep() {
    /* NEW */
 
    /* Test to set color of LEDs */
-   m_pcLEDs->SetAllColors(CColor::RED);
+   m_pcLEDs->SetAllColors(CColor::GREEN);
+
+   /* Get the camera readings */
+   const CCI_ColoredBlobOmnidirectionalCameraSensor::SReadings& sReadings = m_pcBlob->GetReadings();
+   /* Go through the camera readings */
+   if (! sReadings.BlobList.empty()){
+      for(size_t i = 0; i < sReadings.BlobList.size(); ++i){
+         if (sReadings.BlobList[i]->Color == CColor::GREEN){
+            m_pcLEDs->SetAllColors(CColor::RED);
+         }
+      }
+   }
    
    /* END NEW */
 
