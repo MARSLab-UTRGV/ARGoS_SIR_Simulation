@@ -6,5 +6,5 @@ CXX_FLAGS = -O3 -DNDEBUG -fPIC   -fPIC -std=c++17
 
 CXX_DEFINES = -DGL_SILENCE_DEPRECATION -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -Dfootbot_gripping_EXPORTS
 
-CXX_INCLUDES = -I/root/argos-sir-sim/build/controllers/footbot_gripping -I/root/argos-sir-sim/controllers/footbot_gripping -I/root/argos-sir-sim/build/controllers/footbot_gripping/footbot_gripping_autogen/include -I/root/argos-sir-sim -I/usr/include/Headers -I/usr/include/lua5.3 -I/root/argos-sir-sim/controllers -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ 
+CXX_INCLUDES = -I/home/ryan/argos-sir-sim/build/controllers/footbot_gripping -I/home/ryan/argos-sir-sim/controllers/footbot_gripping -I/home/ryan/argos-sir-sim/build/controllers/footbot_gripping/footbot_gripping_autogen/include -I/home/ryan/argos-sir-sim -I/usr/include/Headers -I/usr/include/lua5.3 -I/home/ryan/argos-sir-sim/controllers -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ 
 

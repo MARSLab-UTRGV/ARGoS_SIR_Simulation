@@ -1,36 +1,36 @@
 {
-	"BUILD_DIR" : "/root/argos-sir-sim/build/controllers/footbot_nn/footbot_nn_autogen",
-	"CMAKE_BINARY_DIR" : "/root/argos-sir-sim/build",
-	"CMAKE_CURRENT_BINARY_DIR" : "/root/argos-sir-sim/build/controllers/footbot_nn",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/root/argos-sir-sim/controllers/footbot_nn",
+	"BUILD_DIR" : "/home/ryan/argos-sir-sim/build/controllers/footbot_nn/footbot_nn_autogen",
+	"CMAKE_BINARY_DIR" : "/home/ryan/argos-sir-sim/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/ryan/argos-sir-sim/build/controllers/footbot_nn",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/ryan/argos-sir-sim/controllers/footbot_nn",
 	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
-	"CMAKE_SOURCE_DIR" : "/root/argos-sir-sim",
+	"CMAKE_SOURCE_DIR" : "/home/ryan/argos-sir-sim",
 	"HEADERS" : 
 	[
 		[
-			"/root/argos-sir-sim/controllers/footbot_nn/footbot_nn_controller.h",
+			"/home/ryan/argos-sir-sim/controllers/footbot_nn/footbot_nn_controller.h",
 			"Mu",
 			"EWIEGA46WW/moc_footbot_nn_controller.cpp"
 		],
 		[
-			"/root/argos-sir-sim/controllers/footbot_nn/nn/ctrnn_multilayer.h",
+			"/home/ryan/argos-sir-sim/controllers/footbot_nn/nn/ctrnn_multilayer.h",
 			"Mu",
 			"3GNX45VY2U/moc_ctrnn_multilayer.cpp"
 		],
 		[
-			"/root/argos-sir-sim/controllers/footbot_nn/nn/neural_network.h",
+			"/home/ryan/argos-sir-sim/controllers/footbot_nn/nn/neural_network.h",
 			"Mu",
 			"3GNX45VY2U/moc_neural_network.cpp"
 		],
 		[
-			"/root/argos-sir-sim/controllers/footbot_nn/nn/perceptron.h",
+			"/home/ryan/argos-sir-sim/controllers/footbot_nn/nn/perceptron.h",
 			"Mu",
 			"3GNX45VY2U/moc_perceptron.cpp"
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/root/argos-sir-sim/build/controllers/footbot_nn/footbot_nn_autogen/include",
-	"MOC_COMPILATION_FILE" : "/root/argos-sir-sim/build/controllers/footbot_nn/footbot_nn_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/home/ryan/argos-sir-sim/build/controllers/footbot_nn/footbot_nn_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/ryan/argos-sir-sim/build/controllers/footbot_nn/footbot_nn_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
 		"GL_SILENCE_DEPRECATION",
@@ -49,12 +49,12 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"/root/argos-sir-sim/build/controllers/footbot_nn",
-		"/root/argos-sir-sim/controllers/footbot_nn",
-		"/root/argos-sir-sim",
+		"/home/ryan/argos-sir-sim/build/controllers/footbot_nn",
+		"/home/ryan/argos-sir-sim/controllers/footbot_nn",
+		"/home/ryan/argos-sir-sim",
 		"/usr/include/Headers",
 		"/usr/include/lua5.3",
-		"/root/argos-sir-sim/controllers",
+		"/home/ryan/argos-sir-sim/controllers",
 		"/usr/include/x86_64-linux-gnu/qt5",
 		"/usr/include/x86_64-linux-gnu/qt5/QtWidgets",
 		"/usr/include/x86_64-linux-gnu/qt5/QtGui",
@@ -79,31 +79,34 @@
 		"-c",
 		"/usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/root/argos-sir-sim/build/controllers/footbot_nn/footbot_nn_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/home/ryan/argos-sir-sim/build/controllers/footbot_nn/footbot_nn_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
-	"PARALLEL" : 2,
-	"PARSE_CACHE_FILE" : "/root/argos-sir-sim/build/controllers/footbot_nn/CMakeFiles/footbot_nn_autogen.dir/ParseCache.txt",
+	"PARALLEL" : 4,
+	"PARSE_CACHE_FILE" : "/home/ryan/argos-sir-sim/build/controllers/footbot_nn/CMakeFiles/footbot_nn_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/usr/lib/qt5/bin/moc",
 	"QT_UIC_EXECUTABLE" : "",
 	"QT_VERSION_MAJOR" : 5,
-	"SETTINGS_FILE" : "/root/argos-sir-sim/build/controllers/footbot_nn/CMakeFiles/footbot_nn_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/home/ryan/argos-sir-sim/build/controllers/footbot_nn/CMakeFiles/footbot_nn_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
-			"/root/argos-sir-sim/controllers/footbot_nn/footbot_nn_controller.cpp",
+			"/home/ryan/argos-sir-sim/controllers/footbot_nn/footbot_nn_controller.cpp",
 			"Mu"
 		],
 		[
-			"/root/argos-sir-sim/controllers/footbot_nn/nn/ctrnn_multilayer.cpp",
+			"/home/ryan/argos-sir-sim/controllers/footbot_nn/nn/ctrnn_multilayer.cpp",
 			"Mu"
 		],
 		[
-			"/root/argos-sir-sim/controllers/footbot_nn/nn/neural_network.cpp",
+			"/home/ryan/argos-sir-sim/controllers/footbot_nn/nn/neural_network.cpp",
 			"Mu"
 		],
-		[ "/root/argos-sir-sim/controllers/footbot_nn/nn/perceptron.cpp", "Mu" ]
+		[
+			"/home/ryan/argos-sir-sim/controllers/footbot_nn/nn/perceptron.cpp",
+			"Mu"
+		]
 	],
 	"VERBOSITY" : 0
 }

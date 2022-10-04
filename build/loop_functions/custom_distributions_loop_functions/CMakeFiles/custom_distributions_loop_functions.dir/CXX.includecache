@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/root/argos-sir-sim/build/loop_functions/custom_distributions_loop_functions/custom_distributions_loop_functions_autogen/mocs_compilation.cpp
+/home/ryan/argos-sir-sim/build/loop_functions/custom_distributions_loop_functions/custom_distributions_loop_functions_autogen/mocs_compilation.cpp
 
-/root/argos-sir-sim/loop_functions/custom_distributions_loop_functions/custom_distributions_loop_functions.cpp
+/home/ryan/argos-sir-sim/loop_functions/custom_distributions_loop_functions/custom_distributions_loop_functions.cpp
 custom_distributions_loop_functions.h
-/root/argos-sir-sim/loop_functions/custom_distributions_loop_functions/custom_distributions_loop_functions.h
+/home/ryan/argos-sir-sim/loop_functions/custom_distributions_loop_functions/custom_distributions_loop_functions.h
 argos3/plugins/simulator/entities/box_entity.h
 -
 argos3/plugins/simulator/entities/cylinder_entity.h
@@ -22,7 +22,7 @@ sstream
 list
 -
 
-/root/argos-sir-sim/loop_functions/custom_distributions_loop_functions/custom_distributions_loop_functions.h
+/home/ryan/argos-sir-sim/loop_functions/custom_distributions_loop_functions/custom_distributions_loop_functions.h
 argos3/core/simulator/loop_functions.h
 -
 

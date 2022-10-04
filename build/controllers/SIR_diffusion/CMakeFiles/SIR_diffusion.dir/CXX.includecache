@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/root/argos-sir-sim/controllers/SIR_diffusion/SIR_diffusion.cpp
+/home/ryan/argos-sir-sim/controllers/SIR_diffusion/SIR_diffusion.cpp
 SIR_diffusion.h
-/root/argos-sir-sim/controllers/SIR_diffusion/SIR_diffusion.h
+/home/ryan/argos-sir-sim/controllers/SIR_diffusion/SIR_diffusion.h
 argos3/core/utility/configuration/argos_configuration.h
 -
 argos3/core/utility/math/vector2.h
 -
 
-/root/argos-sir-sim/controllers/SIR_diffusion/SIR_diffusion.h
+/home/ryan/argos-sir-sim/controllers/SIR_diffusion/SIR_diffusion.h
 argos3/core/control_interface/ci_controller.h
 -
 argos3/plugins/robots/generic/control_interface/ci_differential_steering_actuator.h

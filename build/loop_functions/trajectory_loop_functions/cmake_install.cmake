@@ -1,4 +1,4 @@
-# Install script for directory: /root/argos-sir-sim/loop_functions/trajectory_loop_functions
+# Install script for directory: /home/ryan/argos-sir-sim/loop_functions/trajectory_loop_functions
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

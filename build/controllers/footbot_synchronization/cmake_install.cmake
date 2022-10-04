@@ -1,4 +1,4 @@
-# Install script for directory: /root/argos-sir-sim/controllers/footbot_synchronization
+# Install script for directory: /home/ryan/argos-sir-sim/controllers/footbot_synchronization
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

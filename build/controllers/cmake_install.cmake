@@ -1,4 +1,4 @@
-# Install script for directory: /root/argos-sir-sim/controllers
+# Install script for directory: /home/ryan/argos-sir-sim/controllers
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,17 +39,17 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/root/argos-sir-sim/build/controllers/footbot_diffusion/cmake_install.cmake")
-  include("/root/argos-sir-sim/build/controllers/SIR_diffusion/cmake_install.cmake")
-  include("/root/argos-sir-sim/build/controllers/footbot_synchronization/cmake_install.cmake")
-  include("/root/argos-sir-sim/build/controllers/footbot_flocking/cmake_install.cmake")
-  include("/root/argos-sir-sim/build/controllers/footbot_gripping/cmake_install.cmake")
-  include("/root/argos-sir-sim/build/controllers/footbot_foraging/cmake_install.cmake")
-  include("/root/argos-sir-sim/build/controllers/footbot_manualcontrol/cmake_install.cmake")
-  include("/root/argos-sir-sim/build/controllers/footbot_nn/cmake_install.cmake")
-  include("/root/argos-sir-sim/build/controllers/eyebot_circle/cmake_install.cmake")
-  include("/root/argos-sir-sim/build/controllers/eyebot_flocking/cmake_install.cmake")
-  include("/root/argos-sir-sim/build/controllers/epuck_obstacleavoidance/cmake_install.cmake")
+  include("/home/ryan/argos-sir-sim/build/controllers/footbot_diffusion/cmake_install.cmake")
+  include("/home/ryan/argos-sir-sim/build/controllers/SIR_diffusion/cmake_install.cmake")
+  include("/home/ryan/argos-sir-sim/build/controllers/footbot_synchronization/cmake_install.cmake")
+  include("/home/ryan/argos-sir-sim/build/controllers/footbot_flocking/cmake_install.cmake")
+  include("/home/ryan/argos-sir-sim/build/controllers/footbot_gripping/cmake_install.cmake")
+  include("/home/ryan/argos-sir-sim/build/controllers/footbot_foraging/cmake_install.cmake")
+  include("/home/ryan/argos-sir-sim/build/controllers/footbot_manualcontrol/cmake_install.cmake")
+  include("/home/ryan/argos-sir-sim/build/controllers/footbot_nn/cmake_install.cmake")
+  include("/home/ryan/argos-sir-sim/build/controllers/eyebot_circle/cmake_install.cmake")
+  include("/home/ryan/argos-sir-sim/build/controllers/eyebot_flocking/cmake_install.cmake")
+  include("/home/ryan/argos-sir-sim/build/controllers/epuck_obstacleavoidance/cmake_install.cmake")
 
 endif()
 

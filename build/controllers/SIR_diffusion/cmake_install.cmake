@@ -1,4 +1,4 @@
-# Install script for directory: /root/argos-sir-sim/controllers/SIR_diffusion
+# Install script for directory: /home/ryan/argos-sir-sim/controllers/SIR_diffusion
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

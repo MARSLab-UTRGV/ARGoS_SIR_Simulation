@@ -6,5 +6,5 @@ CXX_FLAGS = -O3 -DNDEBUG   -fPIC -std=c++17
 
 CXX_DEFINES = -DGL_SILENCE_DEPRECATION -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB
 
-CXX_INCLUDES = -I/root/argos-sir-sim/build/embedding/mpga -I/root/argos-sir-sim/embedding/mpga -I/root/argos-sir-sim/build/embedding/mpga/mpga_phototaxis_autogen/include -I/root/argos-sir-sim -I/usr/include/Headers -I/usr/include/lua5.3 -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ 
+CXX_INCLUDES = -I/home/ryan/argos-sir-sim/build/embedding/mpga -I/home/ryan/argos-sir-sim/embedding/mpga -I/home/ryan/argos-sir-sim/build/embedding/mpga/mpga_phototaxis_autogen/include -I/home/ryan/argos-sir-sim -I/usr/include/Headers -I/usr/include/lua5.3 -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ 
 

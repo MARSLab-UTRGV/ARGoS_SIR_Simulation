@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/argos-sir-sim
+CMAKE_SOURCE_DIR = /home/ryan/argos-sir-sim
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/argos-sir-sim/build
+CMAKE_BINARY_DIR = /home/ryan/argos-sir-sim/build
 
 # Include any dependencies generated for this target.
 include embedding/mpga/CMakeFiles/mpga_phototaxis.dir/depend.make
@@ -59,29 +59,29 @@ include embedding/mpga/CMakeFiles/mpga_phototaxis.dir/flags.make
 
 embedding/mpga/CMakeFiles/mpga_phototaxis.dir/mpga_phototaxis_autogen/mocs_compilation.cpp.o: embedding/mpga/CMakeFiles/mpga_phototaxis.dir/flags.make
 embedding/mpga/CMakeFiles/mpga_phototaxis.dir/mpga_phototaxis_autogen/mocs_compilation.cpp.o: embedding/mpga/mpga_phototaxis_autogen/mocs_compilation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object embedding/mpga/CMakeFiles/mpga_phototaxis.dir/mpga_phototaxis_autogen/mocs_compilation.cpp.o"
-	cd /root/argos-sir-sim/build/embedding/mpga && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpga_phototaxis.dir/mpga_phototaxis_autogen/mocs_compilation.cpp.o -c /root/argos-sir-sim/build/embedding/mpga/mpga_phototaxis_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object embedding/mpga/CMakeFiles/mpga_phototaxis.dir/mpga_phototaxis_autogen/mocs_compilation.cpp.o"
+	cd /home/ryan/argos-sir-sim/build/embedding/mpga && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpga_phototaxis.dir/mpga_phototaxis_autogen/mocs_compilation.cpp.o -c /home/ryan/argos-sir-sim/build/embedding/mpga/mpga_phototaxis_autogen/mocs_compilation.cpp
 
 embedding/mpga/CMakeFiles/mpga_phototaxis.dir/mpga_phototaxis_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mpga_phototaxis.dir/mpga_phototaxis_autogen/mocs_compilation.cpp.i"
-	cd /root/argos-sir-sim/build/embedding/mpga && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/argos-sir-sim/build/embedding/mpga/mpga_phototaxis_autogen/mocs_compilation.cpp > CMakeFiles/mpga_phototaxis.dir/mpga_phototaxis_autogen/mocs_compilation.cpp.i
+	cd /home/ryan/argos-sir-sim/build/embedding/mpga && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ryan/argos-sir-sim/build/embedding/mpga/mpga_phototaxis_autogen/mocs_compilation.cpp > CMakeFiles/mpga_phototaxis.dir/mpga_phototaxis_autogen/mocs_compilation.cpp.i
 
 embedding/mpga/CMakeFiles/mpga_phototaxis.dir/mpga_phototaxis_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mpga_phototaxis.dir/mpga_phototaxis_autogen/mocs_compilation.cpp.s"
-	cd /root/argos-sir-sim/build/embedding/mpga && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/argos-sir-sim/build/embedding/mpga/mpga_phototaxis_autogen/mocs_compilation.cpp -o CMakeFiles/mpga_phototaxis.dir/mpga_phototaxis_autogen/mocs_compilation.cpp.s
+	cd /home/ryan/argos-sir-sim/build/embedding/mpga && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ryan/argos-sir-sim/build/embedding/mpga/mpga_phototaxis_autogen/mocs_compilation.cpp -o CMakeFiles/mpga_phototaxis.dir/mpga_phototaxis_autogen/mocs_compilation.cpp.s
 
 embedding/mpga/CMakeFiles/mpga_phototaxis.dir/main.cpp.o: embedding/mpga/CMakeFiles/mpga_phototaxis.dir/flags.make
 embedding/mpga/CMakeFiles/mpga_phototaxis.dir/main.cpp.o: ../embedding/mpga/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object embedding/mpga/CMakeFiles/mpga_phototaxis.dir/main.cpp.o"
-	cd /root/argos-sir-sim/build/embedding/mpga && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpga_phototaxis.dir/main.cpp.o -c /root/argos-sir-sim/embedding/mpga/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object embedding/mpga/CMakeFiles/mpga_phototaxis.dir/main.cpp.o"
+	cd /home/ryan/argos-sir-sim/build/embedding/mpga && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpga_phototaxis.dir/main.cpp.o -c /home/ryan/argos-sir-sim/embedding/mpga/main.cpp
 
 embedding/mpga/CMakeFiles/mpga_phototaxis.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mpga_phototaxis.dir/main.cpp.i"
-	cd /root/argos-sir-sim/build/embedding/mpga && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/argos-sir-sim/embedding/mpga/main.cpp > CMakeFiles/mpga_phototaxis.dir/main.cpp.i
+	cd /home/ryan/argos-sir-sim/build/embedding/mpga && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ryan/argos-sir-sim/embedding/mpga/main.cpp > CMakeFiles/mpga_phototaxis.dir/main.cpp.i
 
 embedding/mpga/CMakeFiles/mpga_phototaxis.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mpga_phototaxis.dir/main.cpp.s"
-	cd /root/argos-sir-sim/build/embedding/mpga && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/argos-sir-sim/embedding/mpga/main.cpp -o CMakeFiles/mpga_phototaxis.dir/main.cpp.s
+	cd /home/ryan/argos-sir-sim/build/embedding/mpga && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ryan/argos-sir-sim/embedding/mpga/main.cpp -o CMakeFiles/mpga_phototaxis.dir/main.cpp.s
 
 # Object files for target mpga_phototaxis
 mpga_phototaxis_OBJECTS = \
@@ -123,8 +123,8 @@ embedding/mpga/mpga_phototaxis: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8
 embedding/mpga/mpga_phototaxis: /usr/lib/x86_64-linux-gnu/liblua5.3.so
 embedding/mpga/mpga_phototaxis: /usr/lib/x86_64-linux-gnu/libm.so
 embedding/mpga/mpga_phototaxis: embedding/mpga/CMakeFiles/mpga_phototaxis.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable mpga_phototaxis"
-	cd /root/argos-sir-sim/build/embedding/mpga && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mpga_phototaxis.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable mpga_phototaxis"
+	cd /home/ryan/argos-sir-sim/build/embedding/mpga && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mpga_phototaxis.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 embedding/mpga/CMakeFiles/mpga_phototaxis.dir/build: embedding/mpga/mpga_phototaxis
@@ -132,10 +132,10 @@ embedding/mpga/CMakeFiles/mpga_phototaxis.dir/build: embedding/mpga/mpga_photota
 .PHONY : embedding/mpga/CMakeFiles/mpga_phototaxis.dir/build
 
 embedding/mpga/CMakeFiles/mpga_phototaxis.dir/clean:
-	cd /root/argos-sir-sim/build/embedding/mpga && $(CMAKE_COMMAND) -P CMakeFiles/mpga_phototaxis.dir/cmake_clean.cmake
+	cd /home/ryan/argos-sir-sim/build/embedding/mpga && $(CMAKE_COMMAND) -P CMakeFiles/mpga_phototaxis.dir/cmake_clean.cmake
 .PHONY : embedding/mpga/CMakeFiles/mpga_phototaxis.dir/clean
 
 embedding/mpga/CMakeFiles/mpga_phototaxis.dir/depend:
-	cd /root/argos-sir-sim/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/argos-sir-sim /root/argos-sir-sim/embedding/mpga /root/argos-sir-sim/build /root/argos-sir-sim/build/embedding/mpga /root/argos-sir-sim/build/embedding/mpga/CMakeFiles/mpga_phototaxis.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ryan/argos-sir-sim/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ryan/argos-sir-sim /home/ryan/argos-sir-sim/embedding/mpga /home/ryan/argos-sir-sim/build /home/ryan/argos-sir-sim/build/embedding/mpga /home/ryan/argos-sir-sim/build/embedding/mpga/CMakeFiles/mpga_phototaxis.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : embedding/mpga/CMakeFiles/mpga_phototaxis.dir/depend
 

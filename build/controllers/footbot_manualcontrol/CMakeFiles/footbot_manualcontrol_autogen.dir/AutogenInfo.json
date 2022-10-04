@@ -1,21 +1,21 @@
 {
-	"BUILD_DIR" : "/root/argos-sir-sim/build/controllers/footbot_manualcontrol/footbot_manualcontrol_autogen",
-	"CMAKE_BINARY_DIR" : "/root/argos-sir-sim/build",
-	"CMAKE_CURRENT_BINARY_DIR" : "/root/argos-sir-sim/build/controllers/footbot_manualcontrol",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/root/argos-sir-sim/controllers/footbot_manualcontrol",
+	"BUILD_DIR" : "/home/ryan/argos-sir-sim/build/controllers/footbot_manualcontrol/footbot_manualcontrol_autogen",
+	"CMAKE_BINARY_DIR" : "/home/ryan/argos-sir-sim/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/ryan/argos-sir-sim/build/controllers/footbot_manualcontrol",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/ryan/argos-sir-sim/controllers/footbot_manualcontrol",
 	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
-	"CMAKE_SOURCE_DIR" : "/root/argos-sir-sim",
+	"CMAKE_SOURCE_DIR" : "/home/ryan/argos-sir-sim",
 	"HEADERS" : 
 	[
 		[
-			"/root/argos-sir-sim/controllers/footbot_manualcontrol/footbot_manualcontrol.h",
+			"/home/ryan/argos-sir-sim/controllers/footbot_manualcontrol/footbot_manualcontrol.h",
 			"Mu",
 			"EWIEGA46WW/moc_footbot_manualcontrol.cpp"
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/root/argos-sir-sim/build/controllers/footbot_manualcontrol/footbot_manualcontrol_autogen/include",
-	"MOC_COMPILATION_FILE" : "/root/argos-sir-sim/build/controllers/footbot_manualcontrol/footbot_manualcontrol_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/home/ryan/argos-sir-sim/build/controllers/footbot_manualcontrol/footbot_manualcontrol_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/ryan/argos-sir-sim/build/controllers/footbot_manualcontrol/footbot_manualcontrol_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
 		"GL_SILENCE_DEPRECATION",
@@ -34,12 +34,12 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"/root/argos-sir-sim/build/controllers/footbot_manualcontrol",
-		"/root/argos-sir-sim/controllers/footbot_manualcontrol",
-		"/root/argos-sir-sim",
+		"/home/ryan/argos-sir-sim/build/controllers/footbot_manualcontrol",
+		"/home/ryan/argos-sir-sim/controllers/footbot_manualcontrol",
+		"/home/ryan/argos-sir-sim",
 		"/usr/include/Headers",
 		"/usr/include/lua5.3",
-		"/root/argos-sir-sim/controllers",
+		"/home/ryan/argos-sir-sim/controllers",
 		"/usr/include/x86_64-linux-gnu/qt5",
 		"/usr/include/x86_64-linux-gnu/qt5/QtWidgets",
 		"/usr/include/x86_64-linux-gnu/qt5/QtGui",
@@ -64,20 +64,20 @@
 		"-c",
 		"/usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/root/argos-sir-sim/build/controllers/footbot_manualcontrol/footbot_manualcontrol_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/home/ryan/argos-sir-sim/build/controllers/footbot_manualcontrol/footbot_manualcontrol_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
-	"PARALLEL" : 2,
-	"PARSE_CACHE_FILE" : "/root/argos-sir-sim/build/controllers/footbot_manualcontrol/CMakeFiles/footbot_manualcontrol_autogen.dir/ParseCache.txt",
+	"PARALLEL" : 4,
+	"PARSE_CACHE_FILE" : "/home/ryan/argos-sir-sim/build/controllers/footbot_manualcontrol/CMakeFiles/footbot_manualcontrol_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/usr/lib/qt5/bin/moc",
 	"QT_UIC_EXECUTABLE" : "",
 	"QT_VERSION_MAJOR" : 5,
-	"SETTINGS_FILE" : "/root/argos-sir-sim/build/controllers/footbot_manualcontrol/CMakeFiles/footbot_manualcontrol_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/home/ryan/argos-sir-sim/build/controllers/footbot_manualcontrol/CMakeFiles/footbot_manualcontrol_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
-			"/root/argos-sir-sim/controllers/footbot_manualcontrol/footbot_manualcontrol.cpp",
+			"/home/ryan/argos-sir-sim/controllers/footbot_manualcontrol/footbot_manualcontrol.cpp",
 			"Mu"
 		]
 	],

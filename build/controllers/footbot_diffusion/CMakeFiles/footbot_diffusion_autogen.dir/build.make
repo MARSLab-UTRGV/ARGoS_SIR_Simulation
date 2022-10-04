@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/argos-sir-sim
+CMAKE_SOURCE_DIR = /home/ryan/argos-sir-sim
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/argos-sir-sim/build
+CMAKE_BINARY_DIR = /home/ryan/argos-sir-sim/build
 
 # Utility rule file for footbot_diffusion_autogen.
 
@@ -54,8 +54,8 @@ CMAKE_BINARY_DIR = /root/argos-sir-sim/build
 include controllers/footbot_diffusion/CMakeFiles/footbot_diffusion_autogen.dir/progress.make
 
 controllers/footbot_diffusion/CMakeFiles/footbot_diffusion_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target footbot_diffusion"
-	cd /root/argos-sir-sim/build/controllers/footbot_diffusion && /usr/bin/cmake -E cmake_autogen /root/argos-sir-sim/build/controllers/footbot_diffusion/CMakeFiles/footbot_diffusion_autogen.dir/AutogenInfo.json Release
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target footbot_diffusion"
+	cd /home/ryan/argos-sir-sim/build/controllers/footbot_diffusion && /usr/bin/cmake -E cmake_autogen /home/ryan/argos-sir-sim/build/controllers/footbot_diffusion/CMakeFiles/footbot_diffusion_autogen.dir/AutogenInfo.json Release
 
 footbot_diffusion_autogen: controllers/footbot_diffusion/CMakeFiles/footbot_diffusion_autogen
 footbot_diffusion_autogen: controllers/footbot_diffusion/CMakeFiles/footbot_diffusion_autogen.dir/build.make
@@ -68,10 +68,10 @@ controllers/footbot_diffusion/CMakeFiles/footbot_diffusion_autogen.dir/build: fo
 .PHONY : controllers/footbot_diffusion/CMakeFiles/footbot_diffusion_autogen.dir/build
 
 controllers/footbot_diffusion/CMakeFiles/footbot_diffusion_autogen.dir/clean:
-	cd /root/argos-sir-sim/build/controllers/footbot_diffusion && $(CMAKE_COMMAND) -P CMakeFiles/footbot_diffusion_autogen.dir/cmake_clean.cmake
+	cd /home/ryan/argos-sir-sim/build/controllers/footbot_diffusion && $(CMAKE_COMMAND) -P CMakeFiles/footbot_diffusion_autogen.dir/cmake_clean.cmake
 .PHONY : controllers/footbot_diffusion/CMakeFiles/footbot_diffusion_autogen.dir/clean
 
 controllers/footbot_diffusion/CMakeFiles/footbot_diffusion_autogen.dir/depend:
-	cd /root/argos-sir-sim/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/argos-sir-sim /root/argos-sir-sim/controllers/footbot_diffusion /root/argos-sir-sim/build /root/argos-sir-sim/build/controllers/footbot_diffusion /root/argos-sir-sim/build/controllers/footbot_diffusion/CMakeFiles/footbot_diffusion_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ryan/argos-sir-sim/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ryan/argos-sir-sim /home/ryan/argos-sir-sim/controllers/footbot_diffusion /home/ryan/argos-sir-sim/build /home/ryan/argos-sir-sim/build/controllers/footbot_diffusion /home/ryan/argos-sir-sim/build/controllers/footbot_diffusion/CMakeFiles/footbot_diffusion_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : controllers/footbot_diffusion/CMakeFiles/footbot_diffusion_autogen.dir/depend
 

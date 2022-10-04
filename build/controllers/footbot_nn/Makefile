@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/argos-sir-sim
+CMAKE_SOURCE_DIR = /home/ryan/argos-sir-sim
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/argos-sir-sim/build
+CMAKE_BINARY_DIR = /home/ryan/argos-sir-sim/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /root/argos-sir-sim/build && $(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles /root/argos-sir-sim/build/controllers/footbot_nn/CMakeFiles/progress.marks
-	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/footbot_nn/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
+	cd /home/ryan/argos-sir-sim/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles /home/ryan/argos-sir-sim/build/controllers/footbot_nn/CMakeFiles/progress.marks
+	cd /home/ryan/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/footbot_nn/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/footbot_nn/clean
+	cd /home/ryan/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/footbot_nn/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/footbot_nn/preinstall
+	cd /home/ryan/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/footbot_nn/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/footbot_nn/preinstall
+	cd /home/ryan/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/footbot_nn/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /root/argos-sir-sim/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ryan/argos-sir-sim/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 controllers/footbot_nn/CMakeFiles/footbot_nn.dir/rule:
-	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/footbot_nn/CMakeFiles/footbot_nn.dir/rule
+	cd /home/ryan/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/footbot_nn/CMakeFiles/footbot_nn.dir/rule
 .PHONY : controllers/footbot_nn/CMakeFiles/footbot_nn.dir/rule
 
 # Convenience name for target.
@@ -122,12 +122,12 @@ footbot_nn: controllers/footbot_nn/CMakeFiles/footbot_nn.dir/rule
 
 # fast build rule for target.
 footbot_nn/fast:
-	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/footbot_nn/CMakeFiles/footbot_nn.dir/build.make controllers/footbot_nn/CMakeFiles/footbot_nn.dir/build
+	cd /home/ryan/argos-sir-sim/build && $(MAKE) -f controllers/footbot_nn/CMakeFiles/footbot_nn.dir/build.make controllers/footbot_nn/CMakeFiles/footbot_nn.dir/build
 .PHONY : footbot_nn/fast
 
 # Convenience name for target.
 controllers/footbot_nn/CMakeFiles/footbot_nn_autogen.dir/rule:
-	cd /root/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/footbot_nn/CMakeFiles/footbot_nn_autogen.dir/rule
+	cd /home/ryan/argos-sir-sim/build && $(MAKE) -f CMakeFiles/Makefile2 controllers/footbot_nn/CMakeFiles/footbot_nn_autogen.dir/rule
 .PHONY : controllers/footbot_nn/CMakeFiles/footbot_nn_autogen.dir/rule
 
 # Convenience name for target.
@@ -137,7 +137,7 @@ footbot_nn_autogen: controllers/footbot_nn/CMakeFiles/footbot_nn_autogen.dir/rul
 
 # fast build rule for target.
 footbot_nn_autogen/fast:
-	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/footbot_nn/CMakeFiles/footbot_nn_autogen.dir/build.make controllers/footbot_nn/CMakeFiles/footbot_nn_autogen.dir/build
+	cd /home/ryan/argos-sir-sim/build && $(MAKE) -f controllers/footbot_nn/CMakeFiles/footbot_nn_autogen.dir/build.make controllers/footbot_nn/CMakeFiles/footbot_nn_autogen.dir/build
 .PHONY : footbot_nn_autogen/fast
 
 footbot_nn_autogen/mocs_compilation.o: footbot_nn_autogen/mocs_compilation.cpp.o
@@ -146,7 +146,7 @@ footbot_nn_autogen/mocs_compilation.o: footbot_nn_autogen/mocs_compilation.cpp.o
 
 # target to build an object file
 footbot_nn_autogen/mocs_compilation.cpp.o:
-	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/footbot_nn/CMakeFiles/footbot_nn.dir/build.make controllers/footbot_nn/CMakeFiles/footbot_nn.dir/footbot_nn_autogen/mocs_compilation.cpp.o
+	cd /home/ryan/argos-sir-sim/build && $(MAKE) -f controllers/footbot_nn/CMakeFiles/footbot_nn.dir/build.make controllers/footbot_nn/CMakeFiles/footbot_nn.dir/footbot_nn_autogen/mocs_compilation.cpp.o
 .PHONY : footbot_nn_autogen/mocs_compilation.cpp.o
 
 footbot_nn_autogen/mocs_compilation.i: footbot_nn_autogen/mocs_compilation.cpp.i
@@ -155,7 +155,7 @@ footbot_nn_autogen/mocs_compilation.i: footbot_nn_autogen/mocs_compilation.cpp.i
 
 # target to preprocess a source file
 footbot_nn_autogen/mocs_compilation.cpp.i:
-	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/footbot_nn/CMakeFiles/footbot_nn.dir/build.make controllers/footbot_nn/CMakeFiles/footbot_nn.dir/footbot_nn_autogen/mocs_compilation.cpp.i
+	cd /home/ryan/argos-sir-sim/build && $(MAKE) -f controllers/footbot_nn/CMakeFiles/footbot_nn.dir/build.make controllers/footbot_nn/CMakeFiles/footbot_nn.dir/footbot_nn_autogen/mocs_compilation.cpp.i
 .PHONY : footbot_nn_autogen/mocs_compilation.cpp.i
 
 footbot_nn_autogen/mocs_compilation.s: footbot_nn_autogen/mocs_compilation.cpp.s
@@ -164,7 +164,7 @@ footbot_nn_autogen/mocs_compilation.s: footbot_nn_autogen/mocs_compilation.cpp.s
 
 # target to generate assembly for a file
 footbot_nn_autogen/mocs_compilation.cpp.s:
-	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/footbot_nn/CMakeFiles/footbot_nn.dir/build.make controllers/footbot_nn/CMakeFiles/footbot_nn.dir/footbot_nn_autogen/mocs_compilation.cpp.s
+	cd /home/ryan/argos-sir-sim/build && $(MAKE) -f controllers/footbot_nn/CMakeFiles/footbot_nn.dir/build.make controllers/footbot_nn/CMakeFiles/footbot_nn.dir/footbot_nn_autogen/mocs_compilation.cpp.s
 .PHONY : footbot_nn_autogen/mocs_compilation.cpp.s
 
 footbot_nn_controller.o: footbot_nn_controller.cpp.o
@@ -173,7 +173,7 @@ footbot_nn_controller.o: footbot_nn_controller.cpp.o
 
 # target to build an object file
 footbot_nn_controller.cpp.o:
-	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/footbot_nn/CMakeFiles/footbot_nn.dir/build.make controllers/footbot_nn/CMakeFiles/footbot_nn.dir/footbot_nn_controller.cpp.o
+	cd /home/ryan/argos-sir-sim/build && $(MAKE) -f controllers/footbot_nn/CMakeFiles/footbot_nn.dir/build.make controllers/footbot_nn/CMakeFiles/footbot_nn.dir/footbot_nn_controller.cpp.o
 .PHONY : footbot_nn_controller.cpp.o
 
 footbot_nn_controller.i: footbot_nn_controller.cpp.i
@@ -182,7 +182,7 @@ footbot_nn_controller.i: footbot_nn_controller.cpp.i
 
 # target to preprocess a source file
 footbot_nn_controller.cpp.i:
-	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/footbot_nn/CMakeFiles/footbot_nn.dir/build.make controllers/footbot_nn/CMakeFiles/footbot_nn.dir/footbot_nn_controller.cpp.i
+	cd /home/ryan/argos-sir-sim/build && $(MAKE) -f controllers/footbot_nn/CMakeFiles/footbot_nn.dir/build.make controllers/footbot_nn/CMakeFiles/footbot_nn.dir/footbot_nn_controller.cpp.i
 .PHONY : footbot_nn_controller.cpp.i
 
 footbot_nn_controller.s: footbot_nn_controller.cpp.s
@@ -191,7 +191,7 @@ footbot_nn_controller.s: footbot_nn_controller.cpp.s
 
 # target to generate assembly for a file
 footbot_nn_controller.cpp.s:
-	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/footbot_nn/CMakeFiles/footbot_nn.dir/build.make controllers/footbot_nn/CMakeFiles/footbot_nn.dir/footbot_nn_controller.cpp.s
+	cd /home/ryan/argos-sir-sim/build && $(MAKE) -f controllers/footbot_nn/CMakeFiles/footbot_nn.dir/build.make controllers/footbot_nn/CMakeFiles/footbot_nn.dir/footbot_nn_controller.cpp.s
 .PHONY : footbot_nn_controller.cpp.s
 
 nn/ctrnn_multilayer.o: nn/ctrnn_multilayer.cpp.o
@@ -200,7 +200,7 @@ nn/ctrnn_multilayer.o: nn/ctrnn_multilayer.cpp.o
 
 # target to build an object file
 nn/ctrnn_multilayer.cpp.o:
-	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/footbot_nn/CMakeFiles/footbot_nn.dir/build.make controllers/footbot_nn/CMakeFiles/footbot_nn.dir/nn/ctrnn_multilayer.cpp.o
+	cd /home/ryan/argos-sir-sim/build && $(MAKE) -f controllers/footbot_nn/CMakeFiles/footbot_nn.dir/build.make controllers/footbot_nn/CMakeFiles/footbot_nn.dir/nn/ctrnn_multilayer.cpp.o
 .PHONY : nn/ctrnn_multilayer.cpp.o
 
 nn/ctrnn_multilayer.i: nn/ctrnn_multilayer.cpp.i
@@ -209,7 +209,7 @@ nn/ctrnn_multilayer.i: nn/ctrnn_multilayer.cpp.i
 
 # target to preprocess a source file
 nn/ctrnn_multilayer.cpp.i:
-	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/footbot_nn/CMakeFiles/footbot_nn.dir/build.make controllers/footbot_nn/CMakeFiles/footbot_nn.dir/nn/ctrnn_multilayer.cpp.i
+	cd /home/ryan/argos-sir-sim/build && $(MAKE) -f controllers/footbot_nn/CMakeFiles/footbot_nn.dir/build.make controllers/footbot_nn/CMakeFiles/footbot_nn.dir/nn/ctrnn_multilayer.cpp.i
 .PHONY : nn/ctrnn_multilayer.cpp.i
 
 nn/ctrnn_multilayer.s: nn/ctrnn_multilayer.cpp.s
@@ -218,7 +218,7 @@ nn/ctrnn_multilayer.s: nn/ctrnn_multilayer.cpp.s
 
 # target to generate assembly for a file
 nn/ctrnn_multilayer.cpp.s:
-	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/footbot_nn/CMakeFiles/footbot_nn.dir/build.make controllers/footbot_nn/CMakeFiles/footbot_nn.dir/nn/ctrnn_multilayer.cpp.s
+	cd /home/ryan/argos-sir-sim/build && $(MAKE) -f controllers/footbot_nn/CMakeFiles/footbot_nn.dir/build.make controllers/footbot_nn/CMakeFiles/footbot_nn.dir/nn/ctrnn_multilayer.cpp.s
 .PHONY : nn/ctrnn_multilayer.cpp.s
 
 nn/neural_network.o: nn/neural_network.cpp.o
@@ -227,7 +227,7 @@ nn/neural_network.o: nn/neural_network.cpp.o
 
 # target to build an object file
 nn/neural_network.cpp.o:
-	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/footbot_nn/CMakeFiles/footbot_nn.dir/build.make controllers/footbot_nn/CMakeFiles/footbot_nn.dir/nn/neural_network.cpp.o
+	cd /home/ryan/argos-sir-sim/build && $(MAKE) -f controllers/footbot_nn/CMakeFiles/footbot_nn.dir/build.make controllers/footbot_nn/CMakeFiles/footbot_nn.dir/nn/neural_network.cpp.o
 .PHONY : nn/neural_network.cpp.o
 
 nn/neural_network.i: nn/neural_network.cpp.i
@@ -236,7 +236,7 @@ nn/neural_network.i: nn/neural_network.cpp.i
 
 # target to preprocess a source file
 nn/neural_network.cpp.i:
-	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/footbot_nn/CMakeFiles/footbot_nn.dir/build.make controllers/footbot_nn/CMakeFiles/footbot_nn.dir/nn/neural_network.cpp.i
+	cd /home/ryan/argos-sir-sim/build && $(MAKE) -f controllers/footbot_nn/CMakeFiles/footbot_nn.dir/build.make controllers/footbot_nn/CMakeFiles/footbot_nn.dir/nn/neural_network.cpp.i
 .PHONY : nn/neural_network.cpp.i
 
 nn/neural_network.s: nn/neural_network.cpp.s
@@ -245,7 +245,7 @@ nn/neural_network.s: nn/neural_network.cpp.s
 
 # target to generate assembly for a file
 nn/neural_network.cpp.s:
-	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/footbot_nn/CMakeFiles/footbot_nn.dir/build.make controllers/footbot_nn/CMakeFiles/footbot_nn.dir/nn/neural_network.cpp.s
+	cd /home/ryan/argos-sir-sim/build && $(MAKE) -f controllers/footbot_nn/CMakeFiles/footbot_nn.dir/build.make controllers/footbot_nn/CMakeFiles/footbot_nn.dir/nn/neural_network.cpp.s
 .PHONY : nn/neural_network.cpp.s
 
 nn/perceptron.o: nn/perceptron.cpp.o
@@ -254,7 +254,7 @@ nn/perceptron.o: nn/perceptron.cpp.o
 
 # target to build an object file
 nn/perceptron.cpp.o:
-	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/footbot_nn/CMakeFiles/footbot_nn.dir/build.make controllers/footbot_nn/CMakeFiles/footbot_nn.dir/nn/perceptron.cpp.o
+	cd /home/ryan/argos-sir-sim/build && $(MAKE) -f controllers/footbot_nn/CMakeFiles/footbot_nn.dir/build.make controllers/footbot_nn/CMakeFiles/footbot_nn.dir/nn/perceptron.cpp.o
 .PHONY : nn/perceptron.cpp.o
 
 nn/perceptron.i: nn/perceptron.cpp.i
@@ -263,7 +263,7 @@ nn/perceptron.i: nn/perceptron.cpp.i
 
 # target to preprocess a source file
 nn/perceptron.cpp.i:
-	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/footbot_nn/CMakeFiles/footbot_nn.dir/build.make controllers/footbot_nn/CMakeFiles/footbot_nn.dir/nn/perceptron.cpp.i
+	cd /home/ryan/argos-sir-sim/build && $(MAKE) -f controllers/footbot_nn/CMakeFiles/footbot_nn.dir/build.make controllers/footbot_nn/CMakeFiles/footbot_nn.dir/nn/perceptron.cpp.i
 .PHONY : nn/perceptron.cpp.i
 
 nn/perceptron.s: nn/perceptron.cpp.s
@@ -272,7 +272,7 @@ nn/perceptron.s: nn/perceptron.cpp.s
 
 # target to generate assembly for a file
 nn/perceptron.cpp.s:
-	cd /root/argos-sir-sim/build && $(MAKE) -f controllers/footbot_nn/CMakeFiles/footbot_nn.dir/build.make controllers/footbot_nn/CMakeFiles/footbot_nn.dir/nn/perceptron.cpp.s
+	cd /home/ryan/argos-sir-sim/build && $(MAKE) -f controllers/footbot_nn/CMakeFiles/footbot_nn.dir/build.make controllers/footbot_nn/CMakeFiles/footbot_nn.dir/nn/perceptron.cpp.s
 .PHONY : nn/perceptron.cpp.s
 
 # Help Target
@@ -311,6 +311,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /root/argos-sir-sim/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ryan/argos-sir-sim/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

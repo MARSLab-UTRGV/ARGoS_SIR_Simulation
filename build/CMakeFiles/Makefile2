@@ -44,10 +44,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/argos-sir-sim
+CMAKE_SOURCE_DIR = /home/ryan/argos-sir-sim
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/argos-sir-sim/build
+CMAKE_BINARY_DIR = /home/ryan/argos-sir-sim/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -524,14 +524,14 @@ loop_functions/trajectory_loop_functions/clean: loop_functions/trajectory_loop_f
 controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/all: controllers/footbot_diffusion/CMakeFiles/footbot_diffusion_autogen.dir/all
 	$(MAKE) -f controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/build.make controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/depend
 	$(MAKE) -f controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/build.make controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=22,23,24 "Built target footbot_diffusion"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=22,23,24 "Built target footbot_diffusion"
 .PHONY : controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/all
 
 # Build rule for subdir invocation for target.
 controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 0
 .PHONY : controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/rule
 
 # Convenience name for target.
@@ -551,14 +551,14 @@ controllers/footbot_diffusion/CMakeFiles/footbot_diffusion.dir/clean:
 controllers/footbot_diffusion/CMakeFiles/footbot_diffusion_autogen.dir/all:
 	$(MAKE) -f controllers/footbot_diffusion/CMakeFiles/footbot_diffusion_autogen.dir/build.make controllers/footbot_diffusion/CMakeFiles/footbot_diffusion_autogen.dir/depend
 	$(MAKE) -f controllers/footbot_diffusion/CMakeFiles/footbot_diffusion_autogen.dir/build.make controllers/footbot_diffusion/CMakeFiles/footbot_diffusion_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=25 "Built target footbot_diffusion_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=25 "Built target footbot_diffusion_autogen"
 .PHONY : controllers/footbot_diffusion/CMakeFiles/footbot_diffusion_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 controllers/footbot_diffusion/CMakeFiles/footbot_diffusion_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 controllers/footbot_diffusion/CMakeFiles/footbot_diffusion_autogen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 0
 .PHONY : controllers/footbot_diffusion/CMakeFiles/footbot_diffusion_autogen.dir/rule
 
 # Convenience name for target.
@@ -578,14 +578,14 @@ controllers/footbot_diffusion/CMakeFiles/footbot_diffusion_autogen.dir/clean:
 controllers/SIR_diffusion/CMakeFiles/SIR_diffusion.dir/all: controllers/SIR_diffusion/CMakeFiles/SIR_diffusion_autogen.dir/all
 	$(MAKE) -f controllers/SIR_diffusion/CMakeFiles/SIR_diffusion.dir/build.make controllers/SIR_diffusion/CMakeFiles/SIR_diffusion.dir/depend
 	$(MAKE) -f controllers/SIR_diffusion/CMakeFiles/SIR_diffusion.dir/build.make controllers/SIR_diffusion/CMakeFiles/SIR_diffusion.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=1,2,3 "Built target SIR_diffusion"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=1,2,3 "Built target SIR_diffusion"
 .PHONY : controllers/SIR_diffusion/CMakeFiles/SIR_diffusion.dir/all
 
 # Build rule for subdir invocation for target.
 controllers/SIR_diffusion/CMakeFiles/SIR_diffusion.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 controllers/SIR_diffusion/CMakeFiles/SIR_diffusion.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 0
 .PHONY : controllers/SIR_diffusion/CMakeFiles/SIR_diffusion.dir/rule
 
 # Convenience name for target.
@@ -605,14 +605,14 @@ controllers/SIR_diffusion/CMakeFiles/SIR_diffusion.dir/clean:
 controllers/SIR_diffusion/CMakeFiles/SIR_diffusion_autogen.dir/all:
 	$(MAKE) -f controllers/SIR_diffusion/CMakeFiles/SIR_diffusion_autogen.dir/build.make controllers/SIR_diffusion/CMakeFiles/SIR_diffusion_autogen.dir/depend
 	$(MAKE) -f controllers/SIR_diffusion/CMakeFiles/SIR_diffusion_autogen.dir/build.make controllers/SIR_diffusion/CMakeFiles/SIR_diffusion_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=4 "Built target SIR_diffusion_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=4 "Built target SIR_diffusion_autogen"
 .PHONY : controllers/SIR_diffusion/CMakeFiles/SIR_diffusion_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 controllers/SIR_diffusion/CMakeFiles/SIR_diffusion_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 controllers/SIR_diffusion/CMakeFiles/SIR_diffusion_autogen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 0
 .PHONY : controllers/SIR_diffusion/CMakeFiles/SIR_diffusion_autogen.dir/rule
 
 # Convenience name for target.
@@ -632,14 +632,14 @@ controllers/SIR_diffusion/CMakeFiles/SIR_diffusion_autogen.dir/clean:
 controllers/footbot_synchronization/CMakeFiles/footbot_synchronization.dir/all: controllers/footbot_synchronization/CMakeFiles/footbot_synchronization_autogen.dir/all
 	$(MAKE) -f controllers/footbot_synchronization/CMakeFiles/footbot_synchronization.dir/build.make controllers/footbot_synchronization/CMakeFiles/footbot_synchronization.dir/depend
 	$(MAKE) -f controllers/footbot_synchronization/CMakeFiles/footbot_synchronization.dir/build.make controllers/footbot_synchronization/CMakeFiles/footbot_synchronization.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=49,50,51 "Built target footbot_synchronization"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=49,50,51 "Built target footbot_synchronization"
 .PHONY : controllers/footbot_synchronization/CMakeFiles/footbot_synchronization.dir/all
 
 # Build rule for subdir invocation for target.
 controllers/footbot_synchronization/CMakeFiles/footbot_synchronization.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 controllers/footbot_synchronization/CMakeFiles/footbot_synchronization.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 0
 .PHONY : controllers/footbot_synchronization/CMakeFiles/footbot_synchronization.dir/rule
 
 # Convenience name for target.
@@ -659,14 +659,14 @@ controllers/footbot_synchronization/CMakeFiles/footbot_synchronization.dir/clean
 controllers/footbot_synchronization/CMakeFiles/footbot_synchronization_autogen.dir/all:
 	$(MAKE) -f controllers/footbot_synchronization/CMakeFiles/footbot_synchronization_autogen.dir/build.make controllers/footbot_synchronization/CMakeFiles/footbot_synchronization_autogen.dir/depend
 	$(MAKE) -f controllers/footbot_synchronization/CMakeFiles/footbot_synchronization_autogen.dir/build.make controllers/footbot_synchronization/CMakeFiles/footbot_synchronization_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=52 "Built target footbot_synchronization_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=52 "Built target footbot_synchronization_autogen"
 .PHONY : controllers/footbot_synchronization/CMakeFiles/footbot_synchronization_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 controllers/footbot_synchronization/CMakeFiles/footbot_synchronization_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 controllers/footbot_synchronization/CMakeFiles/footbot_synchronization_autogen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 0
 .PHONY : controllers/footbot_synchronization/CMakeFiles/footbot_synchronization_autogen.dir/rule
 
 # Convenience name for target.
@@ -686,14 +686,14 @@ controllers/footbot_synchronization/CMakeFiles/footbot_synchronization_autogen.d
 controllers/footbot_flocking/CMakeFiles/footbot_flocking.dir/all: controllers/footbot_flocking/CMakeFiles/footbot_flocking_autogen.dir/all
 	$(MAKE) -f controllers/footbot_flocking/CMakeFiles/footbot_flocking.dir/build.make controllers/footbot_flocking/CMakeFiles/footbot_flocking.dir/depend
 	$(MAKE) -f controllers/footbot_flocking/CMakeFiles/footbot_flocking.dir/build.make controllers/footbot_flocking/CMakeFiles/footbot_flocking.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=26,27,28 "Built target footbot_flocking"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=26,27,28 "Built target footbot_flocking"
 .PHONY : controllers/footbot_flocking/CMakeFiles/footbot_flocking.dir/all
 
 # Build rule for subdir invocation for target.
 controllers/footbot_flocking/CMakeFiles/footbot_flocking.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 controllers/footbot_flocking/CMakeFiles/footbot_flocking.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 0
 .PHONY : controllers/footbot_flocking/CMakeFiles/footbot_flocking.dir/rule
 
 # Convenience name for target.
@@ -713,14 +713,14 @@ controllers/footbot_flocking/CMakeFiles/footbot_flocking.dir/clean:
 controllers/footbot_flocking/CMakeFiles/footbot_flocking_autogen.dir/all:
 	$(MAKE) -f controllers/footbot_flocking/CMakeFiles/footbot_flocking_autogen.dir/build.make controllers/footbot_flocking/CMakeFiles/footbot_flocking_autogen.dir/depend
 	$(MAKE) -f controllers/footbot_flocking/CMakeFiles/footbot_flocking_autogen.dir/build.make controllers/footbot_flocking/CMakeFiles/footbot_flocking_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=29 "Built target footbot_flocking_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=29 "Built target footbot_flocking_autogen"
 .PHONY : controllers/footbot_flocking/CMakeFiles/footbot_flocking_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 controllers/footbot_flocking/CMakeFiles/footbot_flocking_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 controllers/footbot_flocking/CMakeFiles/footbot_flocking_autogen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 0
 .PHONY : controllers/footbot_flocking/CMakeFiles/footbot_flocking_autogen.dir/rule
 
 # Convenience name for target.
@@ -740,14 +740,14 @@ controllers/footbot_flocking/CMakeFiles/footbot_flocking_autogen.dir/clean:
 controllers/footbot_gripping/CMakeFiles/footbot_gripping.dir/all: controllers/footbot_gripping/CMakeFiles/footbot_gripping_autogen.dir/all
 	$(MAKE) -f controllers/footbot_gripping/CMakeFiles/footbot_gripping.dir/build.make controllers/footbot_gripping/CMakeFiles/footbot_gripping.dir/depend
 	$(MAKE) -f controllers/footbot_gripping/CMakeFiles/footbot_gripping.dir/build.make controllers/footbot_gripping/CMakeFiles/footbot_gripping.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=34,35,36 "Built target footbot_gripping"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=34,35,36 "Built target footbot_gripping"
 .PHONY : controllers/footbot_gripping/CMakeFiles/footbot_gripping.dir/all
 
 # Build rule for subdir invocation for target.
 controllers/footbot_gripping/CMakeFiles/footbot_gripping.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 controllers/footbot_gripping/CMakeFiles/footbot_gripping.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 0
 .PHONY : controllers/footbot_gripping/CMakeFiles/footbot_gripping.dir/rule
 
 # Convenience name for target.
@@ -767,14 +767,14 @@ controllers/footbot_gripping/CMakeFiles/footbot_gripping.dir/clean:
 controllers/footbot_gripping/CMakeFiles/footbot_gripping_autogen.dir/all:
 	$(MAKE) -f controllers/footbot_gripping/CMakeFiles/footbot_gripping_autogen.dir/build.make controllers/footbot_gripping/CMakeFiles/footbot_gripping_autogen.dir/depend
 	$(MAKE) -f controllers/footbot_gripping/CMakeFiles/footbot_gripping_autogen.dir/build.make controllers/footbot_gripping/CMakeFiles/footbot_gripping_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=37 "Built target footbot_gripping_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=37 "Built target footbot_gripping_autogen"
 .PHONY : controllers/footbot_gripping/CMakeFiles/footbot_gripping_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 controllers/footbot_gripping/CMakeFiles/footbot_gripping_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 controllers/footbot_gripping/CMakeFiles/footbot_gripping_autogen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 0
 .PHONY : controllers/footbot_gripping/CMakeFiles/footbot_gripping_autogen.dir/rule
 
 # Convenience name for target.
@@ -794,14 +794,14 @@ controllers/footbot_gripping/CMakeFiles/footbot_gripping_autogen.dir/clean:
 controllers/footbot_foraging/CMakeFiles/footbot_foraging.dir/all: controllers/footbot_foraging/CMakeFiles/footbot_foraging_autogen.dir/all
 	$(MAKE) -f controllers/footbot_foraging/CMakeFiles/footbot_foraging.dir/build.make controllers/footbot_foraging/CMakeFiles/footbot_foraging.dir/depend
 	$(MAKE) -f controllers/footbot_foraging/CMakeFiles/footbot_foraging.dir/build.make controllers/footbot_foraging/CMakeFiles/footbot_foraging.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=30,31,32 "Built target footbot_foraging"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=30,31,32 "Built target footbot_foraging"
 .PHONY : controllers/footbot_foraging/CMakeFiles/footbot_foraging.dir/all
 
 # Build rule for subdir invocation for target.
 controllers/footbot_foraging/CMakeFiles/footbot_foraging.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 controllers/footbot_foraging/CMakeFiles/footbot_foraging.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 0
 .PHONY : controllers/footbot_foraging/CMakeFiles/footbot_foraging.dir/rule
 
 # Convenience name for target.
@@ -821,14 +821,14 @@ controllers/footbot_foraging/CMakeFiles/footbot_foraging.dir/clean:
 controllers/footbot_foraging/CMakeFiles/footbot_foraging_autogen.dir/all:
 	$(MAKE) -f controllers/footbot_foraging/CMakeFiles/footbot_foraging_autogen.dir/build.make controllers/footbot_foraging/CMakeFiles/footbot_foraging_autogen.dir/depend
 	$(MAKE) -f controllers/footbot_foraging/CMakeFiles/footbot_foraging_autogen.dir/build.make controllers/footbot_foraging/CMakeFiles/footbot_foraging_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=33 "Built target footbot_foraging_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=33 "Built target footbot_foraging_autogen"
 .PHONY : controllers/footbot_foraging/CMakeFiles/footbot_foraging_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 controllers/footbot_foraging/CMakeFiles/footbot_foraging_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 controllers/footbot_foraging/CMakeFiles/footbot_foraging_autogen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 0
 .PHONY : controllers/footbot_foraging/CMakeFiles/footbot_foraging_autogen.dir/rule
 
 # Convenience name for target.
@@ -848,14 +848,14 @@ controllers/footbot_foraging/CMakeFiles/footbot_foraging_autogen.dir/clean:
 controllers/footbot_manualcontrol/CMakeFiles/footbot_manualcontrol.dir/all: controllers/footbot_manualcontrol/CMakeFiles/footbot_manualcontrol_autogen.dir/all
 	$(MAKE) -f controllers/footbot_manualcontrol/CMakeFiles/footbot_manualcontrol.dir/build.make controllers/footbot_manualcontrol/CMakeFiles/footbot_manualcontrol.dir/depend
 	$(MAKE) -f controllers/footbot_manualcontrol/CMakeFiles/footbot_manualcontrol.dir/build.make controllers/footbot_manualcontrol/CMakeFiles/footbot_manualcontrol.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=38,39,40 "Built target footbot_manualcontrol"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=38,39,40 "Built target footbot_manualcontrol"
 .PHONY : controllers/footbot_manualcontrol/CMakeFiles/footbot_manualcontrol.dir/all
 
 # Build rule for subdir invocation for target.
 controllers/footbot_manualcontrol/CMakeFiles/footbot_manualcontrol.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 controllers/footbot_manualcontrol/CMakeFiles/footbot_manualcontrol.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 0
 .PHONY : controllers/footbot_manualcontrol/CMakeFiles/footbot_manualcontrol.dir/rule
 
 # Convenience name for target.
@@ -875,14 +875,14 @@ controllers/footbot_manualcontrol/CMakeFiles/footbot_manualcontrol.dir/clean:
 controllers/footbot_manualcontrol/CMakeFiles/footbot_manualcontrol_autogen.dir/all:
 	$(MAKE) -f controllers/footbot_manualcontrol/CMakeFiles/footbot_manualcontrol_autogen.dir/build.make controllers/footbot_manualcontrol/CMakeFiles/footbot_manualcontrol_autogen.dir/depend
 	$(MAKE) -f controllers/footbot_manualcontrol/CMakeFiles/footbot_manualcontrol_autogen.dir/build.make controllers/footbot_manualcontrol/CMakeFiles/footbot_manualcontrol_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=41 "Built target footbot_manualcontrol_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=41 "Built target footbot_manualcontrol_autogen"
 .PHONY : controllers/footbot_manualcontrol/CMakeFiles/footbot_manualcontrol_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 controllers/footbot_manualcontrol/CMakeFiles/footbot_manualcontrol_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 controllers/footbot_manualcontrol/CMakeFiles/footbot_manualcontrol_autogen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 0
 .PHONY : controllers/footbot_manualcontrol/CMakeFiles/footbot_manualcontrol_autogen.dir/rule
 
 # Convenience name for target.
@@ -902,14 +902,14 @@ controllers/footbot_manualcontrol/CMakeFiles/footbot_manualcontrol_autogen.dir/c
 controllers/footbot_nn/CMakeFiles/footbot_nn.dir/all: controllers/footbot_nn/CMakeFiles/footbot_nn_autogen.dir/all
 	$(MAKE) -f controllers/footbot_nn/CMakeFiles/footbot_nn.dir/build.make controllers/footbot_nn/CMakeFiles/footbot_nn.dir/depend
 	$(MAKE) -f controllers/footbot_nn/CMakeFiles/footbot_nn.dir/build.make controllers/footbot_nn/CMakeFiles/footbot_nn.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=42,43,44,45,46,47 "Built target footbot_nn"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=42,43,44,45,46,47 "Built target footbot_nn"
 .PHONY : controllers/footbot_nn/CMakeFiles/footbot_nn.dir/all
 
 # Build rule for subdir invocation for target.
 controllers/footbot_nn/CMakeFiles/footbot_nn.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 controllers/footbot_nn/CMakeFiles/footbot_nn.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 0
 .PHONY : controllers/footbot_nn/CMakeFiles/footbot_nn.dir/rule
 
 # Convenience name for target.
@@ -929,14 +929,14 @@ controllers/footbot_nn/CMakeFiles/footbot_nn.dir/clean:
 controllers/footbot_nn/CMakeFiles/footbot_nn_autogen.dir/all:
 	$(MAKE) -f controllers/footbot_nn/CMakeFiles/footbot_nn_autogen.dir/build.make controllers/footbot_nn/CMakeFiles/footbot_nn_autogen.dir/depend
 	$(MAKE) -f controllers/footbot_nn/CMakeFiles/footbot_nn_autogen.dir/build.make controllers/footbot_nn/CMakeFiles/footbot_nn_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=48 "Built target footbot_nn_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=48 "Built target footbot_nn_autogen"
 .PHONY : controllers/footbot_nn/CMakeFiles/footbot_nn_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 controllers/footbot_nn/CMakeFiles/footbot_nn_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 controllers/footbot_nn/CMakeFiles/footbot_nn_autogen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 0
 .PHONY : controllers/footbot_nn/CMakeFiles/footbot_nn_autogen.dir/rule
 
 # Convenience name for target.
@@ -956,14 +956,14 @@ controllers/footbot_nn/CMakeFiles/footbot_nn_autogen.dir/clean:
 controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/all: controllers/eyebot_circle/CMakeFiles/eyebot_circle_autogen.dir/all
 	$(MAKE) -f controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/build.make controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/depend
 	$(MAKE) -f controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/build.make controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=13,14,15,16 "Built target eyebot_circle"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=13,14,15,16 "Built target eyebot_circle"
 .PHONY : controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/all
 
 # Build rule for subdir invocation for target.
 controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 0
 .PHONY : controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/rule
 
 # Convenience name for target.
@@ -983,14 +983,14 @@ controllers/eyebot_circle/CMakeFiles/eyebot_circle.dir/clean:
 controllers/eyebot_circle/CMakeFiles/eyebot_circle_autogen.dir/all:
 	$(MAKE) -f controllers/eyebot_circle/CMakeFiles/eyebot_circle_autogen.dir/build.make controllers/eyebot_circle/CMakeFiles/eyebot_circle_autogen.dir/depend
 	$(MAKE) -f controllers/eyebot_circle/CMakeFiles/eyebot_circle_autogen.dir/build.make controllers/eyebot_circle/CMakeFiles/eyebot_circle_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=17 "Built target eyebot_circle_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=17 "Built target eyebot_circle_autogen"
 .PHONY : controllers/eyebot_circle/CMakeFiles/eyebot_circle_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 controllers/eyebot_circle/CMakeFiles/eyebot_circle_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 controllers/eyebot_circle/CMakeFiles/eyebot_circle_autogen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 0
 .PHONY : controllers/eyebot_circle/CMakeFiles/eyebot_circle_autogen.dir/rule
 
 # Convenience name for target.
@@ -1010,14 +1010,14 @@ controllers/eyebot_circle/CMakeFiles/eyebot_circle_autogen.dir/clean:
 controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/all: controllers/eyebot_flocking/CMakeFiles/eyebot_flocking_autogen.dir/all
 	$(MAKE) -f controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/build.make controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/depend
 	$(MAKE) -f controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/build.make controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=18,19,20 "Built target eyebot_flocking"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=18,19,20 "Built target eyebot_flocking"
 .PHONY : controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/all
 
 # Build rule for subdir invocation for target.
 controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 0
 .PHONY : controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/rule
 
 # Convenience name for target.
@@ -1037,14 +1037,14 @@ controllers/eyebot_flocking/CMakeFiles/eyebot_flocking.dir/clean:
 controllers/eyebot_flocking/CMakeFiles/eyebot_flocking_autogen.dir/all:
 	$(MAKE) -f controllers/eyebot_flocking/CMakeFiles/eyebot_flocking_autogen.dir/build.make controllers/eyebot_flocking/CMakeFiles/eyebot_flocking_autogen.dir/depend
 	$(MAKE) -f controllers/eyebot_flocking/CMakeFiles/eyebot_flocking_autogen.dir/build.make controllers/eyebot_flocking/CMakeFiles/eyebot_flocking_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=21 "Built target eyebot_flocking_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=21 "Built target eyebot_flocking_autogen"
 .PHONY : controllers/eyebot_flocking/CMakeFiles/eyebot_flocking_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 controllers/eyebot_flocking/CMakeFiles/eyebot_flocking_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 controllers/eyebot_flocking/CMakeFiles/eyebot_flocking_autogen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 0
 .PHONY : controllers/eyebot_flocking/CMakeFiles/eyebot_flocking_autogen.dir/rule
 
 # Convenience name for target.
@@ -1064,14 +1064,14 @@ controllers/eyebot_flocking/CMakeFiles/eyebot_flocking_autogen.dir/clean:
 controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/all: controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance_autogen.dir/all
 	$(MAKE) -f controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/build.make controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/depend
 	$(MAKE) -f controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/build.make controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=9,10,11 "Built target epuck_obstacleavoidance"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=9,10,11 "Built target epuck_obstacleavoidance"
 .PHONY : controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/all
 
 # Build rule for subdir invocation for target.
 controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 0
 .PHONY : controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/rule
 
 # Convenience name for target.
@@ -1091,14 +1091,14 @@ controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance.dir/clean
 controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance_autogen.dir/all:
 	$(MAKE) -f controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance_autogen.dir/build.make controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance_autogen.dir/depend
 	$(MAKE) -f controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance_autogen.dir/build.make controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=12 "Built target epuck_obstacleavoidance_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=12 "Built target epuck_obstacleavoidance_autogen"
 .PHONY : controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance_autogen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 0
 .PHONY : controllers/epuck_obstacleavoidance/CMakeFiles/epuck_obstacleavoidance_autogen.dir/rule
 
 # Convenience name for target.
@@ -1119,14 +1119,14 @@ loop_functions/foraging_loop_functions/CMakeFiles/foraging_loop_functions.dir/al
 loop_functions/foraging_loop_functions/CMakeFiles/foraging_loop_functions.dir/all: loop_functions/foraging_loop_functions/CMakeFiles/foraging_loop_functions_autogen.dir/all
 	$(MAKE) -f loop_functions/foraging_loop_functions/CMakeFiles/foraging_loop_functions.dir/build.make loop_functions/foraging_loop_functions/CMakeFiles/foraging_loop_functions.dir/depend
 	$(MAKE) -f loop_functions/foraging_loop_functions/CMakeFiles/foraging_loop_functions.dir/build.make loop_functions/foraging_loop_functions/CMakeFiles/foraging_loop_functions.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=53,54,55,56 "Built target foraging_loop_functions"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=53,54,55,56 "Built target foraging_loop_functions"
 .PHONY : loop_functions/foraging_loop_functions/CMakeFiles/foraging_loop_functions.dir/all
 
 # Build rule for subdir invocation for target.
 loop_functions/foraging_loop_functions/CMakeFiles/foraging_loop_functions.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 loop_functions/foraging_loop_functions/CMakeFiles/foraging_loop_functions.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 0
 .PHONY : loop_functions/foraging_loop_functions/CMakeFiles/foraging_loop_functions.dir/rule
 
 # Convenience name for target.
@@ -1146,14 +1146,14 @@ loop_functions/foraging_loop_functions/CMakeFiles/foraging_loop_functions.dir/cl
 loop_functions/foraging_loop_functions/CMakeFiles/foraging_loop_functions_autogen.dir/all: controllers/footbot_foraging/CMakeFiles/footbot_foraging.dir/all
 	$(MAKE) -f loop_functions/foraging_loop_functions/CMakeFiles/foraging_loop_functions_autogen.dir/build.make loop_functions/foraging_loop_functions/CMakeFiles/foraging_loop_functions_autogen.dir/depend
 	$(MAKE) -f loop_functions/foraging_loop_functions/CMakeFiles/foraging_loop_functions_autogen.dir/build.make loop_functions/foraging_loop_functions/CMakeFiles/foraging_loop_functions_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=57 "Built target foraging_loop_functions_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=57 "Built target foraging_loop_functions_autogen"
 .PHONY : loop_functions/foraging_loop_functions/CMakeFiles/foraging_loop_functions_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 loop_functions/foraging_loop_functions/CMakeFiles/foraging_loop_functions_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 loop_functions/foraging_loop_functions/CMakeFiles/foraging_loop_functions_autogen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 0
 .PHONY : loop_functions/foraging_loop_functions/CMakeFiles/foraging_loop_functions_autogen.dir/rule
 
 # Convenience name for target.
@@ -1175,14 +1175,14 @@ loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir
 loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir/all: loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions_autogen.dir/all
 	$(MAKE) -f loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir/build.make loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir/depend
 	$(MAKE) -f loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir/build.make loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=75,76,77 "Built target mpga_phototaxis_loop_functions"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=75,76,77 "Built target mpga_phototaxis_loop_functions"
 .PHONY : loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir/all
 
 # Build rule for subdir invocation for target.
 loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 16
 	$(MAKE) -f CMakeFiles/Makefile2 loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 0
 .PHONY : loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir/rule
 
 # Convenience name for target.
@@ -1202,14 +1202,14 @@ loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir
 loop_functions/mpga_loop_functions/CMakeFiles/mpga.dir/all: loop_functions/mpga_loop_functions/CMakeFiles/mpga_autogen.dir/all
 	$(MAKE) -f loop_functions/mpga_loop_functions/CMakeFiles/mpga.dir/build.make loop_functions/mpga_loop_functions/CMakeFiles/mpga.dir/depend
 	$(MAKE) -f loop_functions/mpga_loop_functions/CMakeFiles/mpga.dir/build.make loop_functions/mpga_loop_functions/CMakeFiles/mpga.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=66,67,68,69 "Built target mpga"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=66,67,68,69 "Built target mpga"
 .PHONY : loop_functions/mpga_loop_functions/CMakeFiles/mpga.dir/all
 
 # Build rule for subdir invocation for target.
 loop_functions/mpga_loop_functions/CMakeFiles/mpga.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 loop_functions/mpga_loop_functions/CMakeFiles/mpga.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 0
 .PHONY : loop_functions/mpga_loop_functions/CMakeFiles/mpga.dir/rule
 
 # Convenience name for target.
@@ -1230,14 +1230,14 @@ loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions_aut
 loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions_autogen.dir/all: loop_functions/mpga_loop_functions/CMakeFiles/mpga.dir/all
 	$(MAKE) -f loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions_autogen.dir/build.make loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions_autogen.dir/depend
 	$(MAKE) -f loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions_autogen.dir/build.make loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=78 "Built target mpga_phototaxis_loop_functions_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=78 "Built target mpga_phototaxis_loop_functions_autogen"
 .PHONY : loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions_autogen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 0
 .PHONY : loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions_autogen.dir/rule
 
 # Convenience name for target.
@@ -1257,14 +1257,14 @@ loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions_aut
 loop_functions/mpga_loop_functions/CMakeFiles/mpga_autogen.dir/all:
 	$(MAKE) -f loop_functions/mpga_loop_functions/CMakeFiles/mpga_autogen.dir/build.make loop_functions/mpga_loop_functions/CMakeFiles/mpga_autogen.dir/depend
 	$(MAKE) -f loop_functions/mpga_loop_functions/CMakeFiles/mpga_autogen.dir/build.make loop_functions/mpga_loop_functions/CMakeFiles/mpga_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=70 "Built target mpga_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=70 "Built target mpga_autogen"
 .PHONY : loop_functions/mpga_loop_functions/CMakeFiles/mpga_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 loop_functions/mpga_loop_functions/CMakeFiles/mpga_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 loop_functions/mpga_loop_functions/CMakeFiles/mpga_autogen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 0
 .PHONY : loop_functions/mpga_loop_functions/CMakeFiles/mpga_autogen.dir/rule
 
 # Convenience name for target.
@@ -1284,14 +1284,14 @@ loop_functions/mpga_loop_functions/CMakeFiles/mpga_autogen.dir/clean:
 loop_functions/custom_distributions_loop_functions/CMakeFiles/custom_distributions_loop_functions.dir/all: loop_functions/custom_distributions_loop_functions/CMakeFiles/custom_distributions_loop_functions_autogen.dir/all
 	$(MAKE) -f loop_functions/custom_distributions_loop_functions/CMakeFiles/custom_distributions_loop_functions.dir/build.make loop_functions/custom_distributions_loop_functions/CMakeFiles/custom_distributions_loop_functions.dir/depend
 	$(MAKE) -f loop_functions/custom_distributions_loop_functions/CMakeFiles/custom_distributions_loop_functions.dir/build.make loop_functions/custom_distributions_loop_functions/CMakeFiles/custom_distributions_loop_functions.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=5,6,7 "Built target custom_distributions_loop_functions"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=5,6,7 "Built target custom_distributions_loop_functions"
 .PHONY : loop_functions/custom_distributions_loop_functions/CMakeFiles/custom_distributions_loop_functions.dir/all
 
 # Build rule for subdir invocation for target.
 loop_functions/custom_distributions_loop_functions/CMakeFiles/custom_distributions_loop_functions.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 loop_functions/custom_distributions_loop_functions/CMakeFiles/custom_distributions_loop_functions.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 0
 .PHONY : loop_functions/custom_distributions_loop_functions/CMakeFiles/custom_distributions_loop_functions.dir/rule
 
 # Convenience name for target.
@@ -1311,14 +1311,14 @@ loop_functions/custom_distributions_loop_functions/CMakeFiles/custom_distributio
 loop_functions/custom_distributions_loop_functions/CMakeFiles/custom_distributions_loop_functions_autogen.dir/all:
 	$(MAKE) -f loop_functions/custom_distributions_loop_functions/CMakeFiles/custom_distributions_loop_functions_autogen.dir/build.make loop_functions/custom_distributions_loop_functions/CMakeFiles/custom_distributions_loop_functions_autogen.dir/depend
 	$(MAKE) -f loop_functions/custom_distributions_loop_functions/CMakeFiles/custom_distributions_loop_functions_autogen.dir/build.make loop_functions/custom_distributions_loop_functions/CMakeFiles/custom_distributions_loop_functions_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=8 "Built target custom_distributions_loop_functions_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=8 "Built target custom_distributions_loop_functions_autogen"
 .PHONY : loop_functions/custom_distributions_loop_functions/CMakeFiles/custom_distributions_loop_functions_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 loop_functions/custom_distributions_loop_functions/CMakeFiles/custom_distributions_loop_functions_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 loop_functions/custom_distributions_loop_functions/CMakeFiles/custom_distributions_loop_functions_autogen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 0
 .PHONY : loop_functions/custom_distributions_loop_functions/CMakeFiles/custom_distributions_loop_functions_autogen.dir/rule
 
 # Convenience name for target.
@@ -1338,14 +1338,14 @@ loop_functions/custom_distributions_loop_functions/CMakeFiles/custom_distributio
 loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/all: loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions_autogen.dir/all
 	$(MAKE) -f loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/build.make loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/depend
 	$(MAKE) -f loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/build.make loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=79,80,81,82 "Built target trajectory_loop_functions"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=79,80,81,82 "Built target trajectory_loop_functions"
 .PHONY : loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/all
 
 # Build rule for subdir invocation for target.
 loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 0
 .PHONY : loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir/rule
 
 # Convenience name for target.
@@ -1365,14 +1365,14 @@ loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.di
 loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions_autogen.dir/all:
 	$(MAKE) -f loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions_autogen.dir/build.make loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions_autogen.dir/depend
 	$(MAKE) -f loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions_autogen.dir/build.make loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=83 "Built target trajectory_loop_functions_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=83 "Built target trajectory_loop_functions_autogen"
 .PHONY : loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions_autogen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 0
 .PHONY : loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions_autogen.dir/rule
 
 # Convenience name for target.
@@ -1392,14 +1392,14 @@ loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions_au
 loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/all: loop_functions/id_loop_functions/CMakeFiles/id_loop_functions_autogen.dir/all
 	$(MAKE) -f loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/build.make loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/depend
 	$(MAKE) -f loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/build.make loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=58,59,60 "Built target id_loop_functions"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=58,59,60 "Built target id_loop_functions"
 .PHONY : loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/all
 
 # Build rule for subdir invocation for target.
 loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 0
 .PHONY : loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/rule
 
 # Convenience name for target.
@@ -1419,14 +1419,14 @@ loop_functions/id_loop_functions/CMakeFiles/id_loop_functions.dir/clean:
 loop_functions/id_loop_functions/CMakeFiles/id_loop_functions_autogen.dir/all:
 	$(MAKE) -f loop_functions/id_loop_functions/CMakeFiles/id_loop_functions_autogen.dir/build.make loop_functions/id_loop_functions/CMakeFiles/id_loop_functions_autogen.dir/depend
 	$(MAKE) -f loop_functions/id_loop_functions/CMakeFiles/id_loop_functions_autogen.dir/build.make loop_functions/id_loop_functions/CMakeFiles/id_loop_functions_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=61 "Built target id_loop_functions_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=61 "Built target id_loop_functions_autogen"
 .PHONY : loop_functions/id_loop_functions/CMakeFiles/id_loop_functions_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 loop_functions/id_loop_functions/CMakeFiles/id_loop_functions_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 loop_functions/id_loop_functions/CMakeFiles/id_loop_functions_autogen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 0
 .PHONY : loop_functions/id_loop_functions/CMakeFiles/id_loop_functions_autogen.dir/rule
 
 # Convenience name for target.
@@ -1447,14 +1447,14 @@ loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functi
 loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functions.dir/all: loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functions_autogen.dir/all
 	$(MAKE) -f loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functions.dir/build.make loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functions.dir/depend
 	$(MAKE) -f loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functions.dir/build.make loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functions.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=62,63,64 "Built target manualcontrol_loop_functions"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=62,63,64 "Built target manualcontrol_loop_functions"
 .PHONY : loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functions.dir/all
 
 # Build rule for subdir invocation for target.
 loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functions.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functions.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 0
 .PHONY : loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functions.dir/rule
 
 # Convenience name for target.
@@ -1474,14 +1474,14 @@ loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functi
 loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functions_autogen.dir/all: controllers/footbot_manualcontrol/CMakeFiles/footbot_manualcontrol.dir/all
 	$(MAKE) -f loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functions_autogen.dir/build.make loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functions_autogen.dir/depend
 	$(MAKE) -f loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functions_autogen.dir/build.make loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functions_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=65 "Built target manualcontrol_loop_functions_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=65 "Built target manualcontrol_loop_functions_autogen"
 .PHONY : loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functions_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functions_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functions_autogen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 0
 .PHONY : loop_functions/manualcontrol_loop_functions/CMakeFiles/manualcontrol_loop_functions_autogen.dir/rule
 
 # Convenience name for target.
@@ -1504,14 +1504,14 @@ embedding/mpga/CMakeFiles/mpga_phototaxis.dir/all: loop_functions/mpga_loop_func
 embedding/mpga/CMakeFiles/mpga_phototaxis.dir/all: embedding/mpga/CMakeFiles/mpga_phototaxis_autogen.dir/all
 	$(MAKE) -f embedding/mpga/CMakeFiles/mpga_phototaxis.dir/build.make embedding/mpga/CMakeFiles/mpga_phototaxis.dir/depend
 	$(MAKE) -f embedding/mpga/CMakeFiles/mpga_phototaxis.dir/build.make embedding/mpga/CMakeFiles/mpga_phototaxis.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=71,72,73 "Built target mpga_phototaxis"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=71,72,73 "Built target mpga_phototaxis"
 .PHONY : embedding/mpga/CMakeFiles/mpga_phototaxis.dir/all
 
 # Build rule for subdir invocation for target.
 embedding/mpga/CMakeFiles/mpga_phototaxis.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 20
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 20
 	$(MAKE) -f CMakeFiles/Makefile2 embedding/mpga/CMakeFiles/mpga_phototaxis.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 0
 .PHONY : embedding/mpga/CMakeFiles/mpga_phototaxis.dir/rule
 
 # Convenience name for target.
@@ -1532,14 +1532,14 @@ embedding/mpga/CMakeFiles/mpga_phototaxis_autogen.dir/all: controllers/footbot_n
 embedding/mpga/CMakeFiles/mpga_phototaxis_autogen.dir/all: loop_functions/mpga_loop_functions/CMakeFiles/mpga_phototaxis_loop_functions.dir/all
 	$(MAKE) -f embedding/mpga/CMakeFiles/mpga_phototaxis_autogen.dir/build.make embedding/mpga/CMakeFiles/mpga_phototaxis_autogen.dir/depend
 	$(MAKE) -f embedding/mpga/CMakeFiles/mpga_phototaxis_autogen.dir/build.make embedding/mpga/CMakeFiles/mpga_phototaxis_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/argos-sir-sim/build/CMakeFiles --progress-num=74 "Built target mpga_phototaxis_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ryan/argos-sir-sim/build/CMakeFiles --progress-num=74 "Built target mpga_phototaxis_autogen"
 .PHONY : embedding/mpga/CMakeFiles/mpga_phototaxis_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 embedding/mpga/CMakeFiles/mpga_phototaxis_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 17
 	$(MAKE) -f CMakeFiles/Makefile2 embedding/mpga/CMakeFiles/mpga_phototaxis_autogen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/argos-sir-sim/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/argos-sir-sim/build/CMakeFiles 0
 .PHONY : embedding/mpga/CMakeFiles/mpga_phototaxis_autogen.dir/rule
 
 # Convenience name for target.

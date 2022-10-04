@@ -16,18 +16,31 @@
   <!-- *************** -->
   <controllers>
 
-    <footbot_sir_diffusion_controller id="fdc"
+    <fb_sir_diffusion_susceptible_controller id="fdc_s"
                                   library="build/controllers/SIR_diffusion/libSIR_diffusion.so">
       <actuators>
         <differential_steering implementation="default" />
         <leds implementation="default" medium="leds" />
       </actuators>
       <sensors>
-        <footbot_proximity implementation="default" show_rays="true" />
-        <colored_blob_omnidirectional_camera implementation="rot_z_only" medium="leds" />
+        <footbot_proximity implementation="default"/>
+        <colored_blob_omnidirectional_camera implementation="rot_z_only" medium="leds" show_rays="true"/>
       </sensors>
       <params alpha="7.5" delta="0.1" velocity="5" />
-    </footbot_sir_diffusion_controller>
+    </fb_sir_diffusion_susceptible_controller>
+
+    <fb_sir_diffusion_infected_controller id="fdc_i"
+                                  library="build/controllers/SIR_diffusion/libSIR_diffusion.so">
+      <actuators>
+        <differential_steering implementation="default" />
+        <leds implementation="default" medium="leds" />
+      </actuators>
+      <sensors>
+        <footbot_proximity implementation="default"/>
+        <colored_blob_omnidirectional_camera implementation="rot_z_only" medium="leds" show_rays="true"/>
+      </sensors>
+      <params alpha="7.5" delta="0.1" velocity="5" />
+    </fb_sir_diffusion_infected_controller>
 
   </controllers>
 
@@ -58,17 +71,17 @@
         from a gaussian distribution, whose mean is zero degrees and
         standard deviation is 360 degrees.
     -->
-    <!--
-    <distribute>
+    
+    <!-- <distribute>
       <position method="uniform" min="-2,-2,0" max="2,2,0" />
       <orientation method="gaussian" mean="0,0,0" std_dev="360,0,0" />
       <entity quantity="10" max_trials="100">
-        <foot-bot id="fb">
-          <controller config="fdc" />
+        <foot-bot id="fb" omnidirectional_camera_aperture="40.890978678521">
+          <controller config="fdc_s" />
         </foot-bot>
       </entity>
-    </distribute>
-    -->
+    </distribute> -->
+  
 
     <!--
       The footbot has a body of a certain height Hb on top of which there's a small tube of a certain height Ht. At the end of the tube, a convex mirror is installed that reflects the floor onto a camera at the base of the tube.
@@ -96,16 +109,47 @@
 
       For R = 1(grid unit), Alpha = 73.896585285972(degrees)
 
+      For R = 0.5, Alpha = 59.997885967845
+
+      For R = 0.25, Alpha = 40.890978678521  
+
     -->
 
-    <foot-bot id="fb_0" omnidirectional_camera_aperture="73.896585285972">
-      <body position="0,0,0" orientation="0,0,0" />
-      <controller config="fdc"/>
+    <foot-bot id="fb_0" omnidirectional_camera_aperture="40.890978678521">
+      <body position="0,0.5,0" orientation="0,0,0" />
+      <controller config="fdc_s"/>
     </foot-bot>
 
-    <foot-bot id="fb_1" omnidirectional_camera_aperture="73.896585285972">
-      <body position="-0.5,-0.5,0" orientation="0,0,0" />
-      <controller config="fdc"/>
+    <foot-bot id="fb_1" omnidirectional_camera_aperture="40.890978678521">
+      <body position="0.5,0.5,0" orientation="-10,0,0" />
+      <controller config="fdc_s"/>
+    </foot-bot>
+
+    <foot-bot id="fb_2" omnidirectional_camera_aperture="40.890978678521">
+      <body position="1,1,0" orientation="-20,0,0" />
+      <controller config="fdc_s"/>
+    </foot-bot>
+
+    <foot-bot id="fb_3" omnidirectional_camera_aperture="40.890978678521">
+      <body position="-1,1.5,0" orientation="-30,0,0" />
+      <controller config="fdc_s"/>
+    </foot-bot>
+
+    <foot-bot id="fb_4" omnidirectional_camera_aperture="40.890978678521">
+      <body position="1,0.5,0" orientation="-40,0,0" />
+      <controller config="fdc_s"/>
+    </foot-bot>
+
+    <foot-bot id="fb_5" omnidirectional_camera_aperture="40.890978678521">
+      <body position="1.5,1,0" orientation="-50,0,0" />
+      <controller config="fdc_s"/>
+    </foot-bot>
+
+    <!-- Infected bot here -->
+
+    <foot-bot id="fb_6" omnidirectional_camera_aperture="40.890978678521">
+      <body position="0,-0.5,0" orientation="60,0,0" />
+      <controller config="fdc_i"/>
     </foot-bot>
 
     <!--

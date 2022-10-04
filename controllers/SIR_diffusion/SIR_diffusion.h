@@ -45,7 +45,6 @@
    */
 #include <argos3/plugins/robots/generic/control_interface/ci_colored_blob_omnidirectional_camera_sensor.h>
 
-
 /* END NEW */
 
 /*
@@ -54,18 +53,25 @@
  */
 using namespace argos;
 
+
+/*************************************************************************************************************************************/
+
+            /* FOR INITIALLY SUSCEPTIBLE BOT */
+
+/*************************************************************************************************************************************/
+
 /*
  * A controller is simply an implementation of the CCI_Controller class.
  */
-class CFootBot_SIR_Diffusion : public CCI_Controller {
+class Cfb_SIR_diffusion_susceptible : public CCI_Controller {
 
 public:
 
    /* Class constructor. */
-   CFootBot_SIR_Diffusion();
+   Cfb_SIR_diffusion_susceptible();
 
    /* Class destructor. */
-   virtual ~CFootBot_SIR_Diffusion() {}
+   virtual ~Cfb_SIR_diffusion_susceptible() {}
 
    /*
     * This function initializes the controller.
@@ -111,6 +117,126 @@ private:
    CCI_LEDsActuator* m_pcLEDs;
    /* Pointer to the colored blob camera */
    CCI_ColoredBlobOmnidirectionalCameraSensor* m_pcBlob;
+
+  /* private function to handle SIR states */
+   virtual void SIR();
+
+   /* counter for infection length */
+   unsigned int count;
+
+   /* constant for infection duration */
+   const unsigned int INFECTION_DURATION = 2400; // ticks
+
+   /* state of the bot (initially susceptible = 0) */
+   int state = 0;
+
+
+   /* END NEW */
+
+   /*
+    * The following variables are used as parameters for the
+    * algorithm. You can set their value in the <parameters> section
+    * of the XML configuration file, under the
+    * <controllers><footbot_diffusion_controller> section.
+    */
+
+   /* Maximum tolerance for the angle between
+    * the robot heading direction and
+    * the closest obstacle detected. */
+   CDegrees m_cAlpha;
+   /* Maximum tolerance for the proximity reading between
+    * the robot and the closest obstacle.
+    * The proximity reading is 0 when nothing is detected
+    * and grows exponentially to 1 when the obstacle is
+    * touching the robot.
+    */
+   Real m_fDelta;
+   /* Wheel speed. */
+   Real m_fWheelVelocity;
+   /* Angle tolerance range to go straight.
+    * It is set to [-alpha,alpha]. */
+   CRange<CRadians> m_cGoStraightAngleRange;
+
+};
+
+
+/*************************************************************************************************************************************/
+
+            /* FOR INITIALLY INFECTED BOT */
+
+/*************************************************************************************************************************************/
+
+
+/*
+ * A controller is simply an implementation of the CCI_Controller class.
+ */
+class Cfb_SIR_diffusion_infected : public CCI_Controller {
+
+public:
+
+   /* Class constructor. */
+   Cfb_SIR_diffusion_infected();
+
+   /* Class destructor. */
+   virtual ~Cfb_SIR_diffusion_infected() {}
+
+   /*
+    * This function initializes the controller.
+    * The 't_node' variable points to the <parameters> section in the XML
+    * file in the <controllers><footbot_diffusion_controller> section.
+    */
+   virtual void Init(TConfigurationNode& t_node);
+
+   /*
+    * This function is called once every time step.
+    * The length of the time step is set in the XML file.
+    */
+   virtual void ControlStep();
+
+   /*
+    * This function resets the controller to its state right after the
+    * Init().
+    * It is called when you press the reset button in the GUI.
+    * In this example controller there is no need for resetting anything,
+    * so the function could have been omitted. It's here just for
+    * completeness.
+    */
+   virtual void Reset() {}
+
+   /*
+    * Called to cleanup what done by Init() when the experiment finishes.
+    * In this example controller there is no need for clean anything up,
+    * so the function could have been omitted. It's here just for
+    * completeness.
+    */
+   virtual void Destroy() {}
+
+private:
+
+   /* Pointer to the differential steering actuator */
+   CCI_DifferentialSteeringActuator* m_pcWheels;
+   /* Pointer to the foot-bot proximity sensor */
+   CCI_FootBotProximitySensor* m_pcProximity;
+
+   /* NEW */
+
+   /* Pointer to the LED actuator */
+   CCI_LEDsActuator* m_pcLEDs;
+   /* Pointer to the colored blob camera */
+   CCI_ColoredBlobOmnidirectionalCameraSensor* m_pcBlob;
+
+   /* private function to handle SIR states */
+   virtual void SIR();
+
+   /* counter for infection length */
+   unsigned int count;
+
+   /* constant for infection duration */
+   const unsigned int INFECTION_DURATION = 2400; // ticks
+
+   /* state of the bot (initially infected = 1) */
+   int state = 1;
+
 
    /* END NEW */
 

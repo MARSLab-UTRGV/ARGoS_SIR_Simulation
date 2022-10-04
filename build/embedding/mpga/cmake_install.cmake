@@ -1,4 +1,4 @@
-# Install script for directory: /root/argos-sir-sim/embedding/mpga
+# Install script for directory: /home/ryan/argos-sir-sim/embedding/mpga
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
