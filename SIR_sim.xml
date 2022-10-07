@@ -2,7 +2,7 @@
 <argos-configuration>
 	<framework>
 		<system threads="0"/>
-		<experiment length="0" ticks_per_second="10" random_seed="124"/>
+		<experiment length="0" ticks_per_second="20" random_seed="124"/>
 	</framework>
 	<controllers>
 		<fb_sir_diffusion_susceptible_controller id="fdc_s" library="build/controllers/SIR_diffusion/libSIR_diffusion.so">
@@ -28,19 +28,37 @@
 			<params alpha="7.5" delta="0.1" velocity="5"/>
 		</fb_sir_diffusion_infected_controller>
 	</controllers>
-	<arena size="5,5,1" center="0,0,0.5">
-		<box id="wall_north" size="4,0.1,0.5" movable="false">
-			<box position="0,2,0" orientation="0,0,0"/>
+	<arena size="10,10,1" center="0,0,0.5">
+		<box id="wall_north" size="10,0.1,0.5" movable="false">
+			<body position="0,5.0,0" orientation="0,0,0"/>
 		</box>
-		<box id="wall_south" size="4,0.1,0.5" movable="false">
-			<box position="0,-2,0" orientation="0,0,0"/>
+		<box id="wall_south" size="10,0.1,0.5" movable="false">
+			<body position="0,-5.0,0" orientation="0,0,0"/>
 		</box>
-		<box id="wall_east" size="0.1,4,0.5" movable="false">
-			<box position="2,0,0" orientation="0,0,0"/>
+		<box id="wall_east" size="0.1,10,0.5" movable="false">
+			<body position="5.0,0,0" orientation="0,0,0"/>
 		</box>
-		<box id="wall_west" size="0.1,4,0.5" movable="false">
-			<box position="-2,0,0" orientation="0,0,0"/>
+		<box id="wall_west" size="0.1,10,0.5" movable="false">
+			<body position="-5.0,0,0" orientation="0,0,0"/>
 		</box>
+		<distribute>
+			<position method="uniform" min="-5.0,-5.0,0" max="5.0,5.0,0"/>
+			<orientation method="gaussian" mean="0,0,0" std_dev="360,0,0"/>
+			<entity quantity="40" max_trials="100">
+				<foot-bot id="fb" omnidirectional_camera_aperture="40.890978678542766">
+					<controller config="fdc_s"/>
+				</foot-bot>
+			</entity>
+		</distribute>
+		<distribute>
+			<position method="uniform" min="-5.0,-5.0,0" max="5.0,5.0,0"/>
+			<orientation method="gaussian" mean="0,0,0" std_dev="360,0,0"/>
+			<entity quantity="1" max_trials="100">
+				<foot-bot id="fb_i" omnidirectional_camera_aperture="40.890978678542766">
+					<controller config="fdc_i"/>
+				</foot-bot>
+			</entity>
+		</distribute>
 	</arena>
 	<physics_engines>
 		<dynamics2d id="dyn2d"/>
@@ -52,7 +70,7 @@
 		<qt-opengl>
 			<camera>
 				<placements>
-					<placement index="0" position="0,0,13" look_at="0,0,0" up="1,0,0" lens_focal_length="65"/>
+					<placement index="0" position="0,0,13" look_at="0,0,0" up="1,0,0" lens_focal_length="35"/>
 				</placements>
 			</camera>
 		</qt-opengl>
