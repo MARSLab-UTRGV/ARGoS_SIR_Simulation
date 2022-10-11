@@ -25,4 +25,6 @@ argos3/plugins/robots/generic/control_interface/ci_leds_actuator.h
 -
 argos3/plugins/robots/generic/control_interface/ci_colored_blob_omnidirectional_camera_sensor.h
 -
+fstream
+-
 

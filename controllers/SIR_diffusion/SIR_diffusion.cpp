@@ -9,10 +9,16 @@
 
 using namespace std;
 
+/* for data collection */
+ofstream SIR_data;
+
 /****************************************/
 
 
 void Cfb_SIR_diffusion_susceptible::SIR(){
+
+   /* update step counter */
+   step_count++;
 
    /* Get the camera readings */
    const CCI_ColoredBlobOmnidirectionalCameraSensor::SReadings& sReadings = m_pcBlob->GetReadings();
@@ -56,6 +62,15 @@ void Cfb_SIR_diffusion_susceptible::SIR(){
          cout << "INVALID STATE/INPUT" << endl;
          break;
    }
+
+   /* write data to file */
+   if(SIR_data.is_open()){
+      SIR_data << step_count << ", " << state << endl;
+   } else {
+      throw 1;
+      cout << "ERR: 'SIR_data.txt' could not be opened for writing..." << endl;
+   }
+
 }
 
 /****************************************/
@@ -109,6 +124,9 @@ void Cfb_SIR_diffusion_susceptible::Init(TConfigurationNode& t_node) {
    m_pcBlob->Enable();
    /* Set color GREEN */
    m_pcLEDs->SetAllColors(CColor::GREEN);
+
+   // for data collection
+   SIR_data.open ("SIR_data.txt", ios::out | ios::app);
 
    /* END NEW */
    /*
@@ -168,6 +186,16 @@ void Cfb_SIR_diffusion_susceptible::ControlStep() {
 /****************************************/
 /****************************************/
 
+void Cfb_SIR_diffusion_susceptible::Destroy(){
+   /* close file if open */
+   if (SIR_data.is_open()){
+      SIR_data.close();
+   }
+}
+
+/****************************************/
+/****************************************/
+
 /*
  * This statement notifies ARGoS of the existence of the controller.
  * It binds the class passed as first argument to the string passed as
@@ -202,6 +230,9 @@ Cfb_SIR_diffusion_infected::Cfb_SIR_diffusion_infected() :
 
 void Cfb_SIR_diffusion_infected::SIR(){
 
+   /* update step counter */
+   step_count++;
+
    /* An initially infected bot does not need to worry about other bots (blob camera not needed) */
 
    // once the infection duration time is met, change to recovered
@@ -212,6 +243,14 @@ void Cfb_SIR_diffusion_infected::SIR(){
 
    // recovered bots don't need to worry about anything as they are immune
    if (state == 2) {}// do nothing
+
+   /* write data to file */
+   if(SIR_data.is_open()){
+      SIR_data << step_count << ", " << state << endl;
+   } else {
+      throw 1;
+      cout << "ERR: 'SIR_data.txt' could not be opened for writing..." << endl;
+   }
 
 }
 
@@ -252,6 +291,9 @@ void Cfb_SIR_diffusion_infected::Init(TConfigurationNode& t_node) {
    m_pcBlob->Enable();
    /* Set color GREEN */
    m_pcLEDs->SetAllColors(CColor::RED);
+
+   // for data collection
+   SIR_data.open ("SIR_data.txt", ios::out | ios::app);
 
    /* END NEW */
    /*
@@ -306,6 +348,16 @@ void Cfb_SIR_diffusion_infected::ControlStep() {
       else {
          m_pcWheels->SetLinearVelocity(0.0f, m_fWheelVelocity);
       }
+   }
+}
+
+/****************************************/
+/****************************************/
+
+void Cfb_SIR_diffusion_infected::Destroy(){
+   /* close file if open */
+   if (SIR_data.is_open()){
+      SIR_data.close();
    }
 }
 

@@ -45,6 +45,9 @@
    */
 #include <argos3/plugins/robots/generic/control_interface/ci_colored_blob_omnidirectional_camera_sensor.h>
 
+/* For data collection */
+#include <fstream>
+
 /* END NEW */
 
 /*
@@ -102,7 +105,7 @@ public:
     * so the function could have been omitted. It's here just for
     * completeness.
     */
-   virtual void Destroy() {}
+   virtual void Destroy();
 
 private:
 
@@ -122,14 +125,16 @@ private:
    virtual void SIR();
 
    /* counter for infection length */
-   unsigned int count;
+   unsigned int count = 0;
+
+   /* counter for steps */
+   unsigned int step_count = 0;
 
    /* constant for infection duration */
    const unsigned int INFECTION_DURATION = 2400; // ticks
 
    /* state of the bot (initially susceptible = 0) */
    int state = 0;
-
 
    /* END NEW */
 
@@ -209,7 +214,7 @@ public:
     * so the function could have been omitted. It's here just for
     * completeness.
     */
-   virtual void Destroy() {}
+   virtual void Destroy();
 
 private:
 
@@ -230,6 +235,9 @@ private:
 
    /* counter for infection length */
    unsigned int count;
+
+   /* counter for steps */
+   unsigned int step_count;
 
    /* constant for infection duration */
    const unsigned int INFECTION_DURATION = 2400; // ticks
