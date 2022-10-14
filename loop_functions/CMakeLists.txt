@@ -9,6 +9,9 @@ add_subdirectory(mpga_loop_functions)
 # Descend into the custom_distributions_loop_functions directory
 add_subdirectory(custom_distributions_loop_functions)
 
+# add SIR_loop_functions
+add_subdirectory(SIR_loop_functions)
+
 # If Qt+OpenGL dependencies were found, descend into these directories
 if(ARGOS_QTOPENGL_FOUND)
   add_subdirectory(trajectory_loop_functions)

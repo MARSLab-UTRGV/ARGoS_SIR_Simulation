@@ -501,6 +501,32 @@ custom_distributions_loop_functions_autogen/fast:
 .PHONY : custom_distributions_loop_functions_autogen/fast
 
 #=============================================================================
+# Target rules for targets named SIR_loop_functions
+
+# Build rule for target.
+SIR_loop_functions: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 SIR_loop_functions
+.PHONY : SIR_loop_functions
+
+# fast build rule for target.
+SIR_loop_functions/fast:
+	$(MAKE) -f loop_functions/SIR_loop_functions/CMakeFiles/SIR_loop_functions.dir/build.make loop_functions/SIR_loop_functions/CMakeFiles/SIR_loop_functions.dir/build
+.PHONY : SIR_loop_functions/fast
+
+#=============================================================================
+# Target rules for targets named SIR_loop_functions_autogen
+
+# Build rule for target.
+SIR_loop_functions_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 SIR_loop_functions_autogen
+.PHONY : SIR_loop_functions_autogen
+
+# fast build rule for target.
+SIR_loop_functions_autogen/fast:
+	$(MAKE) -f loop_functions/SIR_loop_functions/CMakeFiles/SIR_loop_functions_autogen.dir/build.make loop_functions/SIR_loop_functions/CMakeFiles/SIR_loop_functions_autogen.dir/build
+.PHONY : SIR_loop_functions_autogen/fast
+
+#=============================================================================
 # Target rules for targets named trajectory_loop_functions
 
 # Build rule for target.
@@ -642,6 +668,8 @@ help:
 	@echo "... mpga_autogen"
 	@echo "... custom_distributions_loop_functions"
 	@echo "... custom_distributions_loop_functions_autogen"
+	@echo "... SIR_loop_functions"
+	@echo "... SIR_loop_functions_autogen"
 	@echo "... trajectory_loop_functions"
 	@echo "... trajectory_loop_functions_autogen"
 	@echo "... id_loop_functions"

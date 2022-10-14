@@ -62,6 +62,10 @@
 /home/ryan/argos-sir-sim/build/loop_functions/custom_distributions_loop_functions/CMakeFiles/edit_cache.dir
 /home/ryan/argos-sir-sim/build/loop_functions/custom_distributions_loop_functions/CMakeFiles/custom_distributions_loop_functions.dir
 /home/ryan/argos-sir-sim/build/loop_functions/custom_distributions_loop_functions/CMakeFiles/custom_distributions_loop_functions_autogen.dir
+/home/ryan/argos-sir-sim/build/loop_functions/SIR_loop_functions/CMakeFiles/rebuild_cache.dir
+/home/ryan/argos-sir-sim/build/loop_functions/SIR_loop_functions/CMakeFiles/edit_cache.dir
+/home/ryan/argos-sir-sim/build/loop_functions/SIR_loop_functions/CMakeFiles/SIR_loop_functions.dir
+/home/ryan/argos-sir-sim/build/loop_functions/SIR_loop_functions/CMakeFiles/SIR_loop_functions_autogen.dir
 /home/ryan/argos-sir-sim/build/loop_functions/trajectory_loop_functions/CMakeFiles/rebuild_cache.dir
 /home/ryan/argos-sir-sim/build/loop_functions/trajectory_loop_functions/CMakeFiles/edit_cache.dir
 /home/ryan/argos-sir-sim/build/loop_functions/trajectory_loop_functions/CMakeFiles/trajectory_loop_functions.dir

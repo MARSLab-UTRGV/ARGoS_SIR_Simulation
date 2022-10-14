@@ -14,6 +14,27 @@ ofstream SIR_data;
 
 /****************************************/
 
+void Cfb_SIR_diffusion_susceptible::setState(int s){
+   state = s;
+
+   switch(state){
+      case 0:
+         m_pcLEDs->SetAllColors(CColor::GREEN);
+         break;
+      case 1:
+         m_pcLEDs->SetAllColors(CColor::RED);
+         break;
+      case 2:
+         m_pcLEDs->SetAllColors(CColor::YELLOW);
+         break;
+      default:
+         LOGERR << "Error setting state to one of the bots: Not a valid state..." << endl;
+         break;
+   }
+}
+
+/****************************************/
+/****************************************/
 
 void Cfb_SIR_diffusion_susceptible::SIR(){
 
@@ -61,14 +82,6 @@ void Cfb_SIR_diffusion_susceptible::SIR(){
       default:
          cout << "INVALID STATE/INPUT" << endl;
          break;
-   }
-
-   /* write data to file */
-   if(SIR_data.is_open()){
-      SIR_data << step_count << ", " << state << endl;
-   } else {
-      throw 1;
-      cout << "ERR: 'SIR_data.txt' could not be opened for writing..." << endl;
    }
 
 }
@@ -124,9 +137,6 @@ void Cfb_SIR_diffusion_susceptible::Init(TConfigurationNode& t_node) {
    m_pcBlob->Enable();
    /* Set color GREEN */
    m_pcLEDs->SetAllColors(CColor::GREEN);
-
-   // for data collection
-   SIR_data.open ("SIR_data.txt", ios::out | ios::app);
 
    /* END NEW */
    /*

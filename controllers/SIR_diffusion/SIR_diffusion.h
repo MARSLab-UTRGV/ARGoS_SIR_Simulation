@@ -107,6 +107,13 @@ public:
     */
    virtual void Destroy();
 
+   void setState(int);
+
+protected:
+
+   /* state of the bot (initially susceptible = 0) */
+   int state = 0;
+
 private:
 
    /* Pointer to the differential steering actuator */
@@ -121,8 +128,8 @@ private:
    /* Pointer to the colored blob camera */
    CCI_ColoredBlobOmnidirectionalCameraSensor* m_pcBlob;
 
-  /* private function to handle SIR states */
-   virtual void SIR();
+   /* helper function to handle SIR states */
+   void SIR();
 
    /* counter for infection length */
    unsigned int count = 0;
@@ -132,9 +139,6 @@ private:
 
    /* constant for infection duration */
    const unsigned int INFECTION_DURATION = 2400; // ticks
-
-   /* state of the bot (initially susceptible = 0) */
-   int state = 0;
 
    /* END NEW */
 

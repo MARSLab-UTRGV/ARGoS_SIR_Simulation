@@ -28,6 +28,7 @@
 			<params alpha="7.5" delta="0.1" velocity="5"/>
 		</fb_sir_diffusion_infected_controller>
 	</controllers>
+	<loop_functions label="SIR_loop_functions" library="build/loop_functions/SIR_loop_functions/libSIR_loop_functions.so"/>
 	<arena size="10,10,1" center="0,0,0.5">
 		<box id="wall_north" size="10,0.1,0.5" movable="false">
 			<body position="0,5.0,0" orientation="0,0,0"/>
