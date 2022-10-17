@@ -1,0 +1,5 @@
+add_library(SIR_diffusion MODULE SIR_diffusion.h SIR_diffusion.cpp)
+target_link_libraries(SIR_diffusion
+  argos3core_simulator
+  argos3plugin_simulator_footbot
+  argos3plugin_simulator_genericrobot)

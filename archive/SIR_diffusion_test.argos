@@ -1,0 +1,222 @@
+<?xml version="1.0" ?>
+<argos-configuration>
+
+  <!-- ************************* -->
+  <!-- * General configuration * -->
+  <!-- ************************* -->
+  <framework>
+    <system threads="0" />
+    <experiment length="0"
+                ticks_per_second="10"
+                random_seed="124" />
+  </framework>
+
+  <!-- *************** -->
+  <!-- * Controllers * -->
+  <!-- *************** -->
+  <controllers>
+
+    <fb_sir_diffusion_susceptible_controller id="fdc_s"
+                                  library="build/controllers/SIR_diffusion/libSIR_diffusion.so">
+      <actuators>
+        <differential_steering implementation="default" />
+        <leds implementation="default" medium="leds" />
+      </actuators>
+      <sensors>
+        <footbot_proximity implementation="default"/>
+        <colored_blob_omnidirectional_camera implementation="rot_z_only" medium="leds" show_rays="true"/>
+      </sensors>
+      <params alpha="7.5" delta="0.1" velocity="5" />
+    </fb_sir_diffusion_susceptible_controller>
+
+    <fb_sir_diffusion_infected_controller id="fdc_i"
+                                  library="build/controllers/SIR_diffusion/libSIR_diffusion.so">
+      <actuators>
+        <differential_steering implementation="default" />
+        <leds implementation="default" medium="leds" />
+      </actuators>
+      <sensors>
+        <footbot_proximity implementation="default"/>
+        <colored_blob_omnidirectional_camera implementation="rot_z_only" medium="leds" show_rays="true"/>
+      </sensors>
+      <params alpha="7.5" delta="0.1" velocity="5" />
+    </fb_sir_diffusion_infected_controller>
+
+  </controllers>
+
+  <!-- *********************** -->
+  <!-- * Arena configuration * -->
+  <!-- *********************** -->
+  <arena size="10, 10, 1" center="0,0,0.5">
+
+    <box id="wall_north" size="9,0.1,0.5" movable="false">
+      <body position="0,4.5,0" orientation="0,0,0" />
+    </box>
+    <box id="wall_south" size="9,0.1,0.5" movable="false">
+      <body position="0,-4.5,0" orientation="0,0,0" />
+    </box>
+    <box id="wall_east" size="0.1,9,0.5" movable="false">
+      <body position="4.5,0,0" orientation="0,0,0" />
+    </box>
+    <box id="wall_west" size="0.1,9,0.5" movable="false">
+      <body position="-4.5,0,0" orientation="0,0,0" />
+    </box>
+
+    <!--
+        You can distribute entities randomly. Here, we distribute
+        10 foot-bots in this way:
+        - the position is uniformly distributed
+        on the ground, in the square whose corners are (-2,-2) and (2,2)
+        - the orientations are non-zero only when rotating around Z and chosen
+        from a gaussian distribution, whose mean is zero degrees and
+        standard deviation is 360 degrees.
+    -->
+    
+    <distribute>
+      <position method="uniform" min="-4.5,-4.5,0" max="4.5,4.5,0" />
+      <orientation method="gaussian" mean="0,0,0" std_dev="360,0,0" />
+      <entity quantity="40" max_trials="100">
+        <foot-bot id="fb" omnidirectional_camera_aperture="40.890978678521">
+          <controller config="fdc_s" />
+        </foot-bot>
+      </entity>
+    </distribute>
+
+    <distribute>
+      <position method="uniform" min="-4.5,-4.5,0" max="4.5,4.5,0" />
+      <orientation method="gaussian" mean="0,0,0" std_dev="360,0,0" />
+      <entity quantity="1" max_trials="100">
+        <foot-bot id="fb_i" omnidirectional_camera_aperture="40.890978678521">
+          <controller config="fdc_i" />
+        </foot-bot>
+      </entity>
+    </distribute>
+  
+
+    <!--
+      The footbot has a body of a certain height Hb on top of which there's a small tube of a certain height Ht. At the end of the tube, a convex mirror is installed that reflects the floor onto a camera at the base of the tube.
+
+      The omnidirectional camera is modeled as a triangle whose base is the range R of the robot on the floor, and whose tip is the top of the tube. The tip of triangle is at a height
+
+      Hc = Hb + Ht.
+
+      Calling Alpha the aperture that you can set as a parameter, this equation is valid:
+
+      R / Hc = tan(Alpha).
+
+      If you want to calculate the range R, then
+
+      R = Hc * tan(Alpha)
+
+      which is the same calculation done in colored_blob_omnidirectional_camera_rotzonly_sensor.cpp#L190.
+
+      If you want to know which aperture corresponds to which range, then use
+
+      Alpha = atan2(R, Hc)
+
+      For the foot-bot, the value of Hc is 0.288699733.
+
+
+      For R = 1(grid unit), Alpha = 73.896585285972(degrees)
+
+      For R = 0.5, Alpha = 59.997885967845
+
+      For R = 0.25, Alpha = 40.890978678521  
+
+    -->
+
+    <!-- <foot-bot id="fb_0" omnidirectional_camera_aperture="40.890978678521">
+      <body position="0,0.5,0" orientation="0,0,0" />
+      <controller config="fdc_s"/>
+    </foot-bot>
+
+    <foot-bot id="fb_1" omnidirectional_camera_aperture="40.890978678521">
+      <body position="0.5,0.5,0" orientation="-10,0,0" />
+      <controller config="fdc_s"/>
+    </foot-bot>
+
+    <foot-bot id="fb_2" omnidirectional_camera_aperture="40.890978678521">
+      <body position="1,1,0" orientation="-20,0,0" />
+      <controller config="fdc_s"/>
+    </foot-bot>
+
+    <foot-bot id="fb_3" omnidirectional_camera_aperture="40.890978678521">
+      <body position="-1,1.5,0" orientation="-30,0,0" />
+      <controller config="fdc_s"/>
+    </foot-bot>
+
+    <foot-bot id="fb_4" omnidirectional_camera_aperture="40.890978678521">
+      <body position="1,0.5,0" orientation="-40,0,0" />
+      <controller config="fdc_s"/>
+    </foot-bot>
+
+    <foot-bot id="fb_5" omnidirectional_camera_aperture="40.890978678521">
+      <body position="1.5,1,0" orientation="-50,0,0" />
+      <controller config="fdc_s"/>
+    </foot-bot> -->
+
+    <!-- Infected bot here -->
+
+    <!-- <foot-bot id="fb_6" omnidirectional_camera_aperture="40.890978678521">
+      <body position="0,-0.5,0" orientation="60,0,0" />
+      <controller config="fdc_i"/>
+    </foot-bot> -->
+
+    <!--
+        We distribute 5 boxes uniformly in position and rotation around Z.
+    -->
+    <!--
+    <distribute>
+      <position method="uniform" min="-2,-2,0" max="2,2,0" />
+      <orientation method="uniform" min="0,0,0" max="360,0,0" />
+      <entity quantity="5" max_trials="100">
+        <box id="b" size="0.3,0.3,0.5" movable="false" />
+      </entity>
+    </distribute>
+    -->
+
+    <!--
+        We distribute cylinders uniformly in position and with
+        constant rotation (rotating a cylinder around Z does not
+        matter)
+    -->
+    <!--
+    <distribute>
+      <position method="uniform" min="-2,-2,0" max="2,2,0" />
+      <orientation method="constant" values="0,0,0" />
+      <entity quantity="5" max_trials="100">
+        <cylinder id="c" height="0.5" radius="0.15" movable="false" />
+      </entity>
+    </distribute>
+    -->
+
+  </arena>
+
+  <!-- ******************* -->
+  <!-- * Physics engines * -->
+  <!-- ******************* -->
+  <physics_engines>
+    <dynamics2d id="dyn2d" />
+  </physics_engines>
+
+  <!-- ********* -->
+  <!-- * Media * -->
+  <!-- ********* -->
+  <media>
+    <led id="leds" />
+  </media>
+
+  <!-- ****************** -->
+  <!-- * Visualization * -->
+  <!-- ****************** -->
+  <visualization>
+    <qt-opengl>
+      <camera>
+        <placements>
+          <placement index="0" position="0,0,13" look_at="0,0,0" up="1,0,0" lens_focal_length="35" />
+        </placements>
+      </camera>
+    </qt-opengl>
+  </visualization>
+
+</argos-configuration>
