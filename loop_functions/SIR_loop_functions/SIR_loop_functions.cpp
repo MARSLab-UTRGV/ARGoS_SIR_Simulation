@@ -106,23 +106,25 @@ void SIR_loop_functions::PostStep(){
 /****************************************/
 /****************************************/
 
-// bool SIR_loop_functions::isExperimentFinished(){
+bool SIR_loop_functions::isExperimentFinished(){
 
-//     bool isFinished = false;
+    bool isFinished = false;
 
-//     // if there are no more infected bots, the experiment is finished
-//     if (num_infected == 0){
-//         isFinished = true;
-//     }
+    LOG << "isExperimentFinished() is being called" << endl;
 
-//     if(isFinished){
-//         LOG << "No more infected bots. Experiment complete." << endl;
-//         PostExperiment();
-//     }
+    // if there are no more infected bots, the experiment is finished
+    if (num_infected == 0){
+        isFinished = true;
+    }
 
-//     return isFinished;
+    if(isFinished){
+        LOG << "No more infected bots. Experiment complete." << endl;
+        PostExperiment();
+    }
 
-// }
+    return isFinished;
+
+}
 
 /****************************************/
 /****************************************/

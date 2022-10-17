@@ -27,7 +27,7 @@ class SIR_loop_functions : public CLoopFunctions
         //void Reset(){}
         void PreStep();
         void PostStep();
-        // bool isExperimentFinished();
+        bool isExperimentFinished();
         void PostExperiment();
         //CColor GetFloorColor(const CVector2& c_pos_on_floor){}
 

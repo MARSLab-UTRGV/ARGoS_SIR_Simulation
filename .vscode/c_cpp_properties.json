@@ -4,7 +4,8 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/usr/include/lua5.3"
+                "/usr/include/lua5.3",
+                "argos-sir-sim/**"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

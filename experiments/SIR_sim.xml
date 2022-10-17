@@ -18,7 +18,7 @@
 		</fb_sir_diffusion_susceptible_controller>
 	</controllers>
 	<loop_functions label="SIR_loop_functions" library="build/loop_functions/SIR_loop_functions/libSIR_loop_functions.so">
-		<settings filename="./results/raw/SIR_data_2022-10-16 23:57:39.962040.txt" num_init_infected="1"/>
+		<settings filename="./results/raw/SIR_data_2022-10-17 00:13:23.503127.txt" num_init_infected="1"/>
 	</loop_functions>
 	<arena size="10,10,1" center="0,0,0.5">
 		<box id="wall_north" size="10,0.1,0.5" movable="false">
