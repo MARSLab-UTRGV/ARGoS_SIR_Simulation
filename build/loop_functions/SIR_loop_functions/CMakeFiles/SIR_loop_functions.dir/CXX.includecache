@@ -20,8 +20,6 @@ argos3/plugins/robots/generic/control_interface/ci_colored_blob_omnidirectional_
 fstream
 -
 
-/home/ryan/argos-sir-sim/build/loop_functions/SIR_loop_functions/SIR_loop_functions_autogen/mocs_compilation.cpp
-
 /home/ryan/argos-sir-sim/loop_functions/SIR_loop_functions/SIR_loop_functions.cpp
 SIR_loop_functions.h
 /home/ryan/argos-sir-sim/loop_functions/SIR_loop_functions/SIR_loop_functions.h
@@ -34,5 +32,13 @@ argos3/plugins/robots/foot-bot/simulator/footbot_entity.h
 argos3/core/simulator/entity/floor_entity.h
 -
 controllers/SIR_diffusion/SIR_diffusion.h
+-
+random
+-
+sstream
+-
+time.h
+-
+vector
 -
 

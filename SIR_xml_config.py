@@ -9,14 +9,17 @@ H_C = 0.288699733
 I_BOT = 'fdc_i'
 S_BOT = 'fdc_s'
 
-####### GLOBAL VARIABLES (CONFIGURABLE) #######
+####### CONFIGURATION #######
 
 INFECTION_RANGE = 0.25      # in grid units
 INFECTED_COUNT = 1          # number of initially infected bots
-BOT_COUNT = 40              # not including INFECTED_COUNT
+BOT_COUNT = 40              # total bot count including INFECTED_COUNT
 ARENA_SIZE = (10,10,1)      # (x,y,z)
 CAM_HEIGHT = 35             # simulation camera height
-TPS = 20                    # ticks/steps per second
+TPS = 10                    # ticks/steps per second
+VISUAL = False              # turn on/off visual simulator
+SIM_LENGTH = 1200           # length of experiment in seconds
+
 
 ############################################################
 
@@ -60,7 +63,7 @@ def botUPosition(limit):
 def aperture():
     return str(math.degrees(math.atan2(INFECTION_RANGE,H_C)))
 
-def createXML():
+def createXML(fname):
 
     xml = minidom.Document()
 
@@ -78,7 +81,7 @@ def createXML():
     framework.appendChild(system)
     #       <experiment>
     experiment = xml.createElement('experiment')
-    experiment.setAttribute('length','0') # length of experiment in seconds
+    experiment.setAttribute('length', str(SIM_LENGTH))
     experiment.setAttribute('ticks_per_second',str(TPS))
     experiment.setAttribute('random_seed','124')
     framework.appendChild(experiment)
@@ -135,54 +138,21 @@ def createXML():
     fb_susceptible.appendChild(params)
     #           </params>
     #       </fb_sir_diffusion_susceptible_controller>
+    #   </controllers>
 
-    #       <fb_sir_diffusion_infected_controller>
-    fb_infected = xml.createElement('fb_sir_diffusion_infected_controller')
-    fb_infected.setAttribute('id','fdc_i')
-    fb_infected.setAttribute('library','build/controllers/SIR_diffusion/libSIR_diffusion.so')
-    controllers.appendChild(fb_infected)
+    #   <loop_functions>
+    loops = xml.createElement('loop_functions')
+    loops.setAttribute('label','SIR_loop_functions')
+    loops.setAttribute('library','build/loop_functions/SIR_loop_functions/libSIR_loop_functions.so')
+    argos_config.appendChild(loops)
 
-    #           <actuators>
-    actuators = xml.createElement('actuators')
-    fb_infected.appendChild(actuators)
-
-    #               <differential_steering>
-    dif_steering = xml.createElement('differential_steering')
-    dif_steering.setAttribute('implementation','default')
-    actuators.appendChild(dif_steering)
-
-    #               <leds>
-    leds = xml.createElement('leds')
-    leds.setAttribute('implementation','default')
-    leds.setAttribute('medium','leds')
-    actuators.appendChild(leds)
-    #           </actuators
-
-    #           <sensors>
-    sensors = xml.createElement('sensors')
-    fb_infected.appendChild(sensors)
-
-    #               <footbot_proximity>
-    fb_prox = xml.createElement('footbot_proximity')
-    fb_prox.setAttribute('implementation','default')
-    sensors.appendChild(fb_prox)
-
-    #               <colored_blob_omnidirectional_camera>
-    blobcam = xml.createElement('colored_blob_omnidirectional_camera')
-    blobcam.setAttribute('implementation','rot_z_only')
-    blobcam.setAttribute('medium','leds')
-    blobcam.setAttribute('show_rays','true')
-    sensors.appendChild(blobcam)
-    #           </sensors>
-
-    #           <params>
-    params = xml.createElement('params')
-    params.setAttribute('alpha','7.5')
-    params.setAttribute('delta','0.1')
-    params.setAttribute('velocity','5')
-    fb_infected.appendChild(params)
-    #           </params>
-    #       </fb_sir_diffusion_infected_controller>
+    #       <settings>
+    settings = xml.createElement('settings')
+    settings.setAttribute('filename', str(fname))
+    settings.setAttribute('num_init_infected', str(INFECTED_COUNT))
+    loops.appendChild(settings)
+    #       </settings>
+    #   </loop_functions>
 
     #   <arena>
     arena = xml.createElement('arena')
@@ -242,10 +212,6 @@ def createXML():
     body_w.setAttribute('orientation','0,0,0')
     wall_w.appendChild(body_w)
 
-    ################################################################
-    # WE SPAWN IN BOTS HERE, SELECTING ONE TO BE INFECTED #
-    ################################################################
-
     #       <distribute>
     distribute_sus = xml.createElement('distribute')
     arena.appendChild(distribute_sus)
@@ -284,48 +250,6 @@ def createXML():
     #               </foot-bot>
     #           </entity>
     #       </distribute>
-
-################  infected ###################
-
-    #       <distribute>
-    distribute_inf = xml.createElement('distribute')
-    arena.appendChild(distribute_inf)
-
-    #           <position>
-    position_inf = xml.createElement('position')
-    position_inf.setAttribute('method','uniform')
-    position_inf.setAttribute('min',botUPosition('min'))
-    position_inf.setAttribute('max',botUPosition('max'))
-    distribute_inf.appendChild(position_inf)
-
-    #           <orientation>
-    orient_inf = xml.createElement('orientation')
-    orient_inf.setAttribute('method','gaussian')
-    orient_inf.setAttribute('mean','0,0,0')
-    orient_inf.setAttribute('std_dev','360,0,0')
-    distribute_inf.appendChild(orient_inf)
-
-    #           <entity>
-    entity_inf = xml.createElement('entity')
-    entity_inf.setAttribute('quantity', str(INFECTED_COUNT))
-    entity_inf.setAttribute('max_trials','100')
-    distribute_inf.appendChild(entity_inf)
-
-    #               <foot-bot>
-    footbot_I = xml.createElement('foot-bot')
-    footbot_I.setAttribute('id','fb_i')
-    footbot_I.setAttribute('omnidirectional_camera_aperture',aperture())
-    entity_inf.appendChild(footbot_I)
-
-    #                   <controller>
-    cont_inf = xml.createElement('controller')
-    cont_inf.setAttribute('config',I_BOT)
-    footbot_I.appendChild(cont_inf)
-    #                   </controller>
-    #               </foot-bot>
-    #           </entity>
-    #       </distribute>
-
     #   </arena>
 
     #   <physics_engines>
@@ -348,34 +272,36 @@ def createXML():
     media.appendChild(leds)
     #   </media>
 
-    #   <visualization>
-    visualization = xml.createElement('visualization')
-    argos_config.appendChild(visualization)
 
-    #       <qt-opengl>
-    qt = xml.createElement('qt-opengl')
-    visualization.appendChild(qt)
+    if (VISUAL):
+        #   <visualization>
+        visualization = xml.createElement('visualization')
+        argos_config.appendChild(visualization)
 
-    #           <camera>
-    camera = xml.createElement('camera')
-    qt.appendChild(camera)
+        #       <qt-opengl>
+        qt = xml.createElement('qt-opengl')
+        visualization.appendChild(qt)
 
-    #               <placements>
-    placements = xml.createElement('placements')
-    camera.appendChild(placements)
+        #           <camera>
+        camera = xml.createElement('camera')
+        qt.appendChild(camera)
 
-    #                   <placement>
-    placement = xml.createElement('placement')
-    placement.setAttribute('index','0')
-    placement.setAttribute('position','0,0,13')
-    placement.setAttribute('look_at','0,0,0')
-    placement.setAttribute('up','1,0,0')
-    placement.setAttribute('lens_focal_length',str(CAM_HEIGHT))
-    placements.appendChild(placement)
-    #               </placements>
-    #           </camera>
-    #       </qt-opengl>
-    #   </visualization>
+        #               <placements>
+        placements = xml.createElement('placements')
+        camera.appendChild(placements)
+
+        #                   <placement>
+        placement = xml.createElement('placement')
+        placement.setAttribute('index','0')
+        placement.setAttribute('position','0,0,13')
+        placement.setAttribute('look_at','0,0,0')
+        placement.setAttribute('up','1,0,0')
+        placement.setAttribute('lens_focal_length',str(CAM_HEIGHT))
+        placements.appendChild(placement)
+        #               </placements>
+        #           </camera>
+        #       </qt-opengl>
+        #   </visualization>
 
     # </argos-configuration>
 
@@ -388,6 +314,8 @@ def createXML():
 
 
 
+
+################## ARCHIVED ####################
 
 
 
@@ -411,3 +339,97 @@ def createXML():
 #             bot_list.append(Bot('fb'+str(i),S_BOT))
 #         else:
 #             bot_list.append(Bot('fb'+str(i),I_BOT))
+
+
+###############################################################################
+
+#       <fb_sir_diffusion_infected_controller>
+    # fb_infected = xml.createElement('fb_sir_diffusion_infected_controller')
+    # fb_infected.setAttribute('id','fdc_i')
+    # fb_infected.setAttribute('library','build/controllers/SIR_diffusion/libSIR_diffusion.so')
+    # controllers.appendChild(fb_infected)
+
+    # #           <actuators>
+    # actuators = xml.createElement('actuators')
+    # fb_infected.appendChild(actuators)
+
+    # #               <differential_steering>
+    # dif_steering = xml.createElement('differential_steering')
+    # dif_steering.setAttribute('implementation','default')
+    # actuators.appendChild(dif_steering)
+
+    # #               <leds>
+    # leds = xml.createElement('leds')
+    # leds.setAttribute('implementation','default')
+    # leds.setAttribute('medium','leds')
+    # actuators.appendChild(leds)
+    # #           </actuators
+
+    # #           <sensors>
+    # sensors = xml.createElement('sensors')
+    # fb_infected.appendChild(sensors)
+
+    # #               <footbot_proximity>
+    # fb_prox = xml.createElement('footbot_proximity')
+    # fb_prox.setAttribute('implementation','default')
+    # sensors.appendChild(fb_prox)
+
+    # #               <colored_blob_omnidirectional_camera>
+    # blobcam = xml.createElement('colored_blob_omnidirectional_camera')
+    # blobcam.setAttribute('implementation','rot_z_only')
+    # blobcam.setAttribute('medium','leds')
+    # blobcam.setAttribute('show_rays','true')
+    # sensors.appendChild(blobcam)
+    # #           </sensors>
+
+    # #           <params>
+    # params = xml.createElement('params')
+    # params.setAttribute('alpha','7.5')
+    # params.setAttribute('delta','0.1')
+    # params.setAttribute('velocity','5')
+    # fb_infected.appendChild(params)
+    # #           </params>
+    # #       </fb_sir_diffusion_infected_controller>
+
+    ##############################################################
+
+    ################  infected ###################
+
+#     #       <distribute>
+#     distribute_inf = xml.createElement('distribute')
+#     arena.appendChild(distribute_inf)
+
+#     #           <position>
+#     position_inf = xml.createElement('position')
+#     position_inf.setAttribute('method','uniform')
+#     position_inf.setAttribute('min',botUPosition('min'))
+#     position_inf.setAttribute('max',botUPosition('max'))
+#     distribute_inf.appendChild(position_inf)
+
+#     #           <orientation>
+#     orient_inf = xml.createElement('orientation')
+#     orient_inf.setAttribute('method','gaussian')
+#     orient_inf.setAttribute('mean','0,0,0')
+#     orient_inf.setAttribute('std_dev','360,0,0')
+#     distribute_inf.appendChild(orient_inf)
+
+#     #           <entity>
+#     entity_inf = xml.createElement('entity')
+#     entity_inf.setAttribute('quantity', str(INFECTED_COUNT))
+#     entity_inf.setAttribute('max_trials','100')
+#     distribute_inf.appendChild(entity_inf)
+
+#     #               <foot-bot>
+#     footbot_I = xml.createElement('foot-bot')
+#     footbot_I.setAttribute('id','fb_i')
+#     footbot_I.setAttribute('omnidirectional_camera_aperture',aperture())
+#     entity_inf.appendChild(footbot_I)
+
+#     #                   <controller>
+#     cont_inf = xml.createElement('controller')
+#     cont_inf.setAttribute('config',I_BOT)
+#     footbot_I.appendChild(cont_inf)
+#     #                   </controller>
+#     #               </foot-bot>
+#     #           </entity>
+#     #       </distribute>

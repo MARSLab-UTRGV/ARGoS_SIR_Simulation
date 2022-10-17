@@ -9,9 +9,6 @@
 
 using namespace std;
 
-/* for data collection */
-ofstream SIR_data;
-
 /****************************************/
 
 void Cfb_SIR_diffusion_susceptible::setState(int s){
@@ -197,10 +194,7 @@ void Cfb_SIR_diffusion_susceptible::ControlStep() {
 /****************************************/
 
 void Cfb_SIR_diffusion_susceptible::Destroy(){
-   /* close file if open */
-   if (SIR_data.is_open()){
-      SIR_data.close();
-   }
+
 }
 
 /****************************************/
@@ -254,14 +248,6 @@ void Cfb_SIR_diffusion_infected::SIR(){
    // recovered bots don't need to worry about anything as they are immune
    if (state == 2) {}// do nothing
 
-   /* write data to file */
-   if(SIR_data.is_open()){
-      SIR_data << step_count << ", " << state << endl;
-   } else {
-      throw 1;
-      cout << "ERR: 'SIR_data.txt' could not be opened for writing..." << endl;
-   }
-
 }
 
 /****************************************/
@@ -301,9 +287,6 @@ void Cfb_SIR_diffusion_infected::Init(TConfigurationNode& t_node) {
    m_pcBlob->Enable();
    /* Set color GREEN */
    m_pcLEDs->SetAllColors(CColor::RED);
-
-   // for data collection
-   SIR_data.open ("SIR_data.txt", ios::out | ios::app);
 
    /* END NEW */
    /*
@@ -365,10 +348,7 @@ void Cfb_SIR_diffusion_infected::ControlStep() {
 /****************************************/
 
 void Cfb_SIR_diffusion_infected::Destroy(){
-   /* close file if open */
-   if (SIR_data.is_open()){
-      SIR_data.close();
-   }
+
 }
 
 /****************************************/

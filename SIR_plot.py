@@ -1,16 +1,13 @@
-import SIR_xml_config
-import os
 import matplotlib.pyplot as plt
-from datetime import datetime
 
 cur_step = []
 num_susceptible = []
 num_infected = []
 num_recovered = []
+count = 0
 rem = 1000           # remaining lines to be read after no more bots are infected
 
 def read(fname):
-    count = 0
     with open(fname) as f:
         for line in f.readlines():
             data = line.strip().split(',')
@@ -40,20 +37,6 @@ def plot():
 
     plt.show()
 
-def getFilename():
-    now = datetime.now()
-    return "SIR_data_"+str(now)+".txt"
 
-if __name__ == "__main__":
-    fname = getFilename()
-    # try:
-    #     SIR_xml_config.createXML(fname)
-    # except:
-    #     print("Something went wrong creating the XML file...")
 
-    SIR_xml_config.createXML(fname)
-    
-    os.system("argos3 -c SIR_sim.xml")
 
-    read(fname)
-    plot()

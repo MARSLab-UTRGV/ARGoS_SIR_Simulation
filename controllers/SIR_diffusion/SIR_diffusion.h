@@ -109,10 +109,11 @@ public:
 
    void setState(int);
 
-protected:
+   int getState(){return state;};
 
-   /* state of the bot (initially susceptible = 0) */
-   int state = 0;
+   unsigned int getStep(){return step_count;}
+
+protected:
 
 private:
 
@@ -136,6 +137,9 @@ private:
 
    /* counter for steps */
    unsigned int step_count = 0;
+
+   /* state of the bot (initially susceptible = 0) */
+   int state = 0;
 
    /* constant for infection duration */
    const unsigned int INFECTION_DURATION = 2400; // ticks
