@@ -27,33 +27,34 @@ def read(fname):
                 if count == rem:
                     return
 
-def plot():
+def plot(plt_fname):
     plt.plot(cur_step, num_susceptible, color='g', label='susceptible')
     plt.plot(cur_step, num_infected, color='r', label='infected')
     plt.plot(cur_step, num_recovered, color='y', label='recovered')
 
     plt.xlabel("Simulation Steps")
     plt.ylabel("Number of Bots")
-    plt.title("SIR Diffusion Plot (test)")
+    plt.title("SIR Diffusion Simulation Plot")
 
     plt.legend()
 
+    plt.savefig(plt_fname)
     plt.show()
 
-def getFilename():
+def getFilenames():
     now = datetime.now()
-    return "SIR_data_"+str(now)+".txt"
+    return "./results/raw/SIR_data_"+str(now)+".txt", "./results/plots/SIR_data_plot_"+str(now)+".png"
 
 if __name__ == "__main__":
-    fname = getFilename()
+    txt_fname,plt_fname = getFilenames()
     # try:
     #     SIR_xml_config.createXML(fname)
     # except:
     #     print("Something went wrong creating the XML file...")
 
-    SIR_xml_config.createXML(fname)
+    SIR_xml_config.createXML(txt_fname)
     
-    os.system("argos3 -c SIR_sim.xml")
+    os.system("argos3 -c ./experiments/SIR_sim.xml")
 
-    read(fname)
-    plot()
+    read(txt_fname)
+    plot(plt_fname)

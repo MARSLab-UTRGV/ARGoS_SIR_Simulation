@@ -307,9 +307,9 @@ def createXML(fname):
 
     xml_str = xml.toprettyxml(indent = "\t")
 
-    save_path_file = "SIR_sim.xml"
+    xml_filename = "./experiments/SIR_sim.xml"
 
-    with open(save_path_file, "w") as f:
+    with open(xml_filename, "w") as f:
         f.write(xml_str)
 
 
