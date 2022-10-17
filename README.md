@@ -3,6 +3,9 @@ SIR model simulation in ARGoS
 
 This is a simple SIR model simulation in ARGoS using FootBots with simple obstacle avoidance (Diffusion).
 
+CURRENT ISSUE:
+    Experiment is only terminating based on the length of time specified (configurable in 'SIR_xml_config.py'.
+
 **INSTALLATION**
 
 -PYTHON-
