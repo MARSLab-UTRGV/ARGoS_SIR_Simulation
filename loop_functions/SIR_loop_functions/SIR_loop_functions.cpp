@@ -106,23 +106,25 @@ void SIR_loop_functions::PostStep(){
 /****************************************/
 /****************************************/
 
-// bool SIR_loop_functions::isExperimentFinished(){
+bool SIR_loop_functions::IsExperimentFinished(){
 
-//     bool isFinished = false;
+    bool isFinished = false;
 
-//     // if there are no more infected bots, the experiment is finished
-//     if (num_infected == 0){
-//         isFinished = true;
-//     }
+    size_t simTime = GetSpace().GetSimulationClock();
 
-//     if(isFinished){
-//         LOG << "No more infected bots. Experiment complete." << endl;
-//         PostExperiment();
-//     }
+    // if there are no more infected bots, the experiment is finished
+    if (simTime > 1 && num_infected == 0){
+        isFinished = true;
+    }
 
-//     return isFinished;
+    if(isFinished){
+        LOG << "No more infected bots. Experiment complete." << endl;
+        PostExperiment();
+    }
 
-// }
+    return isFinished;
+
+}
 
 /****************************************/
 /****************************************/
