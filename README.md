@@ -1,5 +1,5 @@
 # ARGoS SIR Model Simulation
-SIR model simulation in ARGoS
+SIR (Susceptible Infected and Recovered) model simulation in ARGoS
 
 This is a simple SIR model simulation in ARGoS using FootBots with simple obstacle avoidance (Diffusion).
 
