@@ -13,12 +13,12 @@ S_BOT = 'fdc_s'
 
 INFECTION_RANGE = 0.25      # in grid units
 INFECTED_COUNT = 1          # number of initially infected bots
-BOT_COUNT = 40              # total bot count including INFECTED_COUNT
-ARENA_SIZE = (10,10,1)      # (x,y,z)
+BOT_COUNT = 10              # total bot count including INFECTED_COUNT
+ARENA_SIZE = (5,5,1)      # (x,y,z)
 CAM_HEIGHT = 35             # simulation camera height
 TPS = 10                    # ticks/steps per second
-VISUAL = False              # turn on/off visual simulator
-SIM_LENGTH = 1200           # length of experiment in seconds
+VISUAL = True               # turn on/off visual simulator
+SIM_LENGTH = 4800           # length of experiment in seconds
 
 
 ############################################################

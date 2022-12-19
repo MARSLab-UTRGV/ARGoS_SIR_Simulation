@@ -29,7 +29,7 @@ class SIR_loop_functions : public CLoopFunctions
         void PostStep();
         bool IsExperimentFinished();
         void PostExperiment();
-        //CColor GetFloorColor(const CVector2& c_pos_on_floor){}
+        CColor GetFloorColor(const CVector2& c_pos_on_floor){return CColor::BLACK;}
 
     protected:
 

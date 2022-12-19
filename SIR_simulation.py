@@ -3,7 +3,7 @@ import os
 import matplotlib.pyplot as plt
 from datetime import datetime
 
-cur_step = []
+time_step = []
 num_susceptible = []
 num_infected = []
 num_recovered = []
@@ -16,7 +16,7 @@ def read(fname):
             data = line.strip().split(',')
             if data[0] == '<cur_step>':
                 continue
-            cur_step.append(int(data[0]))
+            time_step.append(int(data[0])/SIR_xml_config.TPS)  # also converting from steps to seconds
             num_susceptible.append(int(data[1]))
             num_infected.append(int(data[2]))
             num_recovered.append(int(data[3]))
@@ -28,13 +28,14 @@ def read(fname):
                     return
 
 def plot(plt_fname):
-    plt.plot(cur_step, num_susceptible, color='g', label='susceptible')
-    plt.plot(cur_step, num_infected, color='r', label='infected')
-    plt.plot(cur_step, num_recovered, color='y', label='recovered')
 
-    plt.xlabel("Simulation Steps")
-    plt.ylabel("Number of Bots")
-    plt.title("SIR Diffusion Simulation Plot")
+    plt.plot(time_step, num_susceptible, color='g', label='Susceptible')
+    plt.plot(time_step, num_infected, color='r', label='Infected')
+    plt.plot(time_step, num_recovered, color='y', label='Recovered')
+
+    plt.xlabel("Simulation Time (seconds)")
+    plt.ylabel("Number of Robots")
+    plt.title("ARGoS Simulation of SIR Model")
 
     plt.legend()
 
@@ -42,15 +43,26 @@ def plot(plt_fname):
     plt.show()
 
 def getFilenames():
-    now = datetime.now()
-    return "./results/raw/SIR_data_"+str(now)+".txt", "./results/plots/SIR_data_plot_"+str(now)+".png"
+
+    # now = datetime.now()
+    # return "./results/raw/SIR_data_"+str(now)+".txt", "./results/plots/SIR_data_plot_"+str(now)+".png"
+
+    # data file identifier (tag) is based on config file parameters, BOT_COUNT and ARENA_SIZE
+    tag = str(SIR_xml_config.BOT_COUNT)+"b-"+str(SIR_xml_config.ARENA_SIZE[0])+'x'+str(SIR_xml_config.ARENA_SIZE[1])
+    # file paths
+    t_path = "./results/raw/SIR_data-"
+    p_path = "./results/plots/SIR_data-"
+    # file formats
+    t_format = ".txt"
+    p_format = ".png"
+    # concatenate
+    t_fname = t_path+tag+t_format
+    p_fname = p_path+tag+p_format
+    
+    return t_fname, p_fname
 
 if __name__ == "__main__":
     txt_fname,plt_fname = getFilenames()
-    # try:
-    #     SIR_xml_config.createXML(fname)
-    # except:
-    #     print("Something went wrong creating the XML file...")
 
     SIR_xml_config.createXML(txt_fname)
     
