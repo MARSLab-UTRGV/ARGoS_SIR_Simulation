@@ -1,4 +1,4 @@
-# ARGoS_SIR_Simulation
+# ARGoS SIR Model Simulation
 SIR model simulation in ARGoS
 
 This is a simple SIR model simulation in ARGoS using FootBots with simple obstacle avoidance (Diffusion).
